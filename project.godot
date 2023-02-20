@@ -1,0 +1,79 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "AdMob",
+"language": "GDScript",
+"path": "res://admob-lib/admob.gd"
+}, {
+"base": "Node",
+"class": "StateMachine",
+"language": "GDScript",
+"path": "res://Scripts/StateMachine.gd"
+} ]
+_global_script_class_icons={
+"AdMob": "res://admob-lib/icon.png",
+"StateMachine": ""
+}
+
+[application]
+
+config/name="Safari Hunt"
+run/main_scene="res://Scenes/UI/MainMenu.tscn"
+config/icon="res://icon.png"
+config/quit_on_go_back=false
+
+[autoload]
+
+Globals="*res://AutoLoad/Globals.gd"
+Signals="*res://AutoLoad/Signals.gd"
+MusicController="*res://Scenes/Sound/MusicController.tscn"
+
+[display]
+
+window/size/width=640
+window/size/height=360
+window/handheld/orientation="sensor_landscape"
+window/stretch/mode="2d"
+window/stretch/aspect="expand"
+
+[global]
+
+etc=false
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[layer_names]
+
+2d_physics/layer_1="World"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Enemy"
+2d_physics/layer_4="coins"
+2d_physics/layer_5="prey"
+2d_physics/layer_7="AI jump"
+2d_physics/layer_8="invincibilty"
+2d_physics/layer_9="speed"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+environment/default_environment="res://default_env.tres"

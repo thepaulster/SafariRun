@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/World1/obstacle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Coin.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/world assets/greenground/groundgreen1.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 639, 39 )
+
+[node name="greenground" type="Node2D"]
+
+[node name="Ground" type="Sprite" parent="."]
+position = Vector2( 610, 390 )
+scale = Vector2( 0.5, 0.5 )
+z_index = -10
+texture = ExtResource( 5 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 632, 576 )
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -23, 0 )
+shape = SubResource( 1 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( 648.5, 370.5 )
+scale = Vector2( 65.05, 37.05 )
+
+[node name="Coin" parent="." instance=ExtResource( 3 )]
+position = Vector2( 454, 409 )
+
+[node name="Coin2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 514, 409 )
+
+[node name="Coin3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 572, 409 )
+
+[node name="Coin4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 634, 409 )
+
+[node name="obstacle" parent="." instance=ExtResource( 2 )]
+position = Vector2( 944, 475 )

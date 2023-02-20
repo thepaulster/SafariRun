@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Rhino Charging.ogg-9d01f7c73bac072b1691654694f9e335.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/Rhino Charging.ogg"
+dest_files=[ "res://.import/Rhino Charging.ogg-9d01f7c73bac072b1691654694f9e335.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

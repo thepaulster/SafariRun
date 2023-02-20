@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/human-bite-crunch-toast-1-sound-effect-88455201.mp3-4e500c175210a786f557d0209f3f6ae2.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/human-bite-crunch-toast-1-sound-effect-88455201.mp3"
+dest_files=[ "res://.import/human-bite-crunch-toast-1-sound-effect-88455201.mp3-4e500c175210a786f557d0209f3f6ae2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,346 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Assets/UI/Final UI/hyenacard.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/UI/powerups.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Shop.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/UI/Themes/tabtheme.tres" type="Theme" id=4]
+[ext_resource path="res://Assets/UI/Final UI/back_button.png" type="Texture" id=5]
+[ext_resource path="res://icon.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/UI/Themes/buttontheme.tres" type="Theme" id=7]
+[ext_resource path="res://Assets/UI/Final UI/cheetah.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/UI/Themes/scorebanner.tres" type="Theme" id=9]
+[ext_resource path="res://Assets/UI/Final UI/backgroundmenu.png" type="Texture" id=10]
+[ext_resource path="res://Assets/UI/Final UI/lionesscard.png" type="Texture" id=11]
+[ext_resource path="res://Assets/UI/Final UI/leopard.png" type="Texture" id=12]
+[ext_resource path="res://Assets/UI/Final UI/lioncard.png" type="Texture" id=13]
+
+[sub_resource type="StyleBoxFlat" id=1]
+draw_center = false
+
+[sub_resource type="Theme" id=2]
+Panel/styles/panel = SubResource( 1 )
+
+[node name="Shop" type="CanvasLayer"]
+script = ExtResource( 3 )
+
+[node name="Shop" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Ui1" type="TextureRect" parent="Shop"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 7
+
+[node name="Control" type="Control" parent="Shop/Ui1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TabContainer" type="TabContainer" parent="Shop/Ui1/Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -461.5
+margin_top = -310.0
+margin_right = 461.5
+margin_bottom = 216.0
+theme = ExtResource( 4 )
+
+[node name="Animals" type="Control" parent="Shop/Ui1/Control/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 71.0
+theme = ExtResource( 4 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Shop/Ui1/Control/TabContainer/Animals"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -448.5
+margin_top = -211.5
+margin_right = 462.5
+margin_bottom = 276.5
+scroll_vertical_enabled = false
+
+[node name="Control" type="Control" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer"]
+margin_right = 1550.0
+margin_bottom = 476.0
+rect_min_size = Vector2( 1550, 0 )
+mouse_filter = 1
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -201.5
+margin_right = 1471.0
+margin_bottom = 201.5
+theme = SubResource( 2 )
+custom_constants/separation = 99
+alignment = 1
+
+[node name="Panel1" type="Panel" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer"]
+margin_right = 251.0
+margin_bottom = 403.0
+rect_min_size = Vector2( 251, 403 )
+mouse_filter = 1
+
+[node name="Card" type="TextureRect" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel1"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.5
+margin_top = -201.5
+margin_right = 125.5
+margin_bottom = 201.5
+rect_min_size = Vector2( 251, 403 )
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel1"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -59.0
+margin_top = -130.0
+margin_right = 59.0
+margin_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Sprite" type="Sprite" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel1/VBoxContainer"]
+visible = false
+position = Vector2( 27, -150 )
+texture = ExtResource( 6 )
+
+[node name="Button" type="Button" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel1/VBoxContainer"]
+margin_top = 10.0
+margin_right = 118.0
+margin_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme = ExtResource( 7 )
+text = "button"
+
+[node name="Panel2" type="Panel" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer"]
+margin_left = 350.0
+margin_right = 601.0
+margin_bottom = 403.0
+rect_min_size = Vector2( 251, 403 )
+mouse_filter = 1
+
+[node name="Card2" type="TextureRect" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.5
+margin_top = -201.5
+margin_right = 125.5
+margin_bottom = 201.5
+rect_min_size = Vector2( 251, 403 )
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel2"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -59.0
+margin_top = -130.0
+margin_right = 59.0
+margin_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel2/VBoxContainer"]
+margin_top = 10.0
+margin_right = 118.0
+margin_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme = ExtResource( 7 )
+text = "button"
+
+[node name="Panel3" type="Panel" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer"]
+margin_left = 700.0
+margin_right = 891.0
+margin_bottom = 403.0
+rect_min_size = Vector2( 191, 318 )
+mouse_filter = 1
+
+[node name="Card3" type="TextureRect" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.5
+margin_top = -201.5
+margin_right = 125.5
+margin_bottom = 201.5
+rect_min_size = Vector2( 251, 403 )
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel3"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -59.0
+margin_top = -130.0
+margin_right = 59.0
+margin_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel3/VBoxContainer"]
+margin_right = 118.0
+margin_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme = ExtResource( 7 )
+text = "button"
+
+[node name="Panel4" type="Panel" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer"]
+margin_left = 990.0
+margin_right = 1181.0
+margin_bottom = 403.0
+rect_min_size = Vector2( 191, 318 )
+mouse_filter = 1
+
+[node name="Card4" type="TextureRect" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel4"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.5
+margin_top = -201.5
+margin_right = 125.5
+margin_bottom = 201.5
+rect_min_size = Vector2( 251, 403 )
+texture = ExtResource( 13 )
+expand = true
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel4"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -59.0
+margin_top = -130.0
+margin_right = 59.0
+margin_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel4/VBoxContainer"]
+margin_right = 118.0
+margin_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme = ExtResource( 7 )
+text = "button"
+
+[node name="Panel5" type="Panel" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer"]
+margin_left = 1280.0
+margin_right = 1471.0
+margin_bottom = 403.0
+rect_min_size = Vector2( 191, 318 )
+mouse_filter = 1
+
+[node name="Card5" type="TextureRect" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel5"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.5
+margin_top = -201.5
+margin_right = 125.5
+margin_bottom = 201.5
+rect_min_size = Vector2( 251, 403 )
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel5"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -59.0
+margin_top = -130.0
+margin_right = 59.0
+margin_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel5/VBoxContainer"]
+margin_right = 118.0
+margin_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme = ExtResource( 7 )
+text = "button"
+
+[node name="PowerUps" type="Control" parent="Shop/Ui1/Control/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 71.0
+
+[node name="powerups" parent="Shop/Ui1/Control/TabContainer/PowerUps" instance=ExtResource( 2 )]
+
+[node name="BackButton" type="TextureButton" parent="Shop/Ui1/Control"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 26.0
+margin_top = -95.0
+margin_right = 112.0
+margin_bottom = -24.0
+rect_min_size = Vector2( 86, 71 )
+texture_normal = ExtResource( 5 )
+expand = true
+stretch_mode = 6
+
+[node name="CoinsDisplay" type="Label" parent="Shop/Ui1/Control"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -122.0
+margin_bottom = 74.0
+theme = ExtResource( 9 )
+text = "Coins "
+
+[node name="Panel" type="Panel" parent="Shop/Ui1"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 184.0
+margin_top = 155.0
+margin_right = -178.0
+margin_bottom = -345.0
+
+[connection signal="pressed" from="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel1/VBoxContainer/Button" to="." method="_on_Button1_pressed"]
+[connection signal="pressed" from="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel2/VBoxContainer/Button" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel3/VBoxContainer/Button" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel4/VBoxContainer/Button" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Shop/Ui1/Control/TabContainer/Animals/ScrollContainer/Control/HBoxContainer/Panel5/VBoxContainer/Button" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Shop/Ui1/Control/BackButton" to="." method="_on_BackButton_pressed"]
