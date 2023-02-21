@@ -1,0 +1,114 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Assets/UI/Final UI/sounds on.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/Final UI/back_button.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/Final UI/music on.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/Final UI/backgroundmenu.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/Final UI/PrivacyPolicy.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/Final UI/toggleTutoff.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UI/Final UI/creditsBtn.png" type="Texture" id=7]
+[ext_resource path="res://Scripts/Settings.gd" type="Script" id=8]
+[ext_resource path="res://Assets/UI/Final UI/toggleTuton.png" type="Texture" id=9]
+[ext_resource path="res://Assets/UI/Final UI/music off.png" type="Texture" id=10]
+[ext_resource path="res://Assets/UI/Final UI/sounds off.png" type="Texture" id=11]
+
+[node name="Settings" type="CanvasLayer"]
+script = ExtResource( 8 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Ui1" type="TextureRect" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 7
+
+[node name="Control" type="Control" parent="Control/Ui1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Ui1/Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -105.5
+margin_top = -139.0
+margin_right = 105.5
+margin_bottom = 139.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/Ui1/Control/VBoxContainer"]
+margin_right = 211.0
+margin_bottom = 53.0
+alignment = 1
+
+[node name="MusicOn" type="TextureButton" parent="Control/Ui1/Control/VBoxContainer/HBoxContainer"]
+margin_left = 39.0
+margin_right = 103.5
+margin_bottom = 53.75
+rect_min_size = Vector2( 64.5, 53.75 )
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 10 )
+expand = true
+stretch_mode = 6
+
+[node name="SoundsOn" type="TextureButton" parent="Control/Ui1/Control/VBoxContainer/HBoxContainer"]
+margin_left = 107.0
+margin_right = 171.5
+margin_bottom = 53.75
+rect_min_size = Vector2( 64.5, 53.75 )
+toggle_mode = true
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 11 )
+expand = true
+stretch_mode = 6
+
+[node name="ToggleTutoff" type="TextureButton" parent="Control/Ui1/Control/VBoxContainer"]
+margin_top = 57.0
+margin_right = 211.0
+margin_bottom = 125.5
+rect_min_size = Vector2( 211, 68.5 )
+toggle_mode = true
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 9 )
+expand = true
+stretch_mode = 6
+
+[node name="PrivacyPolicy" type="TextureButton" parent="Control/Ui1/Control/VBoxContainer"]
+margin_top = 129.0
+margin_right = 211.0
+margin_bottom = 197.5
+rect_min_size = Vector2( 211, 68.5 )
+texture_normal = ExtResource( 5 )
+expand = true
+stretch_mode = 6
+
+[node name="CreditsBtn" type="TextureButton" parent="Control/Ui1/Control/VBoxContainer"]
+margin_top = 201.0
+margin_right = 211.0
+margin_bottom = 269.5
+rect_min_size = Vector2( 211, 68.5 )
+texture_normal = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+
+[node name="BackButton" type="TextureButton" parent="Control/Ui1/Control"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 26.0
+margin_top = -95.0
+margin_right = 112.0
+margin_bottom = -24.0
+rect_min_size = Vector2( 86, 71 )
+texture_normal = ExtResource( 2 )
+expand = true
+stretch_mode = 6
+
+[connection signal="toggled" from="Control/Ui1/Control/VBoxContainer/HBoxContainer/MusicOn" to="." method="_on_MusicOn_toggled"]
+[connection signal="toggled" from="Control/Ui1/Control/VBoxContainer/HBoxContainer/SoundsOn" to="." method="_on_SoundsOn_toggled"]
+[connection signal="pressed" from="Control/Ui1/Control/VBoxContainer/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
+[connection signal="pressed" from="Control/Ui1/Control/BackButton" to="." method="_on_BackButton_pressed"]
