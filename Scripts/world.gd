@@ -11,6 +11,7 @@ const lioness = preload("res://Scenes/lioness.tscn")
 const lion = preload("res://Scenes/lion.tscn")
 const leopard = preload("res://Scenes/Leopard.tscn")
 const cheetah = preload("res://Scenes/Cheetah.tscn")
+const simpleplayer = preload("res://Scenes/simplePlayer.tscn")
 
 var selected_player = [
 				hyena, lioness, leopard, lion, cheetah
@@ -19,7 +20,8 @@ var selected_player = [
 var hunter
 
 func _ready():
-	hunter = selected_player[Globals.store.selected]
+	#hunter = selected_player[Globals.store.selected]
+	hunter = simpleplayer
 	_spawn_player()
 	Signals.connect("change_level", self, "_level_change_func")
 
