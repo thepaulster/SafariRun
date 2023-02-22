@@ -5,7 +5,7 @@ extends Node2D
 var object_pool = []
 
 # The number of objects to be stored in the object pool
-var pool_size = 3
+var pool_size = 6
 
 # The scene from which the objects in the object pool are created
 var scenes_to_spawn = [preload("res://Scenes/World1/ground2.tscn"), preload("res://Scenes/World1/ground2.tscn"), preload("res://Scenes/World1/ground2.tscn"), preload("res://Scenes/World1/ground2.tscn")]

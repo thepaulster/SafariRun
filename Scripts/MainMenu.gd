@@ -3,7 +3,7 @@ extends Control
 onready var ad_controller = get_node("AdMob")
 
 func _ready():
-	MusicController.play_menu_music()
+	#MusicController.play_menu_music()
 	Globals.data_load()
 	#print(Globals.save_data.best_distance)
 	get_tree().set_auto_accept_quit(false)

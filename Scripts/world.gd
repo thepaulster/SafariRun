@@ -20,8 +20,8 @@ var selected_player = [
 var hunter
 
 func _ready():
-	#hunter = selected_player[Globals.store.selected]
-	hunter = simpleplayer
+	hunter = selected_player[Globals.store.selected]
+	#hunter = simpleplayer
 	_spawn_player()
 	Signals.connect("change_level", self, "_level_change_func")
 
