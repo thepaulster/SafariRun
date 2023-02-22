@@ -18,8 +18,6 @@ shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-limit_left = 0
-limit_bottom = 360
 
 [node name="RichTextLabel" type="Label" parent="."]
 margin_left = -10.0

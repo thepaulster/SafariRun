@@ -57,13 +57,13 @@ func _ready():
 			break
 	
 	# Call the spawn_objects function to spawn two objects
-	spawn_objects(11)
+	spawn_objects(6)
 
 # The function to spawn the specified number of objects
 func spawn_objects(count):
 	# Keep track of the previous position of the spawned object
 	#var previous_pos = Vector2()
-	object_pool.shuffle()
+	#object_pool.shuffle()
 	# Iterate through the object pool and find unused objects
 	for i in range(count):
 		for obj in object_pool:

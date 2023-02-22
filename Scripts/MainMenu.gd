@@ -16,9 +16,10 @@ func _ready():
 	ad_controller.load_rewarded_video()
 
 func _on_Play_pressed():
-	get_tree().change_scene("res://Scenes/Level/world.tscn")
+	#get_tree().change_scene("res://Scenes/Level/world.tscn")
+	#get_tree().change_scene("res://Scenes/simplePlayer.tscn")
 	ad_controller.hide_banner()
-	#get_tree().change_scene("res://Scenes/Level/SceneSwitcher.tscn")
+	get_tree().change_scene("res://Scenes/Level/SceneSwitcher.tscn")
 	pass # Replace with function body.
 
 func _on_Exit_pressed():
