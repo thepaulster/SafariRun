@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/UI/Final UI/menu_button.png" type="Texture" id=2]
 [ext_resource path="res://Assets/UI/Final UI/exit_button.png" type="Texture" id=3]
 [ext_resource path="res://Assets/UI/Final UI/title_1.png" type="Texture" id=4]
-[ext_resource path="res://Assets/world assets/homescreen.png" type="Texture" id=5]
 [ext_resource path="res://admob-lib/admob.gd" type="Script" id=6]
 
 [node name="MainMenu" type="Control"]
@@ -15,13 +14,13 @@ size_flags_vertical = 3
 script = ExtResource( 1 )
 
 [node name="Homescreen" type="TextureRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 2
 size_flags_vertical = 2
-texture = ExtResource( 5 )
 expand = true
 stretch_mode = 7
 

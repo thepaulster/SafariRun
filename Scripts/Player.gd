@@ -98,10 +98,7 @@ func _process(delta):
 	pass
 
 func _apply_gravity(delta):
-	#grav_variable = dashgravity if dash_movement.is_dashing() else gravity
-	#if dash_movement.is_dashing():
-	#	grav_variable = dashgravity
-	#else:
+	
 	grav_variable = gravity
 	velocity.y += grav_variable * delta
 

@@ -1,6 +1,6 @@
 extends Node
 
-onready var current_level = get_node("world")#("DrySavannaLevel")
+onready var current_level = get_node("test_world")#("DrySavannaLevel")
 
 func _ready():
 	MusicController.play_game_music()
