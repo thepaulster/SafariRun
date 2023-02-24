@@ -51,7 +51,7 @@ func _ready():
 	invul = false
 	sprite.visible = false
 	sprite.texture = load("res://Assets/Player Assets/Hyena/frame0018.png") 
-	Globals.player_distance = Vector2(0, 0)
+	#Globals.player_distance = Vector2(0, 0)
 	#coin_magnet = true
 	Signals.connect("player_dead", self, "_playerdead")
 	Signals.connect("prey_caught", self, "prey_caught")

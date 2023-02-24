@@ -3,7 +3,7 @@ extends Node
 onready var current_level = get_node("test_world")#("DrySavannaLevel")
 
 func _ready():
-	MusicController.play_game_music()
+	#MusicController.play_game_music()
 	current_level.connect("level_changed", self, "handle_level_changed")
 	Signals.connect("resume_on_thatlevel", self, "_resume_on_level")
 	

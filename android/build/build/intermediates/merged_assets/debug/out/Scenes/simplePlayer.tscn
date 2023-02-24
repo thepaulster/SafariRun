@@ -26,3 +26,6 @@ margin_right = 96.0
 margin_bottom = -34.0
 theme = ExtResource( 3 )
 text = "FPS"
+
+[node name="GroundCast" type="RayCast2D" parent="."]
+enabled = true

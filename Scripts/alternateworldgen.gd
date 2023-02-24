@@ -14,7 +14,7 @@ var scenes_to_spawn = [preload("res://Scenes/World1/ground2.tscn"), preload("res
 var spawn_offset = Vector2(100, 0)
 
 # The constant width of the ground
-const GROUND_WIDTH = 510
+const GROUND_WIDTH = 660
 
 # The offset to use when spawning new objects
 var spawn_new_offset = Vector2(GROUND_WIDTH, 0)
