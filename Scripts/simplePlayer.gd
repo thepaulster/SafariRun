@@ -8,7 +8,7 @@ const RUN_SPEED = 200
 var velocity = Vector2.ZERO
 var state = "running"
 var animation_player:AnimationPlayer
-onready var groundCast: RayCast2D = get_node("GroundCast")
+#onready var groundCast: RayCast2D = get_node("GroundCast")
 
 func _ready():
 	animation_player
