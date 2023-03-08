@@ -27,11 +27,9 @@ func _on_PauseButton_pressed():
 
 
 func _on_Resume_pressed():
-	#get_tree().paused = false
-	#pause_ovelay.visible = false
-	if get_tree().paused == false:
-		pause_button.visible = true
-		HUD = true
+	#if get_tree().paused == false:
+	pause_button.visible = true
+	HUD.visible = true
 	pass # Replace with function body.
 
 

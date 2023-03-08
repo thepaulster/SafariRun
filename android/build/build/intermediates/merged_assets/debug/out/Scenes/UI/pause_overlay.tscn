@@ -24,10 +24,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -254.0
-margin_top = -291.5
-margin_right = 254.0
-margin_bottom = 291.5
+margin_left = -147.0
+margin_top = -172.0
+margin_right = 147.0
+margin_bottom = 172.0
 rect_min_size = Vector2( 294, 231 )
 texture = ExtResource( 4 )
 expand = true
@@ -38,21 +38,24 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -179.0
-margin_top = -114.0
-margin_right = 179.0
-margin_bottom = 114.0
+margin_left = -136.0
+margin_top = -82.0
+margin_right = 136.0
+margin_bottom = 82.0
 custom_constants/separation = 50
+alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/PauseMenu/VBoxContainer"]
-margin_right = 358.0
-margin_bottom = 107.0
-custom_constants/separation = 100
+margin_right = 272.0
+margin_bottom = 63.0
+custom_constants/separation = 60
+alignment = 1
 
 [node name="Music" type="TextureButton" parent="Control/PauseMenu/VBoxContainer/HBoxContainer"]
-margin_right = 129.0
-margin_bottom = 107.5
-rect_min_size = Vector2( 129, 107.5 )
+margin_left = 30.0
+margin_right = 106.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 76, 63 )
 toggle_mode = true
 texture_normal = ExtResource( 1 )
 texture_pressed = ExtResource( 9 )
@@ -60,10 +63,10 @@ expand = true
 stretch_mode = 5
 
 [node name="Sound" type="TextureButton" parent="Control/PauseMenu/VBoxContainer/HBoxContainer"]
-margin_left = 229.0
-margin_right = 358.0
-margin_bottom = 107.5
-rect_min_size = Vector2( 129, 107.5 )
+margin_left = 166.0
+margin_right = 242.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 76, 63 )
 toggle_mode = true
 texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 6 )
@@ -71,35 +74,35 @@ expand = true
 stretch_mode = 5
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Control/PauseMenu/VBoxContainer"]
-margin_top = 157.0
-margin_right = 358.0
-margin_bottom = 228.0
-custom_constants/separation = 40
+margin_top = 113.0
+margin_right = 272.0
+margin_bottom = 164.0
+custom_constants/separation = 16
 alignment = 1
 
 [node name="Resume" type="TextureButton" parent="Control/PauseMenu/VBoxContainer/HBoxContainer2"]
-margin_left = 10.0
-margin_right = 96.0
-margin_bottom = 71.0
-rect_min_size = Vector2( 86, 71 )
+margin_left = 24.0
+margin_right = 88.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 64, 51 )
 texture_normal = ExtResource( 8 )
 expand = true
 stretch_mode = 5
 
 [node name="Retry" type="TextureButton" parent="Control/PauseMenu/VBoxContainer/HBoxContainer2"]
-margin_left = 136.0
-margin_right = 222.0
-margin_bottom = 71.0
-rect_min_size = Vector2( 86, 71 )
+margin_left = 104.0
+margin_right = 168.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 64, 51 )
 texture_normal = ExtResource( 3 )
 expand = true
 stretch_mode = 5
 
 [node name="Home" type="TextureButton" parent="Control/PauseMenu/VBoxContainer/HBoxContainer2"]
-margin_left = 262.0
-margin_right = 348.0
-margin_bottom = 71.67
-rect_min_size = Vector2( 86, 71.67 )
+margin_left = 184.0
+margin_right = 248.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 64, 51 )
 texture_normal = ExtResource( 2 )
 expand = true
 stretch_mode = 5
@@ -107,11 +110,11 @@ stretch_mode = 5
 [node name="PauseMenu2" type="TextureRect" parent="Control"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = 158.5
-margin_top = 40.0
-margin_right = 439.5
-margin_bottom = 131.0
-rect_min_size = Vector2( 281, 91 )
+margin_left = -88.5
+margin_right = 88.5
+margin_bottom = 57.0
 texture = ExtResource( 5 )
 expand = true
 stretch_mode = 6
+
+[connection signal="pressed" from="Control/PauseMenu/VBoxContainer/HBoxContainer2/Resume" to="." method="_on_Resume_pressed"]

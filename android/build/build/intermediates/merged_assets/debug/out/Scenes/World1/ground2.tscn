@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/ground.gd" type="Script" id=1]
 [ext_resource path="res://Assets/world assets/speedbush.png" type="Texture" id=2]
+[ext_resource path="res://Assets/world assets/ground2.png" type="Texture" id=3]
 [ext_resource path="res://Assets/world assets/a Tree.png" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -22,9 +23,9 @@ z_index = -30
 texture = ExtResource( 4 )
 
 [node name="Ground2" type="Sprite" parent="."]
-position = Vector2( 632, 390 )
-scale = Vector2( 0.5, 0.5 )
+position = Vector2( 636, 386 )
 z_index = -10
+texture = ExtResource( 3 )
 
 [node name="Speedbush" type="Sprite" parent="."]
 visible = false

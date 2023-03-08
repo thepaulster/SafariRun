@@ -48,7 +48,7 @@ func _notification(what):
 				node.queue_free()
 
 func ovelay_stop():
-	get_tree().paused = !get_tree().paused
+	get_tree().paused = true
 	var new_instance = pause_ovelay.instance()
 		
 	if get_tree().paused == true:
