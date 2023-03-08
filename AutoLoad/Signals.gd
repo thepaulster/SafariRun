@@ -17,3 +17,7 @@ signal dash_ended
 signal powerup_bar_show(value)
 signal powerup_bar_hide
 
+#pausing signals
+signal pause
+signal resume
+

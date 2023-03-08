@@ -1,66 +1,37 @@
 extends CanvasLayer
 
-onready var pause_ovelay = get_node("pause_overlay")
+#onready var pause_ovelay = get_node("pause_overlay")
 onready var pause_button = get_node("PauseButton")
-onready var music_button = get_node("pause_overlay/PauseMenu/VBoxContainer/HBoxContainer/Music")
-onready var sound_button = get_node("pause_overlay/PauseMenu/VBoxContainer/HBoxContainer/Sound")
+#onready var music_button = get_node("pause_overlay/PauseMenu/VBoxContainer/HBoxContainer/Music")
+#onready var sound_button = get_node("pause_overlay/PauseMenu/VBoxContainer/HBoxContainer/Sound")
 
 onready var distance_label = get_node("HUD/details/HBoxContainer/Distance")
 onready var meat_label = get_node("HUD/details/HBoxContainer2/Meat")
-onready var details_labels = get_node("HUD/details")
+onready var HUD = get_node("HUD")
 
 var distance_display = 0
 var another = 0
 
 
 func _ready():
-	Globals.settings_load()
-	#print(Globals.save_settings.music)
-	another = Globals.keep_distance
-	distance_label.text = str(Globals.keep_distance)
-	meat_label.text = str(Globals.meat)
 	
-	music_button.pressed = Globals.save_settings.music #MusicController.mute
-	sound_button.pressed = Globals.save_settings.sounds #SoundsController.mute
+	Signals.connect("resume", self, "_on_Resume_pressed")
+	pass
 	
-	Globals.connect("meat_collected", self, "_meat_update")
-	Globals.connect("distance_changed", self, "_distance_update")
-	Globals.connect("keep_distance", self, "_distance_kept")
-	Signals.connect("player_dead", self, "_hide_HUD")
-	pause_ovelay.visible = false
-	#details_labels.visible = false
-	get_tree().paused = false
-
-func _input(event):
-	
-	if event.is_action_pressed("ui_cancel"):
-		#var new_pause_state = !get_tree().paused
-		#get_tree().paused = new_pause_state
-		get_tree().paused = !get_tree().paused
-		pause_ovelay.visible = !pause_ovelay.visible
-		pause_button.visible = !pause_button.visible
-		details_labels.visible = !details_labels.visible
 
 func _on_PauseButton_pressed():
-	get_tree().paused = true
-	pause_ovelay.visible = true
+	
+	Signals.emit_signal("pause")
 	pause_button.visible = false
-	details_labels.visible = false
-	pass # Replace with function body.
+	HUD.visible = false
 
-func _notification(what):
-	match what:
-		MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST:
-			get_tree().paused = !get_tree().paused
-			pause_ovelay.visible = !pause_ovelay.visible
-			pause_button.visible = !pause_button.visible
-			details_labels.visible = !details_labels.visible
 
 func _on_Resume_pressed():
-	get_tree().paused = false
-	pause_ovelay.visible = false
-	pause_button.visible = true
-	details_labels.visible = true
+	#get_tree().paused = false
+	#pause_ovelay.visible = false
+	if get_tree().paused == false:
+		pause_button.visible = true
+		HUD = true
 	pass # Replace with function body.
 
 
@@ -92,7 +63,7 @@ func _distance_kept(value):
 
 func _hide_HUD():
 		pause_button.visible = false
-		details_labels.visible = false
+		#details_labels.visible = false
 
 
 func _on_Music_toggled(button_pressed):
