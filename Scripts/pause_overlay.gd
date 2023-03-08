@@ -16,3 +16,8 @@ func _ready():
 #	pass
 func remove_ovelay():
 	queue_free()
+
+
+func _on_Resume_pressed():
+	Signals.emit_signal("resume")
+	pass # Replace with function body.
