@@ -91,3 +91,7 @@ flip_h = true
 anims/invincibility = SubResource( 3 )
 
 [node name="invulTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="invulTimer" to="." method="_on_invulTimer_timeout"]

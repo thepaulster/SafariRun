@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Scripts/simplePlayer.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
@@ -29,6 +29,23 @@ animations = [ {
 "name": "running",
 "speed": 15.0
 } ]
+
+[sub_resource type="Animation" id=3]
+resource_name = "invincibility"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
 
 [node name="simplePlayer" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -66,8 +83,14 @@ position = Vector2( -16, 7 )
 scale = Vector2( 0.34375, 0.34375 )
 frames = SubResource( 2 )
 animation = "running"
-frame = 4
-playing = true
+frame = 6
 flip_h = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/invincibility = SubResource( 3 )
+
+[node name="invulTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="invulTimer" to="." method="_on_invulTimer_timeout"]
