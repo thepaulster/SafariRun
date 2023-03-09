@@ -1,9 +1,9 @@
 extends KinematicBody2D
 
 
-const GRAVITY = 1000
-const JUMP_SPEED = -500
-const RUN_SPEED = 200
+const GRAVITY = 1500
+const JUMP_SPEED = -600
+const RUN_SPEED = 300
 
 var velocity = Vector2.ZERO
 var state = "running"
@@ -20,15 +20,22 @@ func _physics_process(delta):
 	update_position(delta)
 	
 	$RichTextLabel.text = "FPS "+ String(Engine.get_frames_per_second())
+	$RichTextLabel2.text = state
 	
 func update_state(delta):
 	state = "running"
 	velocity.x = RUN_SPEED
+	
+	if !is_on_floor() and velocity.y >= 0:
+		state = "fall"
+	elif !is_on_floor() and velocity.y <= 0:
+		state = "jumping"
 
 func _input(event):	
 	if event is InputEventScreenTouch and is_on_floor():
-		state = "jumping"
+		#state = "jumping"
 		velocity.y = JUMP_SPEED
+	
 
 func update_gravity(delta):
 	velocity.y += GRAVITY * delta
