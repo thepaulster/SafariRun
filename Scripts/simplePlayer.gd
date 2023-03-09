@@ -7,8 +7,9 @@ const RUN_SPEED = 300
 
 var velocity = Vector2.ZERO
 var state = "running"
-var animation_player:AnimationPlayer
-#onready var groundCast: RayCast2D = get_node("GroundCast")
+
+onready var animation_player:AnimationPlayer = get_node("AnimationPlayer")
+
 
 func _ready():
 	animation_player
@@ -42,3 +43,7 @@ func update_gravity(delta):
 
 func update_position(delta):
 	velocity.y = move_and_slide(velocity, Vector2.UP).y
+
+func _invincibility():
+	
+	pass
