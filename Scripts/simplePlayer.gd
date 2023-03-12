@@ -14,7 +14,7 @@ onready var player_animation: AnimatedSprite = get_node("AnimatedSprite2")
 onready var invul_timer = get_node("invulTimer")
 
 func _ready():
-	_invincibility()
+	pass
 
 func _physics_process(delta):
 	
@@ -51,12 +51,12 @@ func _invincibility():
 	animation_player.play("invincibility")
 	pass
 
-
-
-
 func _on_invulTimer_timeout():
 	set_invul = true
 	if set_invul == true:
 		animation_player.stop()
 		player_animation.visible = true
 	pass # Replace with function body.
+
+func dash():
+	pass

@@ -122,7 +122,7 @@ position = Vector2( -26, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 4 )
 animation = "hyenarun"
-frame = 9
+frame = 6
 playing = true
 flip_h = true
 
