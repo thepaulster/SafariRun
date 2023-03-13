@@ -13,7 +13,7 @@ extents = Vector2( 177.75, 18 )
 script = ExtResource( 2 )
 
 [node name="Ground2" type="Sprite" parent="."]
-position = Vector2( 322, 181 )
+position = Vector2( 322, 211 )
 z_index = -10
 texture = ExtResource( 3 )
 
@@ -22,15 +22,14 @@ position = Vector2( 320, 181 )
 scale = Vector2( 33.4, 18.9 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2( 632, 576 )
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -312.5, -278 )
+position = Vector2( 320, 325.75 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -224.75, -409 )
+position = Vector2( 412, 192.75 )
 shape = SubResource( 2 )
 one_way_collision = true
 

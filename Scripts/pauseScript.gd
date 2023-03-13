@@ -1,14 +1,12 @@
 extends Node
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 const pause_ovelay = preload("res://Scenes/UI/pause_overlay.tscn")
 const ui_ovelay = preload("res://Scenes/UI/PauseMenu.tscn")
 
 var node 
 var overlay_node
+var endscreen
 
 
 # Called when the node enters the scene tree for the first time.
@@ -66,3 +64,6 @@ func screen_ovelay():
 func resume_button():
 	get_tree().paused = false
 	node.queue_free()
+
+func endscreen():
+	pass

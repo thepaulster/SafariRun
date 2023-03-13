@@ -9,7 +9,7 @@
 extents = Vector2( 325, 39 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 176, 19 )
+extents = Vector2( 179.5, 19 )
 
 [node name="ground2" type="Node2D"]
 script = ExtResource( 1 )
@@ -22,7 +22,7 @@ z_index = -30
 texture = ExtResource( 4 )
 
 [node name="Ground2" type="Sprite" parent="."]
-position = Vector2( 321, 181 )
+position = Vector2( 321, 209 )
 z_index = -10
 texture = ExtResource( 3 )
 
@@ -37,15 +37,14 @@ position = Vector2( 319, 180.5 )
 scale = Vector2( 32.9, 19.05 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2( 441, 333 )
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -116, -33 )
+position = Vector2( 320, 325.75 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -33, -170 )
+position = Vector2( 411.5, 192 )
 shape = SubResource( 2 )
 one_way_collision = true
 
