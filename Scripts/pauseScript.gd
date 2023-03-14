@@ -80,6 +80,10 @@ func play_continue():
 	pass
 
 func _game_over():
+	var new_game_over = game_over.instance()
 	
+	node = Node.new()
+	add_child(node)
+	node.add_child(new_game_over)
 	pass
 	
