@@ -7,7 +7,6 @@ onready var useMeat_button = get_node("Control/VBoxContainer/UseMeat")
 var add_meat 
 
 func _ready():
-	visible = false
 	add_meat = Globals.value_for_resume * 1000
 	useMeat_button.text = " or use "+str(add_meat)+" meat "
 	button_check()

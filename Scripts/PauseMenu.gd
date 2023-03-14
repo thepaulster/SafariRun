@@ -14,12 +14,10 @@ var another = 0
 
 
 func _ready():
-	
-	Signals.connect("resume", self, "_on_Resume_pressed")
-	pass
-	
+	Signals.connect("resume", self, "_on_Resume_pressed")#called when the player resumes the game
+	Signals.connect("player_dead", self, "_hide_HUD") #called when the player dies to hide the HUD
 
-func _on_PauseButton_pressed():
+func _on_PauseButton_pressed():# called when the pause button is pressed
 	
 	Signals.emit_signal("pause")
 	pause_button.visible = false
@@ -61,6 +59,7 @@ func _distance_kept(value):
 
 func _hide_HUD():
 		pause_button.visible = false
+		HUD.visible = false
 		#details_labels.visible = false
 
 
