@@ -13,7 +13,6 @@ var value = 0
 
 func _ready():
 	get_tree().set_auto_accept_quit(true)
-	endScreen.visible = false
 	Signals.connect("on_resume_timeout", self, "player_dead")
 	Globals.connect("newhighscore", self, "newhighscore")
 

@@ -47,7 +47,7 @@ tracks/0/keys = {
 "values": [ true, false, true ]
 }
 
-[node name="simplePlayer" type="KinematicBody2D"]
+[node name="simplePlayer" type="KinematicBody2D" groups=["player"]]
 script = ExtResource( 1 )
 
 [node name="AnimatedSprite" type="Sprite" parent="."]
@@ -83,7 +83,7 @@ position = Vector2( -16, 7 )
 scale = Vector2( 0.34375, 0.34375 )
 frames = SubResource( 2 )
 animation = "running"
-frame = 6
+frame = 4
 playing = true
 flip_h = true
 

@@ -1,71 +1,54 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/world assets/ground4.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/ground.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/PlayerFall.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scripts/dash_area.gd" type="Script" id=4]
-[ext_resource path="res://Assets/world assets/fowardblock.png" type="Texture" id=5]
-[ext_resource path="res://Assets/world assets/rock2.png" type="Texture" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 388, 39 )
+extents = Vector2( 196.5, 39 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 117.5, 39 )
+extents = Vector2( 59.75, 39 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 225.5, 26.5 )
+extents = Vector2( 114.125, 26.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 33, 44 )
 
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 116, 39 )
-
 [node name="ground4" type="Node2D"]
-scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 2 )
 
-[node name="Rock2" type="Sprite" parent="."]
-position = Vector2( 556, 239 )
-z_index = -21
-texture = ExtResource( 6 )
-
-[node name="Fowardblock" type="Sprite" parent="."]
-position = Vector2( 561, 590 )
-scale = Vector2( 0.594445, 0.594445 )
-z_index = 10
-texture = ExtResource( 5 )
-
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2( 632, 576 )
 collision_mask = 2
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -246, 0 )
+position = Vector2( 203, 325.75 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 500.5, 0 )
+position = Vector2( 577, 325.75 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 74.5, -173.5 )
+position = Vector2( 381.875, 199 )
 shape = SubResource( 3 )
 one_way_collision = true
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
-position = Vector2( 648.5, 370.5 )
-scale = Vector2( 65.05, 37.05 )
+position = Vector2( 324, 190.5 )
+scale = Vector2( 32.6, 19.05 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Ground" type="Sprite" parent="."]
-position = Vector2( 610, 390 )
-scale = Vector2( 0.5, 0.5 )
+position = Vector2( 321, 213 )
 z_index = -10
 texture = ExtResource( 1 )
 
 [node name="PlayerFall" parent="." instance=ExtResource( 3 )]
-position = Vector2( 632, 728 )
+position = Vector2( 630, 370 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 787, 504 )
@@ -74,15 +57,5 @@ collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 4 )
-
-[node name="dash_area" type="StaticBody2D" parent="."]
-position = Vector2( 895, 576 )
-collision_mask = 2
-script = ExtResource( 4 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="dash_area"]
-position = Vector2( -2, 0 )
-shape = SubResource( 5 )
-disabled = true
 
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

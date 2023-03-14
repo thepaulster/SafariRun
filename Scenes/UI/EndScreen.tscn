@@ -24,7 +24,7 @@ font_data = ExtResource( 5 )
 font_path = "res://Assets/UI/Text/Bahianita-Regular.ttf"
 
 [sub_resource type="DynamicFont" id=5]
-size = 50
+size = 36
 font_data = SubResource( 4 )
 
 [sub_resource type="Theme" id=6]
@@ -39,10 +39,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -450.0
-margin_top = -300.0
-margin_right = 450.0
-margin_bottom = 300.0
+margin_left = -309.5
+margin_top = -213.0
+margin_right = 309.5
+margin_bottom = 213.0
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 6
@@ -50,10 +50,10 @@ stretch_mode = 6
 [node name="Control" type="Control" parent="Ui1"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 81.0
-margin_top = 48.0
-margin_right = -96.0
-margin_bottom = -148.0
+margin_left = 26.0
+margin_top = 33.0
+margin_right = -31.0
+margin_bottom = -35.0
 
 [node name="New" type="TextureRect" parent="Ui1/Control"]
 visible = false
@@ -65,20 +65,21 @@ expand = true
 stretch_mode = 6
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Ui1/Control"]
-margin_right = 223.0
-margin_bottom = 49.0
+margin_left = 5.0
+margin_right = 228.0
+margin_bottom = 54.0
 theme = ExtResource( 11 )
 
 [node name="Score" type="Label" parent="Ui1/Control/HBoxContainer"]
-margin_right = 122.0
-margin_bottom = 73.0
+margin_right = 95.0
+margin_bottom = 54.0
 text = "Score: "
 
 [node name="scoreDisplay" type="Label" parent="Ui1/Control/HBoxContainer"]
-margin_left = 126.0
-margin_top = 12.0
-margin_right = 183.0
-margin_bottom = 61.0
+margin_left = 99.0
+margin_top = 2.0
+margin_right = 156.0
+margin_bottom = 51.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Score"
@@ -96,10 +97,10 @@ stretch_mode = 6
 [node name="VBoxContainer" type="VBoxContainer" parent="Ui1/Control"]
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_left = -20.0
-margin_top = -71.5
-margin_right = 256.0
-margin_bottom = 119.5
+margin_left = 7.0
+margin_top = -97.5
+margin_right = 283.0
+margin_bottom = 93.5
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Ui1/Control/VBoxContainer"]
 visible = false
@@ -148,76 +149,76 @@ text = "Display coins"
 
 [node name="Distance" type="HBoxContainer" parent="Ui1/Control/VBoxContainer"]
 margin_right = 276.0
-margin_bottom = 61.0
+margin_bottom = 47.0
 
 [node name="Distance" type="Label" parent="Ui1/Control/VBoxContainer/Distance"]
-margin_right = 149.0
-margin_bottom = 61.0
+margin_right = 121.0
+margin_bottom = 47.0
 theme = ExtResource( 6 )
 text = "Distance: "
 
 [node name="DistanceDisplay" type="Label" parent="Ui1/Control/VBoxContainer/Distance"]
-margin_left = 153.0
-margin_right = 276.0
-margin_bottom = 61.0
+margin_left = 125.0
+margin_right = 223.0
+margin_bottom = 47.0
 theme = ExtResource( 6 )
 text = "Distance"
 
 [node name="coinscollected" type="HBoxContainer" parent="Ui1/Control/VBoxContainer"]
-margin_top = 65.0
+margin_top = 51.0
 margin_right = 276.0
-margin_bottom = 126.0
+margin_bottom = 98.0
 
 [node name="meat" type="Label" parent="Ui1/Control/VBoxContainer/coinscollected"]
-margin_right = 96.0
-margin_bottom = 61.0
+margin_right = 78.0
+margin_bottom = 47.0
 theme = ExtResource( 6 )
 text = "meat: "
 
 [node name="meat_display" type="Label" parent="Ui1/Control/VBoxContainer/coinscollected"]
-margin_left = 100.0
-margin_right = 170.0
-margin_bottom = 61.0
+margin_left = 82.0
+margin_right = 137.0
+margin_bottom = 47.0
 theme = ExtResource( 6 )
 text = "meat"
 
 [node name="PreyCaught" type="HBoxContainer" parent="Ui1/Control/VBoxContainer"]
-margin_top = 130.0
+margin_top = 102.0
 margin_right = 276.0
-margin_bottom = 191.0
+margin_bottom = 149.0
 
 [node name="Prey" type="Label" parent="Ui1/Control/VBoxContainer/PreyCaught"]
-margin_right = 89.0
-margin_bottom = 61.0
+margin_right = 73.0
+margin_bottom = 47.0
 theme = ExtResource( 6 )
 text = "Prey: "
 
 [node name="PreyDisplay" type="Label" parent="Ui1/Control/VBoxContainer/PreyCaught"]
-margin_left = 93.0
-margin_right = 155.0
-margin_bottom = 61.0
+margin_left = 77.0
+margin_right = 127.0
+margin_bottom = 47.0
 theme = ExtResource( 6 )
 text = "prey"
 
 [node name="Currentmeat" type="HBoxContainer" parent="Ui1/Control"]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -19.0
-margin_top = -10.0
-margin_right = 201.0
-margin_bottom = 51.0
+margin_left = -190.0
+margin_top = 7.0
+margin_right = -7.0
+margin_bottom = 54.0
 grow_horizontal = 0
 grow_vertical = 0
 alignment = 1
 
 [node name="Sprite" type="Sprite" parent="Ui1/Control/Currentmeat"]
-position = Vector2( -28, 22 )
-scale = Vector2( 0.0777778, 0.0777778 )
+position = Vector2( -18, 22 )
+scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 8 )
 
 [node name="totalmeatcollected" type="Label" parent="Ui1/Control/Currentmeat"]
-margin_right = 220.0
-margin_bottom = 61.0
+margin_right = 178.0
+margin_bottom = 47.0
 size_flags_horizontal = 2
 size_flags_vertical = 2
 theme = ExtResource( 9 )
@@ -230,50 +231,58 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = -420.0
-margin_top = -151.0
-margin_right = 40.0
-margin_bottom = 205.0
+margin_left = -362.0
+margin_top = -134.0
+margin_bottom = 82.0
 
 [node name="ColorRect" type="ColorRect" parent="Ui1/Control/Adarea"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 6.0
+margin_top = 11.0
+margin_right = -1.0
 theme = SubResource( 7 )
 color = Color( 0.517647, 0.709804, 0.882353, 1 )
 
 [node name="Get" type="TextureRect" parent="Ui1/Control/Adarea"]
-margin_left = -15.0
-margin_top = -28.0
-margin_right = 153.0
-margin_bottom = 152.0
+margin_left = 5.0
+margin_top = 8.0
+margin_right = 115.0
+margin_bottom = 110.0
 texture = ExtResource( 10 )
 expand = true
 stretch_mode = 6
 
 [node name="Meat" type="TextureRect" parent="Ui1/Control/Adarea/Get"]
-margin_left = 24.0
-margin_top = -25.0
-margin_right = 207.0
-margin_bottom = 172.0
+margin_left = 15.0
+margin_top = -19.0
+margin_right = 124.0
+margin_bottom = 93.0
 rect_rotation = 29.4909
 texture = ExtResource( 8 )
 expand = true
 stretch_mode = 6
 
 [node name="Label" type="Label" parent="Ui1/Control/Adarea"]
-margin_left = 151.0
-margin_top = 12.0
-margin_right = 452.0
-margin_bottom = 105.0
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -227.0
+margin_top = 25.0
+margin_right = -10.0
+margin_bottom = 69.0
 theme = SubResource( 6 )
 text = "Get 250 meat for free!"
 autowrap = true
 
 [node name="Label2" type="Label" parent="Ui1/Control/Adarea"]
-margin_left = 7.0
-margin_top = 160.0
-margin_right = 459.0
-margin_bottom = 285.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -173.5
+margin_top = -8.5
+margin_right = 175.5
+margin_bottom = 90.5
 theme = SubResource( 6 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Watch a video AD and get +250 meat for free"
@@ -284,11 +293,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -75.0
-margin_top = -68.0
-margin_right = 75.0
-margin_bottom = -12.0
-rect_min_size = Vector2( 150, 45 )
+margin_left = -54.5
+margin_top = -63.0
+margin_right = 54.5
+margin_bottom = -16.0
 theme = ExtResource( 7 )
 text = "Watch Now"
 
@@ -297,33 +305,32 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -336.0
-margin_top = -154.0
-margin_right = 336.0
-margin_bottom = -47.0
+margin_left = -276.0
+margin_top = -119.0
+margin_right = 276.0
+margin_bottom = -56.0
 alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Ui1/VBoxContainer"]
 pause_mode = 2
-margin_top = 18.0
-margin_right = 672.0
-margin_bottom = 89.0
-custom_constants/separation = 500
+margin_right = 552.0
+margin_bottom = 63.0
+custom_constants/separation = 400
 alignment = 1
 
 [node name="Home" type="TextureButton" parent="Ui1/VBoxContainer/HBoxContainer"]
-margin_right = 86.0
-margin_bottom = 71.0
-rect_min_size = Vector2( 86, 71 )
+margin_right = 76.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 76, 63 )
 texture_normal = ExtResource( 3 )
 expand = true
 stretch_mode = 5
 
 [node name="Retry" type="TextureButton" parent="Ui1/VBoxContainer/HBoxContainer"]
-margin_left = 586.0
-margin_right = 672.0
-margin_bottom = 71.0
-rect_min_size = Vector2( 86, 71 )
+margin_left = 476.0
+margin_right = 552.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 76, 63 )
 texture_normal = ExtResource( 2 )
 expand = true
 stretch_mode = 5

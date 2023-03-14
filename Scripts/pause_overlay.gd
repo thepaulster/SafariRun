@@ -21,3 +21,13 @@ func remove_ovelay():
 func _on_Resume_pressed():
 	Signals.emit_signal("resume")
 	pass # Replace with function body.
+
+
+func _on_Home_pressed():
+	get_tree().change_scene("res://Scenes/UI/MainMenu.tscn")
+	pass # Replace with function body.
+
+
+func _on_Retry_pressed():
+	get_tree().reload_current_scene()
+	pass # Replace with function body.
