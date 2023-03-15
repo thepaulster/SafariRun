@@ -22,7 +22,6 @@ func _ready():
 	Signals.connect("player_dead", self, "play_continue")
 	Signals.connect("on_resume_timeout", self, "_game_over")
 
-
 func _input(event):
 	
 	if event.is_action_pressed("ui_cancel"):
@@ -86,4 +85,3 @@ func _game_over():
 	add_child(node)
 	node.add_child(new_game_over)
 	pass
-	
