@@ -124,3 +124,5 @@ expand = true
 stretch_mode = 6
 
 [connection signal="pressed" from="Control/PauseMenu/VBoxContainer/HBoxContainer2/Resume" to="." method="_on_Resume_pressed"]
+[connection signal="pressed" from="Control/PauseMenu/VBoxContainer/HBoxContainer2/Retry" to="." method="_on_Retry_pressed"]
+[connection signal="pressed" from="Control/PauseMenu/VBoxContainer/HBoxContainer2/Home" to="." method="_on_Home_pressed"]

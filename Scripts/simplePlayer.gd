@@ -4,6 +4,16 @@ extends KinematicBody2D
 const GRAVITY = 1500
 const JUMP_SPEED = -600
 const RUN_SPEED = 300
+var SPEED
+
+
+#dash movement
+const DASH_SPEED = 500
+const dash_length = 1
+
+onready var dash_movement = get_node("Dash")
+onready var playersprite = get_node("AnimatedSprite")
+
 
 var velocity = Vector2.ZERO
 var state = "running"
@@ -27,7 +37,8 @@ func _physics_process(delta):
 	
 func update_state(delta):
 	state = "running"
-	velocity.x = RUN_SPEED
+	SPEED = DASH_SPEED if dash_movement.is_dashing() else RUN_SPEED
+	velocity.x = SPEED
 	
 	if !is_on_floor() and velocity.y >= 0:
 		state = "fall"
@@ -38,6 +49,10 @@ func _input(event):
 	if event is InputEventScreenTouch and is_on_floor():
 		#state = "jumping"
 		velocity.y = JUMP_SPEED
+		
+	#testing the up button
+	if Input.is_action_pressed("ui_down"):
+		_player_dash()
 	
 
 func update_gravity(delta):
@@ -58,5 +73,15 @@ func _on_invulTimer_timeout():
 		player_animation.visible = true
 	pass # Replace with function body.
 
-func dash():
+func _player_dash():
+	dash_movement.start_dash(playersprite, dash_length)
+	if dash_movement.is_dashing():
+		set_invul = true
+		invul_timer.wait_time = dash_length + 2
+		Signals.emit_signal("invulnerable", true)
+		_invincibility()
+		Signals.emit_signal("dashing_now")
+		print("dashing")
+	else:
+		print("dash ended")
 	pass

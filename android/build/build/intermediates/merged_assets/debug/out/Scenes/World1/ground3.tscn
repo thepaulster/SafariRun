@@ -17,19 +17,18 @@ extents = Vector2( 33, 44 )
 script = ExtResource( 2 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2( 657, 300 )
 collision_mask = 2
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -138.25, -85 )
+position = Vector2( 518, 239 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -510.5, 0 )
+position = Vector2( 152, 325.75 )
 shape = SubResource( 3 )
 
 [node name="Ground" type="Sprite" parent="."]
-position = Vector2( 320, 180 )
+position = Vector2( 320, 210 )
 z_index = -10
 texture = ExtResource( 1 )
 
