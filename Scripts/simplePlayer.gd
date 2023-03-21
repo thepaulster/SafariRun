@@ -81,7 +81,5 @@ func _player_dash():
 		Signals.emit_signal("invulnerable", true)
 		_invincibility()
 		Signals.emit_signal("dashing_now")
-		print("dashing")
-	else:
-		print("dash ended")
+		print("dashing now")
 	pass
