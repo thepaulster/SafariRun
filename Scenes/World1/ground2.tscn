@@ -1,16 +1,20 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/ground.gd" type="Script" id=1]
 [ext_resource path="res://Assets/world assets/speedbush.png" type="Texture" id=2]
 [ext_resource path="res://Assets/world assets/ground2.png" type="Texture" id=3]
 [ext_resource path="res://Assets/world assets/a Tree.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/invincibility_platform.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/PlayerFall.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 325, 39 )
+extents = Vector2( 202.5, 39 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 179.5, 19 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 61.5, 38.6175 )
 
 [node name="ground2" type="Node2D"]
 script = ExtResource( 1 )
@@ -41,7 +45,7 @@ scale = Vector2( 32.9, 19.05 )
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 320, 325.75 )
+position = Vector2( 197.5, 325.75 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
@@ -49,10 +53,17 @@ position = Vector2( 411.5, 192 )
 shape = SubResource( 2 )
 one_way_collision = true
 
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 575.5, 325.383 )
+shape = SubResource( 3 )
+
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( 47, 411 )
 
 [node name="invincibility_platform" parent="." instance=ExtResource( 5 )]
 position = Vector2( 458, 316.5 )
+
+[node name="PlayerFall" parent="." instance=ExtResource( 6 )]
+position = Vector2( 408, 387 )
 
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

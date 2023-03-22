@@ -1,8 +1,34 @@
 extends Node
 
-#a scene to create generate a pool of coins and power ups
+var object_pool = []
+var object_scene = preload("res://Scenes/Coin.tscn")
 
-
+onready var spawn_node = get_node("Node2D")
 
 func _ready():
-	pass # Replace with function body.
+	# Initialize the object pool with three instances of the object scene
+	for i in range(3):
+		var new_object = object_scene.instance()
+		spawn_node.add_child(new_object)
+		object_pool.append(new_object)
+	# Hide all the objects in the pool
+	for object in object_pool:
+		object.hide()
+		
+	get_object()
+
+
+func get_object():
+	# Return the first available object in the pool, or create a new one if none are available
+	for object in object_pool:
+		if not object.visible:
+			object.show()
+			return object
+	var new_object = object_scene.instance()
+	spawn_node.add_child(new_object)
+	object_pool.append(new_object)
+	return new_object
+
+func release_object(object):
+	# Hide the object and return it to the pool
+	object.hide()

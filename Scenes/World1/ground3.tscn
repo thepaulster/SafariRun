@@ -38,7 +38,7 @@ position = Vector2( 324, 184.5 )
 scale = Vector2( 32.6, 18.45 )
 
 [node name="PlayerFall" parent="." instance=ExtResource( 3 )]
-position = Vector2( 690, 356 )
+position = Vector2( 585, 369 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 270, 239 )
