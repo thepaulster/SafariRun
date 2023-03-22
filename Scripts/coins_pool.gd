@@ -11,9 +11,6 @@ onready var spawn_node = get_node("Node2D")
 
 func _ready():
 	# Initialize the object pool with three instances of the object scene
-	
-	
-	
 	get_object()
 
 func show_and_hide_objects():
@@ -37,6 +34,7 @@ func get_object():
 	object_pool.append(new_object)
 	return new_object
 
+#release the object
 func release_object(object):
 	# Hide the object and return it to the pool
 	object.hide()
