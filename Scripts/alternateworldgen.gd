@@ -57,7 +57,7 @@ func _ready():
 			break
 	
 	# Call the spawn_objects function to spawn two objects
-	#spawn_objects(6)
+	spawn_objects(6)
 	
 
 # The function to spawn the specified number of objects

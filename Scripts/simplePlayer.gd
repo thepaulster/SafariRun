@@ -71,6 +71,7 @@ func _on_invulTimer_timeout():
 	if set_invul == true:
 		animation_player.stop()
 		player_animation.visible = true
+	Signals.emit_signal("powerup_bar_hide")
 	pass # Replace with function body.
 
 func _player_dash():
