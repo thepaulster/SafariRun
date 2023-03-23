@@ -38,6 +38,7 @@ position = Vector2( 324, 184.5 )
 scale = Vector2( 32.6, 18.45 )
 
 [node name="PlayerFall" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 585, 369 )
 
 [node name="Area2D" type="Area2D" parent="."]
