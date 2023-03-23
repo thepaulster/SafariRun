@@ -37,7 +37,7 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.348148, 0.348148 )
 frames = SubResource( 2 )
-frame = 5
+frame = 11
 playing = true
 flip_h = true
 

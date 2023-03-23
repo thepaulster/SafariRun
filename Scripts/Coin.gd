@@ -6,14 +6,21 @@ extends Area2D
 #var move_position
 var meat_value = 1
 
+func _ready():
+	Signals.connect("coin_visible", self, "_reset")
+
 func _on_Coin_body_entered(body):
 	
 	if body.is_in_group("player"):
 		#queue_free()
 		Globals.meat += meat_value
 		$collected.play()
-		visible = false
+		#visible = false
+		print("coin")
 
+func _reset():
+	#visible = true
+	pass
 
 #func coins_attracted(value):
 #	move_position = value

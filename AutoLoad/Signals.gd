@@ -21,3 +21,6 @@ signal powerup_bar_hide
 signal pause
 signal resume
 
+#coins
+signal coin_visible
+
