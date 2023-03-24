@@ -11,8 +11,10 @@ onready var spawn_node = get_node("Node2D")
 
 func _ready():
 	# Initialize the object pool with three instances of the object scene
-	show_and_hide_objects()
 	#get_object()
+	
+	Signals.connect("coin_visible", self, "get_object")
+	Signals.connect("coin_dis", self, "release_object")
 
 func show_and_hide_objects():
 	for i in range(3):
@@ -28,7 +30,7 @@ func get_object():
 	# Return the first available object in the pool, or create a new one if none are available
 	for object in object_pool:
 		if not object.visible:
-			object.show()
+			#object.show()
 			return object
 	var scene_to_spawn = scene_objects[random_index]
 	var new_object = scene_to_spawn.instance()
@@ -39,5 +41,6 @@ func get_object():
 #release the object
 func release_object(object):
 	# Hide the object and return it to the pool
-	object.hide()
-	Signals.emit_signal("coin_visible")
+	#object.visible = true
+	#object.hide()
+	pass

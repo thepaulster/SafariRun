@@ -22,5 +22,6 @@ signal pause
 signal resume
 
 #coins
+signal coin_dis
 signal coin_visible
 

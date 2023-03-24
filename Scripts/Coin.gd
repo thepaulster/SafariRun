@@ -15,11 +15,12 @@ func _on_Coin_body_entered(body):
 		#queue_free()
 		Globals.meat += meat_value
 		$collected.play()
-		#visible = false
+		Signals.emit_signal("coin_dis", meat_value)
+		visible = false
 		print("coin")
 
 func _reset():
-	#visible = true
+	visible = true
 	pass
 
 #func coins_attracted(value):
