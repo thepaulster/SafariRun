@@ -1,6 +1,9 @@
 extends KinematicBody2D
 
 
+#distance run
+var distance
+
 const GRAVITY = 1500
 const JUMP_SPEED = -600
 const RUN_SPEED = 300
@@ -53,7 +56,11 @@ func _input(event):
 	#testing the up button
 	if Input.is_action_pressed("ui_down"):
 		_player_dash()
-	
+
+func _process(delta):
+	#distance = int(get_position().x/10)
+	distance = int(get_position().x/50)
+	Globals.distance_covered = distance
 
 func update_gravity(delta):
 	velocity.y += GRAVITY * delta

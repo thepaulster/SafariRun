@@ -11,8 +11,7 @@ onready var spawn_node = get_node("Node2D")
 
 func _ready():
 	# Initialize the object pool with three instances of the object scene
-	#get_object()
-	
+	#get_object()	
 	Signals.connect("coin_visible", self, "get_object")
 	Signals.connect("coin_dis", self, "release_object")
 

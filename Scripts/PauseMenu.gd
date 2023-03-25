@@ -14,6 +14,7 @@ var another = 0
 
 
 func _ready():
+	Globals.connect("distance_changed", self, "_distance_update")
 	Signals.connect("resume", self, "_on_Resume_pressed")#called when the player resumes the game
 	Signals.connect("player_dead", self, "_hide_HUD") #called when the player dies to hide the HUD
 
@@ -51,7 +52,7 @@ func _distance_update(value):
 	distance_display = another
 	distance_display += value
 	Globals.keep_distance = distance_display
-	#distance_label.text = str(value)
+	distance_label.text = str(value)
 
 func _distance_kept(value):
 	distance_label.text = str(value)
