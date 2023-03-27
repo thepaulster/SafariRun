@@ -15,9 +15,8 @@ func _on_Coin_body_entered(body):
 		#queue_free()
 		Globals.meat += meat_value
 		$collected.play()
-		Signals.emit_signal("coin_dis", meat_value)
 		visible = false
-		print("coin")
+		print(Globals.meat)
 
 func _reset():
 	visible = true
@@ -33,3 +32,8 @@ func _reset():
 #			position += (move_position - position)/10
 			#print(value)
 #	pass
+
+
+func _on_VisibilityNotifier2D_screen_entered():
+	#Signals.emit_signal("coin_visible")
+	pass # Replace with function body.

@@ -1,45 +1,44 @@
 extends Node2D
 
-var random_index = 0
+const MAX_POOL_SIZE = 10
 
 var object_pool = []
-var object_scene = preload("res://Scenes/Coin.tscn")
-
-var scene_objects = [preload("res://Scenes/Coin.tscn"), preload("res://Scenes/Coin.tscn"), preload("res://Scenes/Coin.tscn")]
-
-onready var spawn_node = get_node("Node2D")
+var available_objects = []
 
 func _ready():
-	# Initialize the object pool with three instances of the object scene
-	#get_object()	
-	Signals.connect("coin_visible", self, "get_object")
-	Signals.connect("coin_dis", self, "release_object")
+	# Create the object pool
+	for i in range(MAX_POOL_SIZE):
+		var obj = preload("res://Scenes/Coin.tscn").instance()
+		obj.set_visible(false)
+		object_pool.append(obj)
+		available_objects.append(obj)
+	
+	spawn_object($Node2D.position)
 
-func show_and_hide_objects():
-	for i in range(3):
-		var new_object = object_scene.instance()
-		spawn_node.add_child(new_object)
-		object_pool.append(new_object)
-	# Hide all the objects in the pool
-	for object in object_pool:
-		object.hide()
-		pass
+func spawn_object(position):
+	
+	var obj
+	# Check if there are any available objects in the pool
+	if available_objects.size() > 0:
+		obj = available_objects.pop_front()
+		obj.set_position(position)
+		obj.set_visible(true)
+	else:
+		# No available objects, create a new one
+		obj = preload("res://Scenes/Coin.tscn").instance()
+		obj.set_position(position)
+		obj.set_visible(true)
+	
+	# Add the object to the scene
+	$Node2D.add_child(obj)
 
-func get_object():
-	# Return the first available object in the pool, or create a new one if none are available
-	for object in object_pool:
-		if not object.visible:
-			#object.show()
-			return object
-	var scene_to_spawn = scene_objects[random_index]
-	var new_object = scene_to_spawn.instance()
-	spawn_node.add_child(new_object)
-	object_pool.append(new_object)
-	return new_object
-
-#release the object
-func release_object(object):
-	# Hide the object and return it to the pool
-	#object.visible = true
-	#object.hide()
-	pass
+func despawn_object(obj):
+	# Remove the object from the scene
+	$Node2D.remove_child(obj)
+	
+	# Reset the object's properties
+	obj.set_position(Vector2.ZERO)
+	obj.set_visible(false)
+	
+	# Add the object back to the pool
+	available_objects.append(obj)
