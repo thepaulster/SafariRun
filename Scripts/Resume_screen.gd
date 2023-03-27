@@ -9,7 +9,7 @@ var add_meat
 func _ready():
 	add_meat = Globals.value_for_resume * 1000
 	useMeat_button.text = " or use "+str(add_meat)+" meat "
-	button_check()
+	#button_check()
 	Signals.connect("player_dead", self, "_game_over")
 	Signals.connect("on_resume_timeout", self, "_hide_UI")
 
@@ -41,7 +41,7 @@ func _on_WatchAD_pressed():
 	pass # Replace with function body
 
 func button_check():
-	if add_meat < 2000: 
+	if add_meat >= 00: #add_meat < 2000 
 		useMeat_button.disabled = true 
 	else:
 		useMeat_button.disabled = false

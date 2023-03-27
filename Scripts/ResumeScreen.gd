@@ -8,8 +8,7 @@ onready var resume_timer = get_node("ResumeTimer")
 var _count = 5
 
 func _ready():
-	#resume_timer.start()
-	pass
+	resume_timer.start()
 
 func _on_timeout():
 	emit_signal("countdown", _count)
