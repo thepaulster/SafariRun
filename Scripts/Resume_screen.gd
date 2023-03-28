@@ -50,6 +50,7 @@ func button_check():
 
 func _on_UseMeat_pressed():
 	Globals.value_for_resume += 1
-	
+	Globals.keep_distance = Globals.distance_covered
+	#print(Globals.keep_distance)
 	get_tree().reload_current_scene()
 	pass # Replace with function body.

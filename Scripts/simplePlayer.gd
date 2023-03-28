@@ -27,6 +27,7 @@ onready var player_animation: AnimatedSprite = get_node("AnimatedSprite2")
 onready var invul_timer = get_node("invulTimer")
 
 func _ready():
+	distance = 40
 	pass
 
 func _physics_process(delta):

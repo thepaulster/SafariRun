@@ -14,10 +14,15 @@ var another = 0
 
 
 func _ready():
+	another = Globals.keep_distance
 	Globals.connect("distance_changed", self, "_distance_update")#updates the distance ran by player
 	Globals.connect("meat_collected", self, "_meat_update")#updates the meat collected by the player
+	Globals.connect("keep_distance", self, "_distance_kept")
 	Signals.connect("resume", self, "_on_Resume_pressed")#called when the player resumes the game
 	Signals.connect("player_dead", self, "_hide_HUD") #called when the player dies to hide the HUD
+	
+	
+	print(distance_display)
 
 func _on_PauseButton_pressed():# called when the pause button is pressed
 	
@@ -52,11 +57,14 @@ func _distance_update(value):
 	
 	distance_display = another
 	distance_display += value
-	Globals.keep_distance = distance_display
-	distance_label.text = str(value)
+	#Globals.keep_distance = distance_display
+	#print(value)
+	distance_label.text = str(distance_display)
 
 func _distance_kept(value):
 	distance_label.text = str(value)
+	print(distance_display)
+	#print(value)
 	pass
 
 func _hide_HUD():
