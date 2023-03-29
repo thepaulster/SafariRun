@@ -22,12 +22,15 @@ var velocity = Vector2.ZERO
 var state = "running"
 var set_invul = false
 
+#hunger timer
+onready var hunger_timer:Timer = get_node("hungerTimer") 
+
 onready var animation_player:AnimationPlayer = get_node("AnimationPlayer")
 onready var player_animation: AnimatedSprite = get_node("AnimatedSprite2")
 onready var invul_timer = get_node("invulTimer")
 
 func _ready():
-	distance = 40
+	hunger_timer.start()
 	pass
 
 func _physics_process(delta):
@@ -92,3 +95,7 @@ func _player_dash():
 		Signals.emit_signal("dashing_now")
 		print("dashing now")
 	pass
+
+
+func _on_hungerTimer_timeout():
+	Signals.emit_signal("player_dead")

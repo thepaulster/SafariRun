@@ -85,7 +85,7 @@ position = Vector2( -16, 7 )
 scale = Vector2( 0.34375, 0.34375 )
 frames = SubResource( 2 )
 animation = "running"
-frame = 2
+frame = 3
 playing = true
 flip_h = true
 
@@ -98,4 +98,8 @@ one_shot = true
 
 [node name="Dash" parent="." instance=ExtResource( 14 )]
 
+[node name="hungerTimer" type="Timer" parent="."]
+wait_time = 5.0
+
 [connection signal="timeout" from="invulTimer" to="." method="_on_invulTimer_timeout"]
+[connection signal="timeout" from="hungerTimer" to="." method="_on_hungerTimer_timeout"]
