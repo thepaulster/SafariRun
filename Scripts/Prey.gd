@@ -2,9 +2,9 @@ extends KinematicBody2D
 
 onready var jumpCast = get_node("jumpCast")
 
-export var speed = 440
-export var jumpforce = 1600
-export var gravity = 4500
+export var speed = 50
+export var jumpforce = 1000
+export var gravity = 1500
 
 onready var animated_sprite = get_node("AnimatedSprite")
 
@@ -15,7 +15,7 @@ var body_out = false
 
 func _ready():
 	Globals.flip = true
-	print("spawned1")
+	#print("spawned1")
 	pass
 
 func _apply_jump():
@@ -28,7 +28,7 @@ func _apply_gravity(delta):
 	velocity.y += gravity * delta
 
 func _apply_movement():
-	velocity.x = speed
+	velocity.x = 100 #speed
 	velocity.y = move_and_slide(velocity, Vector2.UP).y
 
 func _on_playerDetector_body_entered(body):

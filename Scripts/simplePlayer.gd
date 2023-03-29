@@ -30,7 +30,7 @@ onready var player_animation: AnimatedSprite = get_node("AnimatedSprite2")
 onready var invul_timer = get_node("invulTimer")
 
 func _ready():
-	hunger_timer.start()
+	#hunger_timer.start()
 	pass
 
 func _physics_process(delta):
