@@ -22,7 +22,7 @@ position = Vector2( 1, -1 )
 script = ExtResource( 2 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-collision_mask = 2
+collision_mask = 18
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 518, 239 )
@@ -47,8 +47,8 @@ position = Vector2( 585, 369 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 270, 239 )
-collision_layer = 64
-collision_mask = 16
+collision_layer = 0
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 4 )
@@ -59,7 +59,7 @@ position = Vector2( 392, 317 )
 [node name="Area2D2" type="Area2D" parent="."]
 position = Vector2( 405, 267 )
 collision_layer = 64
-collision_mask = 0
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 shape = SubResource( 5 )

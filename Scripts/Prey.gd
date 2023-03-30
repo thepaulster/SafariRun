@@ -40,7 +40,8 @@ func _on_playerDetector_body_entered(body):
 
 
 func _on_VisibilityNotifier2D_screen_exited():
-	_prey_offscreen()
+	#_prey_offscreen()
+	pass
 
 func _prey_caught():
 	
@@ -48,6 +49,7 @@ func _prey_caught():
 	
 	Globals.prey_dead = 1
 	Globals.flip = false
+	print("removed")
 	#Signals.emit_signal("prey_caught", get_position().x)
 	queue_free()
 
@@ -61,5 +63,4 @@ func _on_startrun_body_entered(body):
 	if body.is_in_group("player"):
 		#Signals.emit_signal("prey_caught", get_position().x)
 		speed = Globals.playerSpeed
-		print(Globals.playerSpeed)
 	pass # Replace with function body.
