@@ -7,7 +7,7 @@
 [ext_resource path="res://Scenes/UI/Themes/HUDfonttheme.tres" type="Theme" id=14]
 
 [sub_resource type="DynamicFont" id=3]
-size = 70
+size = 50
 outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 13 )
@@ -33,13 +33,15 @@ grow_vertical = 0
 alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HUD/details"]
+margin_top = 24.0
 margin_right = 143.0
 margin_bottom = 85.0
 alignment = 1
 
 [node name="Distance" type="Label" parent="HUD/details/HBoxContainer"]
-margin_right = 143.0
-margin_bottom = 85.0
+margin_left = 20.0
+margin_right = 122.0
+margin_bottom = 61.0
 grow_horizontal = 0
 grow_vertical = 0
 custom_fonts/font = SubResource( 3 )
@@ -48,7 +50,7 @@ text = "Distance"
 [node name="HBoxContainer2" type="HBoxContainer" parent="HUD/details"]
 margin_top = 89.0
 margin_right = 143.0
-margin_bottom = 150.0
+margin_bottom = 126.0
 alignment = 1
 
 [node name="Sprite" type="Sprite" parent="HUD/details/HBoxContainer2"]
@@ -57,9 +59,9 @@ scale = Vector2( 0.08, 0.08 )
 texture = ExtResource( 12 )
 
 [node name="Meat" type="Label" parent="HUD/details/HBoxContainer2"]
-margin_left = 43.0
-margin_right = 100.0
-margin_bottom = 61.0
+margin_left = 55.0
+margin_right = 88.0
+margin_bottom = 37.0
 grow_horizontal = 0
 grow_vertical = 0
 text = "Meat"

@@ -25,18 +25,17 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 80.5, 6 )
+extents = Vector2( 54, 4 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 77, 37.5 )
+extents = Vector2( 54.5, 28 )
 
 [node name="Enemy" type="KinematicBody2D"]
 collision_layer = 4
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, 3 )
-scale = Vector2( 0.6, 0.6 )
+scale = Vector2( 0.348148, 0.348148 )
 frames = SubResource( 2 )
 frame = 11
 playing = true
@@ -49,7 +48,7 @@ scale = Vector2( 2.53125, 2.1875 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.5, 51 )
+position = Vector2( 0, 29 )
 shape = SubResource( 1 )
 
 [node name="enemyarea" type="Area2D" parent="."]
@@ -57,7 +56,7 @@ collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="enemyarea"]
-position = Vector2( -1, 3.5 )
+position = Vector2( 0.5, -4 )
 shape = SubResource( 3 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]

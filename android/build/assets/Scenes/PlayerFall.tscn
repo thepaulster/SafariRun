@@ -3,7 +3,7 @@
 [ext_resource path="res://Scripts/PlayerFall.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 696, 21.5 )
+extents = Vector2( 292, 21.5 )
 
 [node name="PlayerFall" type="Area2D"]
 script = ExtResource( 1 )

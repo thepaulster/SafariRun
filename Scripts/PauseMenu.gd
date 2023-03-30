@@ -63,7 +63,7 @@ func _distance_update(value):
 
 func _distance_kept(value):
 	distance_label.text = str(value)
-	print(distance_display)
+	#print(distance_display)
 	#print(value)
 	pass
 

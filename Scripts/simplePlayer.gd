@@ -31,6 +31,8 @@ onready var invul_timer = get_node("invulTimer")
 
 func _ready():
 	#hunger_timer.start()
+	Globals.playerSpeed = RUN_SPEED
+	#print(Globals.playerSpeed)
 	pass
 
 func _physics_process(delta):

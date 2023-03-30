@@ -17,6 +17,8 @@ var invul =  true #invulnerability variable
 var player_distance = Vector2() setget player_distance #distance run in current run
 var best_distance = 0 #best distance run by player
 
+var playerSpeed = 0
+
 var score = 0 setget final_score# score calculated from current run
 var best_score = 0 #best score from other scores
 
