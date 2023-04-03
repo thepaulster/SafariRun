@@ -55,7 +55,7 @@ texture = ExtResource( 1 )
 position = Vector2( 630, 370 )
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2( 787, 504 )
+position = Vector2( 467, 252 )
 collision_layer = 64
 collision_mask = 16
 
