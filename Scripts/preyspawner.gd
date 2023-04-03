@@ -10,7 +10,7 @@ var prey_distance = Vector2(0, 0)
 var count = 0
 
 func _ready():
-	#_spawn_prey()
+	_spawn_prey()
 	
 	#Signals.connect("prey_caught", self, "call_timer")
 	Signals.connect("prey_dead", self, "call_timer")

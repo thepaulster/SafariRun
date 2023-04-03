@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/World1/Background.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/world.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/preyspawner.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/World1/World_gen.tscn" type="PackedScene" id=4]
 
 [node name="test_world" type="Node2D"]
@@ -13,3 +14,5 @@ script = ExtResource( 2 )
 
 [node name="SpawnPosition" type="Position2D" parent="."]
 position = Vector2( 40, 64 )
+
+[node name="preyspawner" parent="." instance=ExtResource( 3 )]
