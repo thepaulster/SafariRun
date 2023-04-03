@@ -30,13 +30,11 @@ func _on_PauseButton_pressed():# called when the pause button is pressed
 	pause_button.visible = false
 	HUD.visible = false
 
-
 func _on_Resume_pressed():
 	#if get_tree().paused == false:
 	pause_button.visible = true
 	HUD.visible = true
 	pass # Replace with function body.
-
 
 func _on_Retry_pressed():
 	Globals.meat = 0
@@ -44,7 +42,6 @@ func _on_Retry_pressed():
 	#Signals.emit_signal("resume_on_thatlevel")
 	get_tree().reload_current_scene()
 	pass # Replace with function body.
-
 
 func _on_Home_pressed():
 	get_tree().change_scene("res://Scenes/UI/MainMenu.tscn")

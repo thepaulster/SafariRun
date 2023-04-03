@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
+[ext_resource path="res://Scenes/UI/PowerUp_bar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/UI/Final UI/pause_btn.png" type="Texture" id=8]
 [ext_resource path="res://Scripts/PauseMenu.gd" type="Script" id=11]
 [ext_resource path="res://Assets/others/meat.png" type="Texture" id=12]
@@ -26,16 +27,16 @@ theme = ExtResource( 14 )
 [node name="details" type="VBoxContainer" parent="HUD"]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -143.0
-margin_bottom = 150.0
+margin_left = -142.0
+margin_right = 1.0
+margin_bottom = 102.0
 grow_horizontal = 0
 grow_vertical = 0
 alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HUD/details"]
-margin_top = 24.0
 margin_right = 143.0
-margin_bottom = 85.0
+margin_bottom = 61.0
 alignment = 1
 
 [node name="Distance" type="Label" parent="HUD/details/HBoxContainer"]
@@ -48,9 +49,9 @@ custom_fonts/font = SubResource( 3 )
 text = "Distance"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="HUD/details"]
-margin_top = 89.0
+margin_top = 65.0
 margin_right = 143.0
-margin_bottom = 126.0
+margin_bottom = 102.0
 alignment = 1
 
 [node name="Sprite" type="Sprite" parent="HUD/details/HBoxContainer2"]
@@ -77,5 +78,7 @@ rect_min_size = Vector2( 76, 63 )
 texture_normal = ExtResource( 8 )
 expand = true
 stretch_mode = 5
+
+[node name="PowerUp_bar" parent="." instance=ExtResource( 1 )]
 
 [connection signal="pressed" from="PauseButton" to="." method="_on_PauseButton_pressed"]
