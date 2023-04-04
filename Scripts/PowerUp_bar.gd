@@ -21,7 +21,7 @@ func _ready():
 	
 	Signals.connect("powerup_bar_show", self, "bar_show")
 	Signals.connect("powerup_bar_hide", self, "bar_hide")
-	
+	bar_show()
 	#progressbar.max_value = maxvalue
 	pass
 
