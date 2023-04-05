@@ -1,8 +1,11 @@
 extends Node
 
 var progress = 1.0
-var time_left = 4.0
+var time_left = 10.0
 var step = 0.02
+
+
+#just add time left when player is captured
 
 func _ready():
 	$Timer.wait_time = 0.02
