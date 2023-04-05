@@ -7,6 +7,8 @@ onready var resume_timer = get_node("ResumeTimer")
 
 var _count = 5
 
+var prog = 1
+
 func _ready():
 	resume_timer.start()
 
@@ -17,6 +19,7 @@ func _on_timeout():
 	if _count <= 0:
 		resume_timer.stop()
 		Signals.emit_signal("on_resume_timeout")
+	
 
 
 func _on_ResumeTimer_timeout():
