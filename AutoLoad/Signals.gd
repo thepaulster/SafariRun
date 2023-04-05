@@ -25,3 +25,7 @@ signal resume
 signal coin_dis
 signal coin_visible
 
+#player health
+signal add_health
+signal player_died_hungry
+
