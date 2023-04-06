@@ -33,6 +33,8 @@ func _ready():
 	#hunger_timer.start()
 	Globals.playerSpeed = RUN_SPEED
 	#print(Globals.playerSpeed)
+	
+	Signals.connect("player_stamina_empty", self, "_player_dead")
 	pass
 
 func _physics_process(delta):
@@ -100,4 +102,8 @@ func _player_dash():
 
 
 func _on_hungerTimer_timeout():
+	Signals.emit_signal("player_dead")
+
+
+func _player_death():
 	Signals.emit_signal("player_dead")
