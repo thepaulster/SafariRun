@@ -55,7 +55,12 @@ func update_state(delta):
 		state = "fall"
 	elif !is_on_floor() and velocity.y <= 0:
 		state = "jumping"
-
+	
+	if state == "running":
+		$AnimatedSprite3.visible = true
+	else:
+		$AnimatedSprite3.visible = false
+	
 func _input(event):	
 	if event is InputEventScreenTouch and is_on_floor():
 		#state = "jumping"
