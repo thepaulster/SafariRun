@@ -46,7 +46,6 @@ func _on_RewardedAd_pressed():
 	ad_controller.hide_banner()
 	ad_controller.show_rewarded_video()
 	ad_controller.load_rewarded_video()
-	pass # Replace with function body.
 
 
 func _on_RewardedInterstitialAD_pressed():
