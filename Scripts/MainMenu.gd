@@ -52,4 +52,3 @@ func _on_RewardedInterstitialAD_pressed():
 	ad_controller.hide_banner()
 	ad_controller.show_rewarded_interstitial()
 	ad_controller.load_rewarded_interstitial()
-	pass # Replace with function body.
