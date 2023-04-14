@@ -6,7 +6,7 @@ var distance
 
 const GRAVITY = 1500
 const JUMP_SPEED = -600
-const RUN_SPEED = 300
+var RUN_SPEED = 300
 var SPEED
 
 
@@ -30,7 +30,7 @@ onready var player_animation: AnimatedSprite = get_node("AnimatedSprite2")
 onready var invul_timer = get_node("invulTimer")
 
 func _ready():
-	#hunger_timer.start()
+	hunger_timer.start()
 	Globals.playerSpeed = RUN_SPEED
 	#print(Globals.playerSpeed)
 	
@@ -107,7 +107,10 @@ func _player_dash():
 
 
 func _on_hungerTimer_timeout():
-	Signals.emit_signal("player_dead")
+	RUN_SPEED += 5
+	RUN_SPEED = Globals.playerSpeed 
+	print(RUN_SPEED)
+#	Signals.emit_signal("player_dead")
 
 
 func _player_death():
