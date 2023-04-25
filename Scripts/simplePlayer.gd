@@ -32,6 +32,7 @@ onready var invul_timer = get_node("invulTimer")
 func _ready():
 	hunger_timer.start()
 	Globals.playerSpeed = RUN_SPEED
+	
 	#print(Globals.playerSpeed)
 	
 	Signals.connect("player_stamina_empty", self, "_player_dead")
@@ -108,7 +109,7 @@ func _player_dash():
 
 func _on_hungerTimer_timeout():
 	RUN_SPEED += 5
-	RUN_SPEED = Globals.playerSpeed 
+	Globals.playerSpeed = RUN_SPEED 
 	print(RUN_SPEED)
 #	Signals.emit_signal("player_dead")
 
