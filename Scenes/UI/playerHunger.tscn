@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://Scripts/playerHunger.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/UI/countdowncicle.tscn" type="PackedScene" id=2]
 
 [node name="playerHunger" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -13,11 +12,5 @@ max_value = 1.0
 value = 1.0
 
 [node name="Timer" type="Timer" parent="."]
-
-[node name="countdowncircle" parent="." instance=ExtResource( 2 )]
-margin_left = 161.0
-margin_top = 33.0
-margin_right = 161.0
-margin_bottom = 33.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

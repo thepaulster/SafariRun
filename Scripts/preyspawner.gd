@@ -50,6 +50,5 @@ func _go_next_pos():
 	#print(prey_distance + 800)
 
 func _on_PreyTimer_timeout():
-	print("done")
 	_spawn_prey()
 	pass # Replace with function body.
