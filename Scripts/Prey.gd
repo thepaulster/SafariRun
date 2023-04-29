@@ -33,7 +33,7 @@ func _apply_movement():
 
 func _on_playerDetector_body_entered(body):
 	if body.is_in_group("player"):
-		#Signals.emit_signal("prey_caught", get_position().x)
+		Signals.emit_signal("prey_caught", get_position().x)
 		_prey_caught()
 	else:
 		return
@@ -49,7 +49,6 @@ func _prey_caught():
 	
 	Globals.prey_dead = 1
 	Globals.flip = false
-	print("removed")
 	#Signals.emit_signal("prey_caught", get_position().x)
 	queue_free()
 
@@ -62,5 +61,6 @@ func _prey_offscreen():
 func _on_startrun_body_entered(body):
 	if body.is_in_group("player"):
 		#Signals.emit_signal("prey_caught", get_position().x)
-		speed = Globals.playerSpeed
+		#speed = Globals.playerSpeed
+		speed = 100
 	pass # Replace with function body.

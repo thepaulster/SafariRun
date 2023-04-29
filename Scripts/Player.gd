@@ -84,6 +84,7 @@ func _handle_move_input():
 func prey_caught(value): 
 	caught = value
 	Globals.player_distance = get_position()
+	print("caught", Globals.player_distance)
 
 func _process(delta):
 	#distance = int(get_position().x/10)

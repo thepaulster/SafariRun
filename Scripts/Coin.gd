@@ -16,7 +16,6 @@ func _on_Coin_body_entered(body):
 		Globals.meat += meat_value
 		$collected.play()
 		visible = false
-		print(Globals.meat)
 
 func _reset():
 	visible = true

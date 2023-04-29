@@ -36,6 +36,7 @@ func _ready():
 	#print(Globals.playerSpeed)
 	
 	Signals.connect("player_stamina_empty", self, "_player_dead")
+	
 	pass
 
 func _physics_process(delta):

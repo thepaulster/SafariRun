@@ -37,6 +37,10 @@ Globals="*res://AutoLoad/Globals.gd"
 Signals="*res://AutoLoad/Signals.gd"
 MusicController="*res://Scenes/Sound/MusicController.tscn"
 
+[debug]
+
+settings/stdout/print_fps=true
+
 [display]
 
 window/size/width=640
