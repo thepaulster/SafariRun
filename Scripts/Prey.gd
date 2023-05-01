@@ -33,7 +33,7 @@ func _apply_movement():
 
 func _on_playerDetector_body_entered(body):
 	if body.is_in_group("player"):
-		Signals.emit_signal("prey_caught", get_position().x)
+		#Signals.emit_signal("prey_caught", get_position().x)
 		_prey_caught()
 	else:
 		return
@@ -49,7 +49,7 @@ func _prey_caught():
 	
 	Globals.prey_dead = 1
 	Globals.flip = false
-	#Signals.emit_signal("prey_caught", get_position().x)
+	Signals.emit_signal("prey_caught", get_position().x)
 	queue_free()
 
 func _prey_offscreen():

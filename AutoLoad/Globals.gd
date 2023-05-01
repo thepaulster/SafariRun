@@ -11,6 +11,8 @@ signal meat_collected(value)
 signal keep_distance(value)
 signal newhighscore
 signal newbestdistance
+signal distance_new
+
 
 var invul =  true #invulnerability variable
 
@@ -23,7 +25,7 @@ var score = 0 setget final_score# score calculated from current run
 var best_score = 0 #best score from other scores
 
 var prey_dead = 0 setget prey_killed
-var flip = false
+var flip = true
 
 var meat = 0 setget collect_meat #this is for meat that has been collected in one run
 var meat_count

@@ -32,11 +32,11 @@ onready var invul_timer = get_node("invulTimer")
 func _ready():
 	hunger_timer.start()
 	Globals.playerSpeed = RUN_SPEED
-	
-	#print(Globals.playerSpeed)
+	Globals.player_distance(position)
+	print(Globals.player_distance)
 	
 	Signals.connect("player_stamina_empty", self, "_player_dead")
-	
+	Signals.connect("prey_caught", self, "_player_coordinates")
 	pass
 
 func _physics_process(delta):
@@ -107,13 +107,18 @@ func _player_dash():
 		print("dashing now")
 	pass
 
-
 func _on_hungerTimer_timeout():
 	RUN_SPEED += 5
 	Globals.playerSpeed = RUN_SPEED 
-	print(RUN_SPEED)
 #	Signals.emit_signal("player_dead")
-
 
 func _player_death():
 	Signals.emit_signal("player_dead")
+
+func _player_coordinates(value):
+	
+	#Globals.player_distance = position
+	Globals.player_distance(position)
+	print(Globals.player_distance)
+	Signals.emit_signal("test", position)
+	pass

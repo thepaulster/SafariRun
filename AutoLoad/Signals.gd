@@ -29,3 +29,4 @@ signal coin_visible
 signal add_stamina
 signal player_stamina_empty
 
+signal test
