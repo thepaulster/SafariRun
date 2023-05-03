@@ -60,7 +60,6 @@ var save_shop = {"store": store, "powerup1": invi_level, "powerup2": dash_level}
 
 var powerUp_bar_value = 0 setget bar_value
 
-
 func bar_value(value):
 	powerUp_bar_value = value
 	#print(powerUp_bar_value)
