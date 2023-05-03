@@ -10,6 +10,8 @@ var step = 0.02
 func _ready():
 	$Timer.wait_time = 0.02
 	$Timer.start()
+	
+	Signals.connect("add_stamina", self, "_stamina_added")
 
 func _on_Timer_timeout():
 	time_left -= $Timer.wait_time
@@ -20,3 +22,7 @@ func _on_Timer_timeout():
 		#Signals.emit_signal("player_stamina_empty")
 	progress = time_left / 10.0
 	$ProgressBar.value = progress
+
+
+func _stamina_added(value):
+	print(value)
