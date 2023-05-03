@@ -25,4 +25,5 @@ func _on_Timer_timeout():
 
 
 func _stamina_added(value):
+	time_left += .1
 	print(value)

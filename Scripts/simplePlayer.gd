@@ -119,6 +119,5 @@ func _player_coordinates(value):
 	
 	#Globals.player_distance = position
 	Globals.player_distance(position)
-	print(Globals.player_distance)
 	Signals.emit_signal("test", position)
 	pass
