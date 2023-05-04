@@ -20,7 +20,7 @@ func _spawn_prey(value):
 	
 	
 	spawn_position = start_position + Vector2(400, 0)
-	print(spawn_position)
+	
 	prey = prey_scene.instance()
 	prey.position = spawn_position
 	call_deferred("add_child", prey)
