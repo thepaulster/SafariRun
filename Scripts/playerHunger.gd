@@ -1,7 +1,7 @@
 extends Node
 
 var progress = 1.0
-var time_left = 10.0
+var time_left = 20.0
 var step = 0.02
 
 
@@ -20,7 +20,7 @@ func _on_Timer_timeout():
 		$Timer.stop()
 		#emit a signal to kill the player
 		#Signals.emit_signal("player_stamina_empty")
-	progress = time_left / 10.0
+	progress = time_left / 20.0
 	$ProgressBar.value = progress
 
 
