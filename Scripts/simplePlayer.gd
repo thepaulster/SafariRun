@@ -104,7 +104,6 @@ func _player_dash():
 		Signals.emit_signal("invulnerable", true)
 		_invincibility()
 		Signals.emit_signal("dashing_now")
-		print("dashing now")
 	pass
 
 func _on_hungerTimer_timeout():

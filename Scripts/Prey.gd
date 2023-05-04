@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 onready var jumpCast = get_node("jumpCast")
 
-export var speed = 50
+export var speed = 100
 export var jumpforce = 1000
 export var gravity = 1500
 
@@ -50,7 +50,7 @@ func _prey_caught():
 	Globals.prey_dead = 1
 	Globals.flip = false
 	Signals.emit_signal("prey_caught", get_position().x)
-	Signals.emit_signal("add_stamina", 1)
+	Signals.emit_signal("add_stamina", 2)
 	queue_free()
 
 func _prey_offscreen():
@@ -62,6 +62,6 @@ func _prey_offscreen():
 func _on_startrun_body_entered(body):
 	if body.is_in_group("player"):
 		#Signals.emit_signal("prey_caught", get_position().x)
-		#speed = Globals.playerSpeed
-		speed = 100
+		speed = Globals.playerSpeed
+		#speed = 250
 	pass # Replace with function body.
