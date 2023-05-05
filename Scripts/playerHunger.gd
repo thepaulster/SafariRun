@@ -25,4 +25,4 @@ func _on_Timer_timeout():
 
 
 func _stamina_added(value):
-	time_left += value
+	time_left += value #cap the time left to maximum time allowed by bar
