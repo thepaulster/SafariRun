@@ -29,4 +29,6 @@ signal coin_visible
 signal add_stamina(value)
 signal player_stamina_empty
 
+#player speed reduced
+signal reduce_speed(value)
 signal test

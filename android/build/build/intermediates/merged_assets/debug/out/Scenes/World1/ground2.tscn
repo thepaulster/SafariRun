@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scripts/ground.gd" type="Script" id=1]
 [ext_resource path="res://Assets/world assets/speedbush.png" type="Texture" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://Assets/world assets/a Tree.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/invincibility_platform.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/PlayerFall.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scenes/Prey.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 202.5, 39 )
@@ -17,7 +16,7 @@ extents = Vector2( 179.5, 19 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 61.5, 39 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 39.5, 25.5 )
 
 [node name="ground2" type="Node2D"]
@@ -70,15 +69,12 @@ position = Vector2( 458, 316.5 )
 [node name="PlayerFall" parent="." instance=ExtResource( 6 )]
 position = Vector2( 408, 387 )
 
-[node name="Prey" parent="." instance=ExtResource( 7 )]
-position = Vector2( 36, 244 )
-
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 360, 271 )
 collision_layer = 64
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

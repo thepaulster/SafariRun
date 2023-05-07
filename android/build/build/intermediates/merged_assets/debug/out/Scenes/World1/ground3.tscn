@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/world assets/ground3.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/ground.gd" type="Script" id=2]
@@ -14,11 +14,15 @@ extents = Vector2( 151.5, 39 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 33, 44 )
 
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 39.5, 25.5 )
+
 [node name="ground3" type="Node2D"]
+position = Vector2( 1, -1 )
 script = ExtResource( 2 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-collision_mask = 2
+collision_mask = 18
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 518, 239 )
@@ -43,13 +47,21 @@ position = Vector2( 585, 369 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 270, 239 )
-collision_layer = 64
-collision_mask = 16
+collision_layer = 0
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 4 )
 
 [node name="invincibility_platform" parent="." instance=ExtResource( 4 )]
 position = Vector2( 392, 317 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2( 405, 267 )
+collision_layer = 64
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource( 5 )
 
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

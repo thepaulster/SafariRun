@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Prey.gd" type="Script" id=2]
@@ -41,6 +41,9 @@ animations = [ {
 "speed": 15.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 10, 163 )
+
 [node name="Prey" type="KinematicBody2D" groups=["prey"]]
 modulate = Color( 0.588235, 0.521569, 0.286275, 1 )
 collision_layer = 16
@@ -77,11 +80,21 @@ shape = SubResource( 2 )
 position = Vector2( 13, -11 )
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 3 )
-animation = "fall"
+animation = "run"
+frame = 2
 playing = true
 flip_h = true
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 
+[node name="startrun" type="Area2D" parent="."]
+position = Vector2( -166, 4 )
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="startrun"]
+shape = SubResource( 4 )
+
 [connection signal="body_entered" from="playerDetector" to="." method="_on_playerDetector_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="body_entered" from="startrun" to="." method="_on_startrun_body_entered"]

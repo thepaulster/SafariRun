@@ -37,6 +37,7 @@ func _ready():
 	
 	Signals.connect("player_stamina_empty", self, "_player_dead")
 	Signals.connect("prey_caught", self, "_player_coordinates")
+	Signals.connect("reduce_speed", self, "_hit_bush")
 	pass
 
 func _physics_process(delta):
@@ -120,3 +121,8 @@ func _player_coordinates(value):
 	Globals.player_distance(position)
 	Signals.emit_signal("test", position)
 	pass
+
+func _hit_bush(value):
+	
+	RUN_SPEED -= value
+	

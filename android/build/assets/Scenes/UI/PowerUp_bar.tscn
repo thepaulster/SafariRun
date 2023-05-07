@@ -15,10 +15,9 @@ autostart = true
 [node name="ProgressBar" type="ProgressBar" parent="Control"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -310.0
-margin_top = 38.0
-margin_right = 310.0
-margin_bottom = 52.0
+margin_left = -127.5
+margin_right = 127.5
+margin_bottom = 36.0
 max_value = 1.0
 
 [connection signal="timeout" from="Control/Timer" to="." method="_on_Timer_timeout"]
