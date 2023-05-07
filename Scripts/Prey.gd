@@ -50,7 +50,7 @@ func _prey_caught():
 	Globals.prey_dead = 1
 	Globals.flip = false
 	Signals.emit_signal("prey_caught", get_position().x)
-	Signals.emit_signal("add_stamina", 19)
+	Signals.emit_signal("add_stamina", 18)
 	queue_free()
 
 func _prey_offscreen():

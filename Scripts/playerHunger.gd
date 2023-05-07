@@ -21,7 +21,7 @@ func _on_Timer_timeout():
 		#emit a signal to kill the player
 		#Signals.emit_signal("player_stamina_empty")
 	progress = time_left / 25.0
-	$ProgressBar.value = progress
+	$TextureProgress.value = progress
 
 
 func _stamina_added(value):
