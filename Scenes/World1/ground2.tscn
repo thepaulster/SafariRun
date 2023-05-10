@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Scripts/ground.gd" type="Script" id=1]
 [ext_resource path="res://Assets/world assets/speedbush.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Scenes/invincibility_platform.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/PlayerFall.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/bush.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/speedBoost.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 202.5, 39 )
@@ -42,6 +43,7 @@ scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+visible = false
 position = Vector2( 319, 180.5 )
 scale = Vector2( 32.9, 19.05 )
 
@@ -80,5 +82,8 @@ shape = SubResource( 5 )
 
 [node name="bush" parent="." instance=ExtResource( 7 )]
 position = Vector2( 328, 263 )
+
+[node name="speedBoost" parent="." instance=ExtResource( 8 )]
+position = Vector2( 329, 143 )
 
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

@@ -1,6 +1,7 @@
 extends Node
 
 var progress = 1.0
+var max_time = 25.0
 var time_left = 25.0
 var step = 0.02
 
@@ -26,3 +27,7 @@ func _on_Timer_timeout():
 
 func _stamina_added(value):
 	time_left += value #cap the time left to maximum time allowed by bar
+	
+	if time_left > max_time:
+		time_left = max_time #caps max time of bar 
+		print(time_left)

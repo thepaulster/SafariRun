@@ -11,7 +11,7 @@ func _ready():
 	pass # Replace with function body.
 
 func enable_dash_platform():
-	dash_platform.disabled = false
+	dash_platform.disabled = false #change to call_deferred() or set_deferred, check online for a solution
 	
 
 func disable_dash_platform():
