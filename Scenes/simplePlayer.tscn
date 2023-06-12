@@ -3,16 +3,16 @@
 [ext_resource path="res://Scripts/simplePlayer.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/UI/Themes/totalmeat.tres" type="Theme" id=3]
-[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0007.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0009.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0004.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0008.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0000.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0002.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0006.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0005.png" type="Texture" id=11]
-[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0001.png" type="Texture" id=12]
-[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0003.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Player Assets/hyena3/frame0007.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Player Assets/hyena3/frame0009.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Player Assets/hyena3/frame0003.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Player Assets/hyena3/frame0005.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Player Assets/hyena3/frame0004.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Player Assets/hyena3/frame0000.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Player Assets/hyena3/frame0002.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Player Assets/hyena3/frame0001.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Player Assets/hyena3/frame0008.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Player Assets/hyena3/frame0006.png" type="Texture" id=13]
 [ext_resource path="res://Scenes/Dash.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Scenes/UI/playerHunger.tscn" type="PackedScene" id=15]
 
@@ -26,7 +26,7 @@ animations = [ {
 "name": "default",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 12 ), ExtResource( 9 ), ExtResource( 13 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 9 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 13 ), ExtResource( 4 ), ExtResource( 12 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "running",
 "speed": 15.0
@@ -83,23 +83,12 @@ theme = ExtResource( 3 )
 text = "state"
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
-position = Vector2( -16, 7 )
+position = Vector2( -11, 17 )
 scale = Vector2( 0.34375, 0.34375 )
 frames = SubResource( 2 )
 animation = "running"
-frame = 1
+frame = 2
 playing = true
-flip_h = true
-
-[node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
-modulate = Color( 0.0117647, 0.0117647, 0.0117647, 0.270588 )
-position = Vector2( -16, 38.4375 )
-scale = Vector2( 0.34375, 0.0885417 )
-frames = SubResource( 2 )
-animation = "running"
-playing = true
-flip_h = true
-flip_v = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/invincibility = SubResource( 3 )
