@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\paul.asiimwe\\Documents\\GitHub\\SafariRun\\android\\build\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es\\values-es.xml",
+            "outputFile": "C:\\Users\\paul.asiimwe\\.gradle\\daemon\\7.4\\com.godot.game-mergeDebugResources-3:\\values-es\\values-es.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\paul.asiimwe\\Documents\\GitHub\\SafariRun\\android\\build\\res\\values-es\\godot_project_name_string.xml",
+                    "source": "C:\\Github\\SafariRun\\android\\build\\res\\values-es\\godot_project_name_string.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "1",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\paul.asiimwe\\.gradle\\caches\\transforms-3\\9617710e59968e2412aeb3b23f549743\\transformed\\core-1.2.0\\res\\values-es\\values-es.xml",
+                    "source": "C:\\Users\\paul.asiimwe\\.gradle\\caches\\transforms-3\\086694f904f7332915774462ffe124fb\\transformed\\core-1.2.0\\res\\values-es\\values-es.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -35,6 +35,43 @@
                         "startOffsets": "121",
                         "endColumns": "100",
                         "endOffsets": "217"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.godot.game-mergeDebugResources-3:/values-es/values-es.xml",
+            "map": [
+                {
+                    "source": "C:\\Github\\SafariRun\\android\\build\\res\\values-es\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "64",
+                        "endOffsets": "175"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "67",
+                        "endOffsets": "118"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\paul.asiimwe\\.gradle\\caches\\transforms-3\\086694f904f7332915774462ffe124fb\\transformed\\core-1.2.0\\res\\values-es\\values-es.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "123",
+                        "endColumns": "100",
+                        "endOffsets": "219"
                     }
                 }
             ]

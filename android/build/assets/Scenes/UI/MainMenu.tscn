@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/UI/Final UI/menu_button.png" type="Texture" id=2]
 [ext_resource path="res://Assets/UI/Final UI/exit_button.png" type="Texture" id=3]
 [ext_resource path="res://Assets/UI/Final UI/title_1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/testUI/mission_button.png" type="Texture" id=5]
 [ext_resource path="res://admob-lib/admob.gd" type="Script" id=6]
+[ext_resource path="res://Assets/UI/testUI/exit_button.png" type="Texture" id=7]
+[ext_resource path="res://Assets/UI/testUI/settings_button.png" type="Texture" id=8]
+[ext_resource path="res://Assets/UI/testUI/shop_button.png" type="Texture" id=9]
+[ext_resource path="res://Assets/UI/testUI/achievements_button.png" type="Texture" id=10]
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
@@ -56,6 +61,7 @@ expand = true
 stretch_mode = 6
 
 [node name="Menu" type="TextureButton" parent="VBoxContainer"]
+visible = false
 margin_left = 30.0
 margin_top = 22.0
 margin_right = 106.0
@@ -74,6 +80,56 @@ margin_right = -32.0
 margin_bottom = 85.0
 rect_min_size = Vector2( 76, 63 )
 texture_normal = ExtResource( 3 )
+expand = true
+stretch_mode = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+margin_left = 23.0
+margin_top = 49.0
+margin_right = 74.0
+margin_bottom = 320.0
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
+margin_right = 51.333
+margin_bottom = 51.667
+rect_min_size = Vector2( 51.333, 51.667 )
+texture_normal = ExtResource( 9 )
+expand = true
+stretch_mode = 4
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
+margin_top = 55.0
+margin_right = 51.333
+margin_bottom = 106.667
+rect_min_size = Vector2( 51.333, 51.667 )
+texture_normal = ExtResource( 5 )
+expand = true
+stretch_mode = 4
+
+[node name="TextureButton3" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
+margin_top = 110.0
+margin_right = 51.333
+margin_bottom = 161.667
+rect_min_size = Vector2( 51.333, 51.667 )
+texture_normal = ExtResource( 10 )
+expand = true
+stretch_mode = 4
+
+[node name="TextureButton4" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
+margin_top = 165.0
+margin_right = 51.333
+margin_bottom = 216.667
+rect_min_size = Vector2( 51.333, 51.667 )
+texture_normal = ExtResource( 8 )
+expand = true
+stretch_mode = 4
+
+[node name="TextureButton5" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
+margin_top = 220.0
+margin_right = 51.333
+margin_bottom = 271.667
+rect_min_size = Vector2( 51.333, 51.667 )
+texture_normal = ExtResource( 7 )
 expand = true
 stretch_mode = 4
 

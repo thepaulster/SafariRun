@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\paul.asiimwe\\Documents\\GitHub\\SafariRun\\android\\build\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rES\\values-es-rES.xml",
+            "outputFile": "C:\\Users\\paul.asiimwe\\.gradle\\daemon\\7.4\\com.godot.game-mergeDebugResources-3:\\values-es-rES\\values-es-rES.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\paul.asiimwe\\Documents\\GitHub\\SafariRun\\android\\build\\res\\values-es-rES\\godot_project_name_string.xml",
+                    "source": "C:\\Github\\SafariRun\\android\\build\\res\\values-es-rES\\godot_project_name_string.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "1",
@@ -18,6 +18,28 @@
                         "startOffsets": "55",
                         "endColumns": "65",
                         "endOffsets": "116"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.godot.game-mergeDebugResources-3:/values-es-rES/values-es-rES.xml",
+            "map": [
+                {
+                    "source": "C:\\Github\\SafariRun\\android\\build\\res\\values-es-rES\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "64",
+                        "endOffsets": "175"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "67",
+                        "endOffsets": "118"
                     }
                 }
             ]

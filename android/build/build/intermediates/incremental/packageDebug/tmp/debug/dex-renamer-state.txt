@@ -1,4 +1,4 @@
-#Sun May 07 15:01:36 EAT 2023
-base.0=C\:\\Users\\paul.asiimwe\\Documents\\GitHub\\SafariRun\\android\\build\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Sun Jun 18 08:53:38 EAT 2023
+base.0=C\:\\Github\\SafariRun\\android\\build\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

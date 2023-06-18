@@ -1,10 +1,32 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\paul.asiimwe\\Documents\\GitHub\\SafariRun\\android\\build\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-3:/values-zh/values-zh.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\paul.asiimwe\\Documents\\GitHub\\SafariRun\\android\\build\\res\\values-zh\\godot_project_name_string.xml",
+                    "source": "C:\\Github\\SafariRun\\android\\build\\res\\values-zh\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "64",
+                        "endOffsets": "175"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "67",
+                        "endOffsets": "118"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\paul.asiimwe\\.gradle\\daemon\\7.4\\com.godot.game-mergeDebugResources-3:\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Github\\SafariRun\\android\\build\\res\\values-zh\\godot_project_name_string.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "1",

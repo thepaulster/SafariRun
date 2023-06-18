@@ -9,6 +9,9 @@ onready var distance_label = get_node("HUD/details/HBoxContainer/Distance")
 onready var meat_label = get_node("HUD/details/HBoxContainer2/Meat")
 onready var HUD = get_node("HUD")
 
+onready var test_meat = get_node("HUD/VBoxContainer/HBoxContainer/Label")
+onready var test_label = get_node("HUD/VBoxContainer/HBoxContainer3/Label")
+
 var distance_display = 0
 var another = 0
 
@@ -57,9 +60,11 @@ func _distance_update(value):
 	#Globals.keep_distance = distance_display
 	#print(value)
 	distance_label.text = str(distance_display)
+	test_label.text = str(distance_display)
 
 func _distance_kept(value):
 	distance_label.text = str(value)
+	test_label.text = str(value)
 	#print(distance_display)
 	#print(value)
 	pass
