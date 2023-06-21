@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Assets/UI/Final UI/ui_1.png" type="Texture" id=1]
 [ext_resource path="res://Assets/UI/Final UI/retry.png" type="Texture" id=2]
@@ -22,6 +22,10 @@
 [ext_resource path="res://Assets/UI/testUI/background_view.png" type="Texture" id=20]
 [ext_resource path="res://Scenes/UI/Themes/ScoreboardTheme.tres" type="Theme" id=21]
 [ext_resource path="res://Scenes/UI/Themes/endscoresTheme.tres" type="Theme" id=22]
+[ext_resource path="res://Assets/UI/testUI/Meat_collected_display.png" type="Texture" id=23]
+[ext_resource path="res://Assets/UI/testUI/addmeat_button.png" type="Texture" id=24]
+[ext_resource path="res://Assets/UI/testUI/wooden_meat_display.png" type="Texture" id=25]
+[ext_resource path="res://Scenes/UI/Themes/meat_display.tres" type="Theme" id=26]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -355,10 +359,20 @@ texture_normal = ExtResource( 2 )
 expand = true
 stretch_mode = 5
 
+[node name="MeatCollectedDisplay" type="TextureRect" parent="."]
+margin_left = 515.0
+margin_top = 6.0
+margin_right = 654.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 139, 36 )
+texture = ExtResource( 23 )
+expand = true
+stretch_mode = 6
+
 [node name="Scoreboard" type="TextureRect" parent="."]
-margin_left = 267.0
+margin_left = 187.0
 margin_top = 25.0
-margin_right = 605.0
+margin_right = 525.0
 margin_bottom = 88.0
 rect_min_size = Vector2( 338, 63 )
 texture = ExtResource( 17 )
@@ -542,6 +556,51 @@ rect_min_size = Vector2( 147, 41 )
 texture_normal = ExtResource( 15 )
 expand = true
 stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -106.0
+margin_top = 5.0
+margin_right = -2.0
+margin_bottom = 45.0
+custom_constants/separation = -18
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer"]
+margin_right = 45.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 45, 34 )
+texture_normal = ExtResource( 24 )
+expand = true
+stretch_mode = 5
+
+[node name="WoodenMeatDisplay" type="TextureRect" parent="HBoxContainer"]
+show_behind_parent = true
+margin_left = 27.0
+margin_right = 104.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 77, 34 )
+texture = ExtResource( 25 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="HBoxContainer/WoodenMeatDisplay"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -33.5
+margin_top = -15.5
+margin_right = 43.5
+margin_bottom = 9.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource( 26 )
+custom_colors/font_color = Color( 0.843137, 0.780392, 0.560784, 1 )
+text = "20"
+align = 1
+valign = 1
 
 [connection signal="pressed" from="Ui1/VBoxContainer/HBoxContainer/Home" to="." method="_on_Home_pressed"]
 [connection signal="pressed" from="Ui1/VBoxContainer/HBoxContainer/Retry" to="." method="_on_Retry_pressed"]
