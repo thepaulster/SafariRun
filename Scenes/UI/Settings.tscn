@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Assets/UI/Final UI/sounds on.png" type="Texture" id=1]
 [ext_resource path="res://Assets/UI/Final UI/back_button.png" type="Texture" id=2]
@@ -13,6 +13,15 @@
 [ext_resource path="res://Assets/UI/Final UI/sounds off.png" type="Texture" id=11]
 [ext_resource path="res://Assets/UI/testUI/end.png" type="Texture" id=12]
 [ext_resource path="res://Assets/UI/testUI/settings_preview.png" type="Texture" id=13]
+[ext_resource path="res://Assets/UI/testUI/settings_credits.png" type="Texture" id=14]
+[ext_resource path="res://Assets/UI/testUI/settings_musicoff.png" type="Texture" id=15]
+[ext_resource path="res://Assets/UI/testUI/background_view.png" type="Texture" id=16]
+[ext_resource path="res://Assets/UI/testUI/settings_musicon.png" type="Texture" id=17]
+[ext_resource path="res://Assets/UI/testUI/settings_soundon.png" type="Texture" id=18]
+[ext_resource path="res://Assets/UI/testUI/settings_privacypolicy.png" type="Texture" id=19]
+[ext_resource path="res://Assets/UI/testUI/settings_soundoff.png" type="Texture" id=20]
+[ext_resource path="res://Assets/UI/testUI/settings_banner.png" type="Texture" id=21]
+[ext_resource path="res://Assets/UI/testUI/backbutton.png" type="Texture" id=22]
 
 [node name="Settings" type="CanvasLayer"]
 script = ExtResource( 8 )
@@ -112,6 +121,7 @@ expand = true
 stretch_mode = 6
 
 [node name="End" type="TextureRect" parent="Control/Ui1"]
+visible = false
 margin_left = 316.0
 margin_top = 180.0
 margin_right = 316.0
@@ -119,6 +129,7 @@ margin_bottom = 180.0
 texture = ExtResource( 12 )
 
 [node name="SettingsPreview" type="TextureRect" parent="Control"]
+visible = false
 margin_left = 29.0
 margin_top = 15.0
 margin_right = 616.0
@@ -135,7 +146,104 @@ margin_right = 1928.0
 margin_bottom = 1040.0
 texture = ExtResource( 13 )
 
+[node name="SettingsBanner" type="TextureRect" parent="Control"]
+margin_left = 226.0
+margin_top = 15.0
+margin_right = 419.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 193, 52 )
+texture = ExtResource( 21 )
+expand = true
+stretch_mode = 5
+
+[node name="BackgroundView" type="TextureRect" parent="Control"]
+margin_left = 29.0
+margin_top = 37.0
+margin_right = 616.0
+margin_bottom = 353.0
+rect_min_size = Vector2( 587, 316 )
+texture = ExtResource( 16 )
+expand = true
+stretch_mode = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/BackgroundView"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -155.0
+margin_top = -57.0
+margin_right = 155.0
+margin_bottom = 57.0
+custom_constants/separation = 70
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/BackgroundView/HBoxContainer"]
+margin_right = 45.0
+margin_bottom = 114.0
+alignment = 1
+
+[node name="MusicSettings" type="TextureButton" parent="Control/BackgroundView/HBoxContainer/VBoxContainer"]
+margin_top = 12.0
+margin_right = 45.0
+margin_bottom = 55.0
+rect_min_size = Vector2( 45, 43 )
+toggle_mode = true
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 15 )
+expand = true
+stretch_mode = 4
+
+[node name="SoundSettings" type="TextureButton" parent="Control/BackgroundView/HBoxContainer/VBoxContainer"]
+margin_top = 59.0
+margin_right = 45.0
+margin_bottom = 102.0
+rect_min_size = Vector2( 45, 43 )
+toggle_mode = true
+texture_normal = ExtResource( 18 )
+texture_pressed = ExtResource( 20 )
+expand = true
+stretch_mode = 5
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control/BackgroundView/HBoxContainer"]
+margin_left = 115.0
+margin_right = 310.0
+margin_bottom = 114.0
+alignment = 1
+
+[node name="privacy_policy" type="TextureButton" parent="Control/BackgroundView/HBoxContainer/VBoxContainer2"]
+margin_right = 195.0
+margin_bottom = 55.0
+rect_min_size = Vector2( 195, 55 )
+texture_normal = ExtResource( 19 )
+expand = true
+stretch_mode = 4
+
+[node name="credits" type="TextureButton" parent="Control/BackgroundView/HBoxContainer/VBoxContainer2"]
+margin_top = 59.0
+margin_right = 195.0
+margin_bottom = 114.0
+rect_min_size = Vector2( 195, 55 )
+texture_normal = ExtResource( 14 )
+expand = true
+stretch_mode = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+margin_left = 23.0
+margin_top = 49.0
+margin_right = 74.0
+margin_bottom = 320.0
+
+[node name="BackButton" type="TextureButton" parent="Control/VBoxContainer"]
+margin_right = 51.333
+margin_bottom = 51.667
+rect_min_size = Vector2( 51.333, 51.667 )
+texture_normal = ExtResource( 22 )
+expand = true
+stretch_mode = 4
+
 [connection signal="toggled" from="Control/Ui1/Control/VBoxContainer/HBoxContainer/MusicOn" to="." method="_on_MusicOn_toggled"]
 [connection signal="toggled" from="Control/Ui1/Control/VBoxContainer/HBoxContainer/SoundsOn" to="." method="_on_SoundsOn_toggled"]
 [connection signal="pressed" from="Control/Ui1/Control/VBoxContainer/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
 [connection signal="pressed" from="Control/Ui1/Control/BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/BackButton" to="." method="_on_BackButton_pressed"]

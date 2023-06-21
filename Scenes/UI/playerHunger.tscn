@@ -8,6 +8,10 @@
 script = ExtResource( 1 )
 
 [node name="TextureProgress" type="TextureProgress" parent="."]
+margin_left = 13.0
+margin_top = 8.0
+margin_right = 398.0
+margin_bottom = 134.0
 rect_min_size = Vector2( 128.333, 42 )
 rect_scale = Vector2( 0.3, 0.3 )
 max_value = 1.0

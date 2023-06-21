@@ -84,9 +84,9 @@ expand = true
 stretch_mode = 4
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
-margin_left = 23.0
+margin_left = 25.0
 margin_top = 49.0
-margin_right = 74.0
+margin_right = 76.0
 margin_bottom = 320.0
 
 [node name="TextureButton" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
@@ -115,7 +115,7 @@ texture_normal = ExtResource( 10 )
 expand = true
 stretch_mode = 4
 
-[node name="TextureButton4" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
+[node name="settingsButton" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
 margin_top = 165.0
 margin_right = 51.333
 margin_bottom = 216.667
@@ -124,7 +124,7 @@ texture_normal = ExtResource( 8 )
 expand = true
 stretch_mode = 4
 
-[node name="TextureButton5" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
+[node name="exitButton" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
 margin_top = 220.0
 margin_right = 51.333
 margin_bottom = 271.667
@@ -173,6 +173,7 @@ text = "RewardedInterstitialAD"
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Menu" to="." method="_on_Menu_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/settingsButton" to="." method="_on_settingsButton_pressed"]
 [connection signal="pressed" from="HBoxContainer/bannerAd" to="." method="_on_bannerAd_pressed"]
 [connection signal="pressed" from="HBoxContainer/interstitialAd" to="." method="_on_interstitialAd_pressed"]
 [connection signal="pressed" from="HBoxContainer/RewardedAd" to="." method="_on_RewardedAd_pressed"]

@@ -12,7 +12,7 @@ func _ready():
 	pass # Replace with function body.
 
 func _on_BackButton_pressed():
-	get_tree().change_scene("res://Scenes/UI/Menu.tscn")
+	get_tree().change_scene("res://Scenes/UI/MainMenu.tscn")
 	pass # Replace with function body.
 
 func _notification(what):
