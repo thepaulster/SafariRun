@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/world assets/mounts.png" type="Texture" id=1]
 [ext_resource path="res://Assets/world assets/sky.png" type="Texture" id=2]
@@ -10,7 +10,8 @@
 [ext_resource path="res://Assets/world assets/clouds.png" type="Texture" id=8]
 [ext_resource path="res://Assets/world assets/fog.png" type="Texture" id=9]
 [ext_resource path="res://Assets/world assets/sky1.png" type="Texture" id=10]
-[ext_resource path="res://Assets/world assets/grassbg.png" type="Texture" id=11]
+[ext_resource path="res://Assets/world assets/grass_bg.png" type="Texture" id=11]
+[ext_resource path="res://Assets/world assets/grass_bg2.png" type="Texture" id=12]
 
 [node name="Background" type="Node2D"]
 
@@ -83,7 +84,7 @@ texture = ExtResource( 11 )
 
 [node name="Grassbg2" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
 position = Vector2( 960, 179 )
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
 visible = false
