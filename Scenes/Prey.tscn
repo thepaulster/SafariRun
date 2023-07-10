@@ -20,7 +20,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32, 32 )
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 32, 32 )
 
 [sub_resource type="SpriteFrames" id=3]
@@ -74,14 +74,14 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="playerDetector"]
-shape = SubResource( 2 )
+shape = SubResource( 5 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 13, -11 )
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 3 )
 animation = "run"
-frame = 7
+frame = 5
 playing = true
 flip_h = true
 

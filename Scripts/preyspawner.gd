@@ -2,7 +2,8 @@ extends Node2D
 
 signal done
 
-var prey = preload("res://Scenes/Prey.tscn")
+#var prey = preload("res://Scenes/Prey.tscn")
+var prey = preload("res://Scenes/asset_scenes/boar-test.tscn")
 
 var only_once = true
 var timer_done = false

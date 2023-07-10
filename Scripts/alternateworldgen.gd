@@ -8,7 +8,7 @@ var object_pool = []
 var pool_size = 6
 
 # The scene from which the objects in the object pool are created
-var scenes_to_spawn = [preload("res://Scenes/World1/test_ground.tscn"), preload("res://Scenes/World1/test_ground.tscn"), preload("res://Scenes/World1/test_ground.tscn"), preload("res://Scenes/World1/test_ground2.tscn"), preload("res://Scenes/World1/test_ground.tscn")]
+var scenes_to_spawn = [preload("res://Scenes/World1/test_ground.tscn"), preload("res://Scenes/World1/test_ground.tscn"), preload("res://Scenes/World1/test_ground.tscn"), preload("res://Scenes/World1/test_ground2.tscn"), preload("res://Scenes/World1/test_ground3.tscn")]
 
 # The offset for each spawned object
 var spawn_offset = Vector2(100, 0)

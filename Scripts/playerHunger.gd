@@ -5,6 +5,9 @@ var max_time = 25.0
 var time_left = 25.0
 var step = 0.02
 
+onready var powerup = get_node("powerupbar")
+
+var run
 
 #just add time left when player is captured
 
@@ -13,6 +16,7 @@ func _ready():
 	$Timer.start()
 	
 	Signals.connect("add_stamina", self, "_stamina_added")
+	Signals.connect("powerupcharge", self, "_power_up")
 
 func _on_Timer_timeout():
 	time_left -= $Timer.wait_time
@@ -30,4 +34,6 @@ func _stamina_added(value):
 	
 	if time_left > max_time:
 		time_left = max_time #caps max time of bar 
-		print(time_left)
+
+func _power_up(value):
+	powerup.value += value

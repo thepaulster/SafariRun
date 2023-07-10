@@ -17,7 +17,7 @@
 [ext_resource path="res://Scenes/UI/playerHunger.tscn" type="PackedScene" id=15]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 32, 32 )
+extents = Vector2( 23, 32 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -60,6 +60,7 @@ z_index = 10
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 2, 0 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -68,6 +69,7 @@ limit_bottom = 360
 limit_smoothed = true
 
 [node name="RichTextLabel" type="Label" parent="."]
+visible = false
 margin_left = -10.0
 margin_top = -98.0
 margin_right = 96.0
@@ -76,6 +78,7 @@ theme = ExtResource( 3 )
 text = "FPS"
 
 [node name="RichTextLabel2" type="Label" parent="."]
+visible = false
 margin_left = 43.0
 margin_top = -32.0
 margin_right = 149.0
@@ -89,7 +92,7 @@ scale = Vector2( 0.34375, 0.34375 )
 z_index = 10
 frames = SubResource( 2 )
 animation = "running"
-frame = 3
+frame = 8
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

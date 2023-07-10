@@ -47,10 +47,12 @@ func _prey_caught():
 	
 	visible = false
 	
+	Signals.emit_signal("powerupcharge", 2)
+	
 	Globals.prey_dead = 1
 	Globals.flip = false
-	Signals.emit_signal("prey_caught", get_position().x)
-	Signals.emit_signal("add_stamina", 18)
+	#Signals.emit_signal("prey_caught", get_position().x)
+	Signals.emit_signal("add_stamina", 14)
 	queue_free()
 
 func _prey_offscreen():

@@ -21,28 +21,6 @@
                     }
                 }
             ]
-        },
-        {
-            "outputFile": "C:\\Users\\paul.asiimwe\\.gradle\\daemon\\7.4\\com.godot.game-mergeDebugResources-3:\\values-en\\values-en.xml",
-            "map": [
-                {
-                    "source": "C:\\Github\\SafariRun\\android\\build\\res\\values-en\\godot_project_name_string.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "1",
-                        "startOffsets": "112",
-                        "endColumns": "62",
-                        "endOffsets": "173"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                }
-            ]
         }
     ]
 }

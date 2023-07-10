@@ -24,6 +24,7 @@ signal resume
 #coins
 signal coin_dis
 signal coin_visible
+signal powerupcharge
 
 #player health
 signal add_stamina(value)

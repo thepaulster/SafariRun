@@ -4,7 +4,7 @@ extends KinematicBody2D
 #distance run
 var distance
 
-const GRAVITY = 1500
+const GRAVITY = 2000 #1500
 const JUMP_SPEED = -600
 var RUN_SPEED = 300
 var SPEED
@@ -47,8 +47,8 @@ func _physics_process(delta):
 	update_state(delta)
 	update_position(delta)
 	
-	$RichTextLabel.text = "FPS "+ String(Engine.get_frames_per_second())
-	$RichTextLabel2.text = state
+	#$RichTextLabel.text = "FPS "+ String(Engine.get_frames_per_second())
+	#$RichTextLabel2.text = state
 	
 func update_state(delta):
 	state = "running"
