@@ -11,24 +11,25 @@ func _ready():
 	invi_level = Globals.save_shop.powerup1
 	dash_level = Globals.save_shop.powerup2
 	#print(invi_level)
-	$ScrollContainer/Control/VBoxContainer/Panel/Button1.text = str(amount[invi_level])
-	$ScrollContainer/Control/VBoxContainer/Panel/ProgressBar.value = invi_level
-	$ScrollContainer/Control/VBoxContainer/Panel2/Button1.text = str(amount[dash_level])
-	$ScrollContainer/Control/VBoxContainer/Panel2/ProgressBar.value = dash_level
+	#$ScrollContainer/Control/VBoxContainer/Panel/Button1.text = str(amount[invi_level])
+	#$ScrollContainer/Control/VBoxContainer/Panel/ProgressBar.value = invi_level
+	#$ScrollContainer/Control/VBoxContainer/Panel2/Button1.text = str(amount[dash_level])
+	#$ScrollContainer/Control/VBoxContainer/Panel2/ProgressBar.value = dash_level
 	pass # Replace with function body.
 
 func _on_Button1_pressed():
 	invi_level += 1
 	if invi_level <= 4:
-		$ScrollContainer/Control/VBoxContainer/Panel/Button1.disabled = false
-		$ScrollContainer/Control/VBoxContainer/Panel/Button1.text = str(amount[invi_level])
-		$ScrollContainer/Control/VBoxContainer/Panel/ProgressBar.value = invi_level
+		#$ScrollContainer/Control/VBoxContainer/Panel/Button1.disabled = false
+		#$ScrollContainer/Control/VBoxContainer/Panel/Button1.text = str(amount[invi_level])
+		#$ScrollContainer/Control/VBoxContainer/Panel/ProgressBar.value = invi_level
 		Globals.invi_level = invi_level
 		Globals.save_shop.powerup1 = invi_level
 		Globals.shop_save()
 	else:
-		$ScrollContainer/Control/VBoxContainer/Panel/Button1.disabled = true
-		$ScrollContainer/Control/VBoxContainer/Panel/Button1.text = " fully Upgraded "
+		#$ScrollContainer/Control/VBoxContainer/Panel/Button1.disabled = true
+		#$ScrollContainer/Control/VBoxContainer/Panel/Button1.text = " fully Upgraded "
+		pass
 	
 	#globals.meat - amount[level]
 	#
@@ -37,14 +38,15 @@ func _on_Button1_pressed():
 func _on_Button2_pressed():
 	dash_level += 1
 	if dash_level <= 4:
-		$ScrollContainer/Control/VBoxContainer/Panel2/Button1.disabled = false
-		$ScrollContainer/Control/VBoxContainer/Panel2/Button1.text = str(amount[dash_level])
-		$ScrollContainer/Control/VBoxContainer/Panel2/ProgressBar.value = dash_level
+		#$ScrollContainer/Control/VBoxContainer/Panel2/Button1.disabled = false
+		#$ScrollContainer/Control/VBoxContainer/Panel2/Button1.text = str(amount[dash_level])
+		#$ScrollContainer/Control/VBoxContainer/Panel2/ProgressBar.value = dash_level
 		Globals.dash_level = dash_level
 		Globals.save_shop.powerup2 = dash_level
 		Globals.shop_save()
 	else:
-		$ScrollContainer/Control/VBoxContainer/Panel2/Button1.disabled = true
-		$ScrollContainer/Control/VBoxContainer/Panel2/Button1.text = " fully Upgraded "
+		#$ScrollContainer/Control/VBoxContainer/Panel2/Button1.disabled = true
+		#$ScrollContainer/Control/VBoxContainer/Panel2/Button1.text = " fully Upgraded "
+		pass
 	
 	pass # Replace with function body.
