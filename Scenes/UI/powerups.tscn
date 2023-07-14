@@ -122,7 +122,6 @@ margin_right = 166.0
 margin_bottom = 10.0
 rect_min_size = Vector2( 166, 10 )
 max_value = 5.0
-value = 1.0
 texture_under = ExtResource( 6 )
 texture_progress = ExtResource( 7 )
 nine_patch_stretch = true
@@ -185,3 +184,5 @@ rect_min_size = Vector2( 51.333, 51.667 )
 texture_normal = ExtResource( 11 )
 expand = true
 stretch_mode = 4
+
+[connection signal="pressed" from="BackgroundView/Pagebg/ScrollContainer/VBoxContainer/VBoxContainer/HBoxContainer/VBoxContainer2/TextureButton" to="." method="_on_DashUpgradeButton_pressed"]

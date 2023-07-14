@@ -1,6 +1,14 @@
 extends KinematicBody2D
 
 
+#swipe_input
+var swipeStartPosition
+var swipeThreshold = 100 # Minimum distance to register as a swipe
+var swipeTimeThreshold = 0.3 # Maximum time allowed to register a swipe
+
+var swipeEndPosition
+
+
 #distance run
 var distance
 
@@ -66,13 +74,15 @@ func update_state(delta):
 	#	$AnimatedSprite3.visible = false
 	
 func _input(event):	
-	if event is InputEventScreenTouch and is_on_floor():
+	if event is InputEventScreenTouch and is_on_floor() and state != "swipe":
 		#state = "jumping"
 		velocity.y = JUMP_SPEED
 		
 	#testing the up button
 	if Input.is_action_pressed("ui_down"):
 		_player_dash()
+	
+	swipe_input(event)
 
 func _process(delta):
 	#distance = int(get_position().x/10)
@@ -127,3 +137,29 @@ func _hit_bush(value):
 	
 	RUN_SPEED -= value
 	
+
+func swipe_input(event):
+	if event is InputEventScreenTouch:
+		var touch = event as InputEventScreenTouch
+		if touch.pressed:
+			swipeStartPosition = touch.position
+		#elif touch.is_action_released("touch"):
+		else:
+			swipeEndPosition = touch.position
+			var swipeVector = swipeEndPosition - swipeStartPosition
+			var swipeDistance = swipeVector.length()
+			#var swipeTime = touch.get_time()
+
+			if swipeDistance > swipeThreshold: #and swipeTime < swipeTimeThreshold:
+				var swipeDirection = swipeVector.normalized()
+
+				if swipeDirection.x > 0:
+					# Left to right swipe detected
+					print("Left to right swipe detected.")
+					_player_dash()
+					state = "swipe"
+				elif swipeDirection.x < 0:
+					# Right to left swipe detected
+					print("Right to left swipe detected.")
+	
+	pass

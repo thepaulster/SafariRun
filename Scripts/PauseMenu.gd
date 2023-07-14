@@ -6,7 +6,7 @@ onready var pause_button = get_node("PauseButton")
 #onready var sound_button = get_node("pause_overlay/PauseMenu/VBoxContainer/HBoxContainer/Sound")
 
 onready var distance_label = get_node("HUD/details/HBoxContainer/Distance")
-onready var meat_label = get_node("HUD/details/HBoxContainer2/Meat")
+onready var meat_label = get_node("HUD/VBoxContainer/HBoxContainer/Label")
 onready var HUD = get_node("HUD")
 
 onready var test_meat = get_node("HUD/VBoxContainer/HBoxContainer/Label")
