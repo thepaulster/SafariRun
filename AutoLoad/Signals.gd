@@ -33,3 +33,6 @@ signal player_stamina_empty
 #player speed reduced
 signal reduce_speed(value)
 signal test
+
+#emitted when power up is done
+signal powerup_used

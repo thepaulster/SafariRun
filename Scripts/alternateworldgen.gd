@@ -62,40 +62,40 @@ func _ready():
 
 # The function to spawn the specified number of objects
 func spawn_objects(count):
-	# Keep track of the previous position of the spawned object
 	#var previous_pos = Vector2()
 	#object_pool.shuffle()
+
 	# Iterate through the object pool and find unused objects
 	for i in range(count):
 		for obj in object_pool:
 			# If an unused object is found
-			#print(obj)
 			if not obj.get_parent():
-				
-				# Add it to the node as a child
+				# Remove the object from its current parent, if any
+				var current_parent = obj.get_parent()
+				if current_parent:
+					current_parent.remove_child(obj)
+
+				# Add it to the container node as a child
 				obj.position = previous_pos 
-				add_child(obj)
 				#$container.call_deferred("add_child", obj)
+				$container.add_child(obj)
 
 				# Update the previous position to the position of the newly spawned object
 				previous_pos = obj.position + spawn_new_offset
-				
-				# Increment the current scene index to use the next scene for spawning
-				#current_scene_index = (current_scene_index + 1) % len(scene_to_spawn)
-				#print(current_scene_index)
+
 				# Break the loop as the object has been spawned
 				break
 
 # The function to add an object back to the object pool
 func pool_object(obj):
 	# Remove the object from the scene
-	#remove_child(obj)
-	call_deferred("remove_child", obj)
+	$container.call_deferred("remove_child", obj)
 
 	# Reset the object's position
-	#obj.position = Vector2()
-	
+	#obj.position = Vector2()	
 # The function to be called when an object goes off screen
+
+
 func try_again(obj):
 	# Call the pool_object function to add the object back to the pool
 	pool_object(obj)

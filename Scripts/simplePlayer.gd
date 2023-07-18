@@ -1,165 +1,123 @@
 extends KinematicBody2D
 
+var swipeStartPosition: Vector2
+const swipeThreshold: float = 100.0 # Minimum distance to register as a swipe
+const swipeTimeThreshold: float = 0.3 # Maximum time allowed to register a swipe
 
-#swipe_input
-var swipeStartPosition
-var swipeThreshold = 100 # Minimum distance to register as a swipe
-var swipeTimeThreshold = 0.3 # Maximum time allowed to register a swipe
+var swipeEndPosition: Vector2
 
-var swipeEndPosition
+var distance: int
 
+const GRAVITY: float = 2000.0
+const JUMP_SPEED: float = -600.0
+const RUN_SPEED: float = 300.0
+var SPEED: float = RUN_SPEED
 
-#distance run
-var distance
+const DASH_SPEED: float = 500.0
+const dashLength: float = 1.0
 
-const GRAVITY = 2000 #1500
-const JUMP_SPEED = -600
-var RUN_SPEED = 300
-var SPEED
+onready var dashMovement: Node2D = $Dash
+onready var playerSprite: Sprite = $AnimatedSprite
 
+var velocity: Vector2 = Vector2.ZERO
+var state: String = "running"
+var setInvulnerable: bool = false
 
-#dash movement
-const DASH_SPEED = 500
-const dash_length = 1
-
-onready var dash_movement = get_node("Dash")
-onready var playersprite = get_node("AnimatedSprite")
-
-
-var velocity = Vector2.ZERO
-var state = "running"
-var set_invul = false
-
-#hunger timer
-onready var hunger_timer:Timer = get_node("hungerTimer") 
-
-onready var animation_player:AnimationPlayer = get_node("AnimationPlayer")
-onready var player_animation: AnimatedSprite = get_node("AnimatedSprite2")
-onready var invul_timer = get_node("invulTimer")
+onready var hungerTimer: Timer = $hungerTimer
+onready var animationPlayer: AnimationPlayer = $AnimationPlayer
+onready var player_animation: AnimatedSprite = $AnimatedSprite2
+onready var invulTimer: Timer = $invulTimer
 
 func _ready():
-	hunger_timer.start()
+	hungerTimer.start()
 	Globals.playerSpeed = RUN_SPEED
 	Globals.player_distance(position)
-	print(Globals.player_distance)
 	
 	Signals.connect("player_stamina_empty", self, "_player_death")
 	Signals.connect("prey_caught", self, "_player_coordinates")
 	Signals.connect("reduce_speed", self, "_hit_bush")
 	Signals.connect("speed_boost", self, "_player_dash")
-	pass
 
-func _physics_process(delta):
-	
+func _physics_process(delta: float) -> void:
 	update_gravity(delta)
 	update_state(delta)
 	update_position(delta)
-	
-	#$RichTextLabel.text = "FPS "+ String(Engine.get_frames_per_second())
-	#$RichTextLabel2.text = state
-	
-func update_state(delta):
+
+func update_state(delta: float) -> void:
 	state = "running"
-	SPEED = DASH_SPEED if dash_movement.is_dashing() else RUN_SPEED
+	SPEED = DASH_SPEED if dashMovement.is_dashing() else RUN_SPEED
 	velocity.x = SPEED
-	
 	if !is_on_floor() and velocity.y >= 0:
 		state = "fall"
 	elif !is_on_floor() and velocity.y <= 0:
 		state = "jumping"
 	
-	#if state == "running":
-	#	$AnimatedSprite3.visible = true
-	#else:
-	#	$AnimatedSprite3.visible = false
-	
-func _input(event):	
-	if event is InputEventScreenTouch and is_on_floor() and state != "swipe":
-		#state = "jumping"
+	if dashMovement.is_dashing():
+		state = "dashing"
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventScreenTouch and is_on_floor():
 		velocity.y = JUMP_SPEED
-		
-	#testing the up button
-	if Input.is_action_pressed("ui_down"):
-		_player_dash()
 	
 	swipe_input(event)
 
-func _process(delta):
-	#distance = int(get_position().x/10)
-	distance = int(get_position().x/50)
+func _process(delta: float) -> void:
+	distance = int(get_position().x / 50)
 	Globals.distance_covered = distance
 
-func update_gravity(delta):
+func update_gravity(delta: float) -> void:
 	velocity.y += GRAVITY * delta
 
-func update_position(delta):
+func update_position(delta: float) -> void:
 	velocity.y = move_and_slide(velocity, Vector2.UP).y
 
-func _invincibility():
-	invul_timer.start()
-	animation_player.play("invincibility")
-	pass
+func _invincibility() -> void:
+	invulTimer.start()
+	animationPlayer.play("invincibility")
 
-func _on_invulTimer_timeout():
-	set_invul = true
-	if set_invul == true:
-		animation_player.stop()
+func _on_invulTimer_timeout() -> void:
+	setInvulnerable = true
+	if setInvulnerable:
+		animationPlayer.stop()
 		player_animation.visible = true
 	Signals.emit_signal("powerup_bar_hide")
-	pass # Replace with function body.
 
-func _player_dash():
-	dash_movement.start_dash(playersprite, dash_length)
-	if dash_movement.is_dashing():
-		set_invul = true
-		invul_timer.wait_time = dash_length + 2
+func _player_dash() -> void:
+	dashMovement.start_dash(playerSprite, dashLength)
+	if dashMovement.is_dashing():
+		setInvulnerable = true
+		invulTimer.wait_time = dashLength + 2
 		Signals.emit_signal("invulnerable", true)
 		_invincibility()
 		Signals.emit_signal("dashing_now")
-	pass
 
-func _on_hungerTimer_timeout():
-	RUN_SPEED += 5
-	Globals.playerSpeed = RUN_SPEED 
-#	Signals.emit_signal("player_dead")
+func _on_hungerTimer_timeout() -> void:
+	Globals.playerSpeed += 5
 
-func _player_death():
+func _player_death() -> void:
 	Signals.emit_signal("player_dead")
 
-func _player_coordinates(value):
-	
-	#Globals.player_distance = position
+func _player_coordinates(value) -> void:
 	Globals.player_distance(position)
 	Signals.emit_signal("test", position)
-	pass
 
-func _hit_bush(value):
-	
-	RUN_SPEED -= value
-	
+func _hit_bush(value: float) -> void:
+	Globals.playerSpeed -= value
 
-func swipe_input(event):
+func swipe_input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:
-		var touch = event as InputEventScreenTouch
+		var touch: InputEventScreenTouch = event
 		if touch.pressed:
 			swipeStartPosition = touch.position
-		#elif touch.is_action_released("touch"):
 		else:
 			swipeEndPosition = touch.position
-			var swipeVector = swipeEndPosition - swipeStartPosition
-			var swipeDistance = swipeVector.length()
-			#var swipeTime = touch.get_time()
+			var swipeVector: Vector2 = swipeEndPosition - swipeStartPosition
+			var swipeDistance: float = swipeVector.length()
 
-			if swipeDistance > swipeThreshold: #and swipeTime < swipeTimeThreshold:
-				var swipeDirection = swipeVector.normalized()
+			if swipeDistance > swipeThreshold:
+				var swipeDirection: Vector2 = swipeVector.normalized()
 
 				if swipeDirection.x > 0:
-					# Left to right swipe detected
-					print("Left to right swipe detected.")
 					_player_dash()
-					state = "swipe"
 				elif swipeDirection.x < 0:
-					# Right to left swipe detected
 					print("Right to left swipe detected.")
-	
-	pass
