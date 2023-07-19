@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
+var powerupready = false
 var swipeStartPosition: Vector2
 const swipeThreshold: float = 100.0 # Minimum distance to register as a swipe
 const swipeTimeThreshold: float = 0.3 # Maximum time allowed to register a swipe
@@ -32,6 +33,7 @@ func _ready():
 	hungerTimer.start()
 	Globals.playerSpeed = RUN_SPEED
 	Globals.player_distance(position)
+	powerupready = Globals.powerupready
 	
 	Signals.connect("player_stamina_empty", self, "_player_death")
 	Signals.connect("prey_caught", self, "_player_coordinates")
@@ -81,6 +83,7 @@ func _on_invulTimer_timeout() -> void:
 		animationPlayer.stop()
 		player_animation.visible = true
 	Signals.emit_signal("powerup_bar_hide")
+	Signals.emit_signal("powerup_used")
 
 func _player_dash() -> void:
 	dashMovement.start_dash(playerSprite, dashLength)
@@ -90,6 +93,8 @@ func _player_dash() -> void:
 		Signals.emit_signal("invulnerable", true)
 		_invincibility()
 		Signals.emit_signal("dashing_now")
+		Signals.emit_signal("powerup_used")
+	
 
 func _on_hungerTimer_timeout() -> void:
 	Globals.playerSpeed += 5
@@ -117,7 +122,9 @@ func swipe_input(event: InputEvent) -> void:
 			if swipeDistance > swipeThreshold:
 				var swipeDirection: Vector2 = swipeVector.normalized()
 
-				if swipeDirection.x > 0:
+				if swipeDirection.x > 0 and Globals.powerupready == true:
 					_player_dash()
+					Globals.powerupready = false
+				
 				elif swipeDirection.x < 0:
 					print("Right to left swipe detected.")

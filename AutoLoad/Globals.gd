@@ -13,6 +13,7 @@ signal newhighscore
 signal newbestdistance
 signal distance_new
 
+var powerupready = false
 
 var invul =  true #invulnerability variable
 

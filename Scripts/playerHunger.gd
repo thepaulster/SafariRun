@@ -21,6 +21,9 @@ func _ready():
 	
 	Signals.connect("add_stamina", self, "_stamina_added")
 	Signals.connect("powerupcharge", self, "_power_up")
+	Signals.connect("pause", self, "_pause_and_hide")
+	Signals.connect("resume", self, "_resume_pressed")
+	Signals.connect("powerup_used", self, "_power_up_visibility")
 	glow.visible = false
 
 func _on_Timer_timeout():
@@ -46,6 +49,18 @@ func _power_up(value):
 	
 	if powerup.value >= powerup.max_value:
 		glow.visible = true
+		Globals.powerupready = true
 	else:
 		glow.visible = false
  
+func _pause_and_hide():
+	$Timer.paused = true
+	$".".visible = false
+
+func _resume_pressed():
+	$Timer.paused = false
+	$".".visible = true
+
+func _power_up_visibility():
+	powerup.value = 0
+	glow.visible = false
