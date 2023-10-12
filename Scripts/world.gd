@@ -6,16 +6,16 @@ signal level_changed(level_name)
 
 export (String) var level_name = "level" 
 onready var spawn_position = get_node("SpawnPosition")
-const hyena = preload("res://Scenes/Player.tscn")
-const lioness = preload("res://Scenes/lioness.tscn")
-const lion = preload("res://Scenes/lion.tscn")
-const leopard = preload("res://Scenes/Leopard.tscn")
-const cheetah = preload("res://Scenes/Cheetah.tscn")
+#const hyena = preload("res://Scenes/Player.tscn")
+#const lioness = preload("res://Scenes/lioness.tscn")
+#const lion = preload("res://Scenes/lion.tscn")
+#const leopard = preload("res://Scenes/Leopard.tscn")
+#const cheetah = preload("res://Scenes/Cheetah.tscn")
 const simpleplayer = preload("res://Scenes/simplePlayer.tscn")
 
-var selected_player = [
-				hyena, lioness, leopard, lion, cheetah
-	]
+#var selected_player = [
+#				hyena, lioness, leopard, lion, cheetah
+#	]
 
 var hunter
 

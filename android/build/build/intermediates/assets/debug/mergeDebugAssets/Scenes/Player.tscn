@@ -1,15 +1,7 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Scripts/playerFSM.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Player Assets/lioness/lioness1.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Player Assets/lioness/lioness2.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Player Assets/lioness/lioness4.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Player Assets/lioness/lioness5.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Player Assets/lioness/lioness7.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Player Assets/lioness/lioness8.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Player Assets/lioness/lioness6.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Player Assets/lioness/lioness3.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Player Assets/Hyena2/hyena0007.png" type="Texture" id=11]
 [ext_resource path="res://Assets/Player Assets/Hyena2/hyena0008.png" type="Texture" id=12]
 [ext_resource path="res://Assets/Player Assets/Hyena/frame0018.png" type="Texture" id=13]
@@ -27,9 +19,6 @@
 [ext_resource path="res://Assets/Player Assets/Hyena/fall.png" type="Texture" id=25]
 [ext_resource path="res://Assets/Player Assets/Hyena/jump2.png" type="Texture" id=26]
 [ext_resource path="res://Scenes/UI/Themes/totalmeat.tres" type="Theme" id=27]
-[ext_resource path="res://Assets/Player Assets/lioness/lioness10.png" type="Texture" id=35]
-[ext_resource path="res://Assets/Player Assets/lioness/lioness11.png" type="Texture" id=36]
-[ext_resource path="res://Assets/Player Assets/lioness/lioness9.png" type="Texture" id=37]
 [ext_resource path="res://Assets/others/dust_particle.png" type="Texture" id=39]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -56,7 +45,7 @@ tracks/0/keys = {
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ ExtResource( 10 ) ],
+"frames": [  ],
 "loop": true,
 "name": "fall",
 "speed": 5.0
@@ -76,15 +65,10 @@ animations = [ {
 "name": "hyenarun",
 "speed": 16.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 36 ), ExtResource( 4 ) ],
+"frames": [  ],
 "loop": true,
 "name": "jump",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 37 ), ExtResource( 35 ), ExtResource( 36 ) ],
-"loop": true,
-"name": "run",
-"speed": 22.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=5]
@@ -122,7 +106,7 @@ position = Vector2( -26, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 4 )
 animation = "hyenarun"
-frame = 2
+frame = 1
 playing = true
 flip_h = true
 

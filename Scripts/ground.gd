@@ -4,7 +4,7 @@ signal destroyed
 signal off_screen
 
 func _ready():
-	#visible = false
+	visible = false
 	pass
 
 func _on_VisibilityNotifier2D_screen_exited():

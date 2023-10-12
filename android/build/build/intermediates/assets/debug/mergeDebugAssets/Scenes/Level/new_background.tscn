@@ -1,0 +1,1125 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 144.tres" type="Texture" id=1]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 76.tres" type="Texture" id=2]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 133.tres" type="Texture" id=3]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 75.tres" type="Texture" id=4]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 134.tres" type="Texture" id=5]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 82.tres" type="Texture" id=6]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 139.tres" type="Texture" id=7]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 143.tres" type="Texture" id=8]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 140.tres" type="Texture" id=9]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 138.tres" type="Texture" id=10]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 137.tres" type="Texture" id=11]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 111.tres" type="Texture" id=12]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 107.tres" type="Texture" id=13]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 110.tres" type="Texture" id=14]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 141.tres" type="Texture" id=15]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 123.tres" type="Texture" id=16]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 109.tres" type="Texture" id=17]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 131.tres" type="Texture" id=18]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 112.tres" type="Texture" id=19]
+[ext_resource path="res://Assets/testsheet.sprites/1x/Asset 128.tres" type="Texture" id=20]
+
+[node name="new_background" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 1 )
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Asset75" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 472, 553 )
+scale = Vector2( 1.77381, 1.77381 )
+texture = ExtResource( 4 )
+
+[node name="Asset144" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 1208, 601 )
+scale = Vector2( 2.02147, 2.02147 )
+texture = ExtResource( 1 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.1, 1 )
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Asset133" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 705, 665 )
+scale = Vector2( 3.74472, 3.74472 )
+texture = ExtResource( 3 )
+
+[node name="Asset134" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 990, 711 )
+scale = Vector2( 2.875, 2.875 )
+texture = ExtResource( 5 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.6, 1 )
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Asset77" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 1208, 727 )
+texture = ExtResource( 2 )
+
+[node name="Asset144" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 376, 720 )
+texture = ExtResource( 8 )
+
+[node name="Asset145" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 120, 664 )
+texture = ExtResource( 8 )
+
+[node name="Asset137" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 664, 736 )
+texture = ExtResource( 11 )
+
+[node name="Asset76" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 32, 759 )
+texture = ExtResource( 2 )
+
+[node name="Asset140" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 408, 752 )
+texture = ExtResource( 9 )
+
+[node name="Asset139" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 1000, 672 )
+texture = ExtResource( 7 )
+
+[node name="Asset143" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 960, 656 )
+texture = ExtResource( 8 )
+
+[node name="Asset138" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 560, 752 )
+texture = ExtResource( 10 )
+
+[node name="Asset141" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 1480, 704 )
+texture = ExtResource( 15 )
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+layer = 50
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+z_index = 50
+motion_scale = Vector2( 2, 1 )
+motion_mirroring = Vector2( 3840, 0 )
+
+[node name="Node2D" type="Node2D" parent="ParallaxBackground2/ParallaxLayer"]
+
+[node name="Asset203" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D"]
+position = Vector2( 1594.41, 749 )
+texture = ExtResource( 12 )
+
+[node name="Asset205" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D"]
+position = Vector2( 1562.41, 829 )
+scale = Vector2( 0.307229, 0.307229 )
+texture = ExtResource( 17 )
+
+[node name="Asset202" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D"]
+position = Vector2( 262.5, 770.5 )
+texture = ExtResource( 14 )
+
+[node name="Asset204" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D"]
+position = Vector2( 256, 816 )
+scale = Vector2( 0.389535, 0.389535 )
+texture = ExtResource( 13 )
+
+[node name="Node2D2" type="Node2D" parent="ParallaxBackground2/ParallaxLayer"]
+
+[node name="Asset82" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 32, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset83" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 32, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset84" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 32, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset85" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 32, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset86" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 96, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset87" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 96, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset88" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 96, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset89" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 96, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset90" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 160, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset91" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 160, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset92" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 160, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset93" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 160, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset94" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 224, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset95" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 224, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset96" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 224, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset97" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 224, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset98" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 288, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset99" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 288, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset100" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 288, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset101" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 288, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset102" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 352, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset103" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 352, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset104" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 352, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset105" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 352, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset106" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 416, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset107" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 416, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset108" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 416, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset109" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 416, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset110" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 480, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset111" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 480, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset112" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 480, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset113" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 480, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset114" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 544, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset115" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 544, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset116" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 544, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset117" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 544, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset118" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 608, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset119" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 608, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset120" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 608, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset121" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 608, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset122" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 672, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset123" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 672, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset124" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 672, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset125" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 672, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset126" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 736, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset127" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 736, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset128" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 736, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset129" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 736, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset130" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 800, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset131" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 800, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset132" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 800, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset133" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 800, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset134" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 864, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset135" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 864, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset136" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 864, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset137" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 864, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset138" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 928, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset139" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 928, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset140" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 928, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset141" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 928, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset142" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 992, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset143" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 992, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset144" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 992, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset145" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 992, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset146" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1056, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset147" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1056, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset148" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1056, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset149" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1056, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset150" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1120, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset151" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1120, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset152" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1120, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset153" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1120, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset154" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1184, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset155" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1184, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset156" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1184, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset157" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1184, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset158" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1248, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset159" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1248, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset160" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1248, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset161" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1248, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset162" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1312, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset163" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1312, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset164" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1312, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset165" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1312, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset166" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1376, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset167" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1376, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset168" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1376, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset169" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1376, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset170" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1440, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset171" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1440, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset172" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1440, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset173" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1440, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset174" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1504, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset175" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1504, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset176" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1504, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset177" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1504, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset178" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1568, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset179" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1568, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset180" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1568, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset181" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1568, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset182" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1632, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset183" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1632, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset184" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1632, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset185" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1632, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset186" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1696, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset187" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1696, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset188" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1696, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset189" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1696, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset190" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1760, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset191" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1760, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset192" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1760, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset193" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1760, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset194" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1824, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset195" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1824, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset196" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1824, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset197" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1824, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset198" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1888, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset199" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1888, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset200" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1888, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset201" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 1888, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset202" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 576, 592 )
+scale = Vector2( 3.0143, 3.34202 )
+texture = ExtResource( 18 )
+
+[node name="Asset206" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 594, 943 )
+scale = Vector2( 0.557143, 0.557143 )
+texture = ExtResource( 16 )
+
+[node name="Asset207" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D2"]
+position = Vector2( 517.205, 966.75 )
+scale = Vector2( 0.403614, 0.403614 )
+texture = ExtResource( 17 )
+
+[node name="Node2D3" type="Node2D" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 1920, 0 )
+
+[node name="Asset82" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 32, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset83" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 32, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset84" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 32, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset85" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 32, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset86" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 96, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset87" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 96, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset88" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 96, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset89" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 96, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset90" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 160, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset91" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 160, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset92" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 160, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset93" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 160, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset94" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 224, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset95" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 224, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset96" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 224, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset97" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 224, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset98" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 288, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset99" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 288, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset100" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 288, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset101" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 288, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset102" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 352, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset103" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 352, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset104" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 352, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset105" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 352, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset106" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 416, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset107" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 416, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset108" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 416, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset109" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 416, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset110" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 480, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset111" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 480, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset112" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 480, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset113" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 480, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset114" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 544, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset115" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 544, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset116" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 544, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset117" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 544, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset118" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 608, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset119" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 608, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset120" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 608, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset121" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 608, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset122" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 672, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset123" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 672, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset124" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 672, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset125" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 672, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset126" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 736, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset127" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 736, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset128" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 736, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset129" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 736, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset130" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 800, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset131" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 800, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset132" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 800, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset133" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 800, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset134" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 864, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset135" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 864, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset136" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 864, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset137" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 864, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset138" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 928, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset139" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 928, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset140" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 928, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset141" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 928, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset142" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 992, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset143" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 992, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset144" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 992, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset145" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 992, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset146" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1056, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset147" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1056, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset148" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1056, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset149" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1056, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset150" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1120, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset151" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1120, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset152" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1120, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset153" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1120, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset154" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1184, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset155" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1184, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset156" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1184, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset157" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1184, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset158" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1248, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset159" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1248, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset160" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1248, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset161" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1248, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset162" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1312, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset163" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1312, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset164" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1312, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset165" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1312, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset166" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1376, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset167" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1376, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset168" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1376, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset169" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1376, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset170" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1440, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset171" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1440, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset172" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1440, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset173" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1440, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset174" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1504, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset175" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1504, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset176" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1504, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset177" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1504, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset178" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1568, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset179" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1568, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset180" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1568, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset181" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1568, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset182" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1632, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset183" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1632, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset184" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1632, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset185" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1632, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset186" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1696, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset187" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1696, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset188" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1696, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset189" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1696, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset190" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1760, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset191" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1760, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset192" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1760, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset193" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1760, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset194" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1824, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset195" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1824, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset196" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1824, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset197" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1824, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset198" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1888, 864 )
+texture = ExtResource( 6 )
+
+[node name="Asset199" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1888, 928 )
+texture = ExtResource( 6 )
+
+[node name="Asset200" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1888, 992 )
+texture = ExtResource( 6 )
+
+[node name="Asset201" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1888, 1056 )
+texture = ExtResource( 6 )
+
+[node name="Asset202" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 560, 896 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 20 )
+
+[node name="Asset207" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 517.205, 966.75 )
+scale = Vector2( 0.403614, 0.403614 )
+texture = ExtResource( 17 )
+
+[node name="Asset204" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1448, 888 )
+texture = ExtResource( 19 )
+
+[node name="Asset208" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/Node2D3"]
+position = Vector2( 1392, 960 )
+scale = Vector2( 0.403614, 0.403614 )
+texture = ExtResource( 17 )

@@ -39,11 +39,15 @@ MusicController="*res://Scenes/Sound/MusicController.tscn"
 
 [display]
 
-window/size/width=640
-window/size/height=360
+window/size/width=1920
+window/size/height=1080
 window/handheld/orientation="sensor_landscape"
-window/stretch/mode="2d"
+window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/codeandweb.texturepacker/plugin.cfg" )
 
 [global]
 

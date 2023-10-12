@@ -65,7 +65,7 @@ shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-limit_bottom = 360
+limit_bottom = 1080
 limit_smoothed = true
 
 [node name="RichTextLabel" type="Label" parent="."]
@@ -92,7 +92,7 @@ scale = Vector2( 0.34375, 0.34375 )
 z_index = 10
 frames = SubResource( 2 )
 animation = "running"
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

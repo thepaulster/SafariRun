@@ -8,13 +8,14 @@ var object_pool = []
 var pool_size = 6
 
 # The scene from which the objects in the object pool are created
-var scenes_to_spawn = [preload("res://Scenes/World1/test_ground.tscn"), preload("res://Scenes/World1/test_ground.tscn"), preload("res://Scenes/World1/test_ground.tscn"), preload("res://Scenes/World1/test_ground2.tscn"), preload("res://Scenes/World1/test_ground3.tscn")]
+var scenes_to_spawn = [preload("res://Scenes/Level/new_world.tscn"), preload("res://Scenes/Level/new_world.tscn"), preload("res://Scenes/Level/new_world.tscn"), preload("res://Scenes/Level/new_world.tscn"), preload("res://Scenes/Level/new_world.tscn")]
+#var scenes_to_spawn = [preload("res://Scenes/World1/test_ground.tscn"), preload("res://Scenes/World1/test_ground.tscn"), preload("res://Scenes/World1/test_ground.tscn"), preload("res://Scenes/World1/test_ground2.tscn"), preload("res://Scenes/World1/test_ground3.tscn")]
 
 # The offset for each spawned object
 var spawn_offset = Vector2(100, 0)
 
 # The constant width of the ground
-const GROUND_WIDTH = 620
+const GROUND_WIDTH = 1920
 
 # The offset to use when spawning new objects
 var spawn_new_offset = Vector2(GROUND_WIDTH, 0)

@@ -1,6 +1,5 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=31 format=2]
 
-[ext_resource path="res://Assets/UI/Final UI/ui_1.png" type="Texture" id=1]
 [ext_resource path="res://Assets/UI/Final UI/retry.png" type="Texture" id=2]
 [ext_resource path="res://Assets/UI/Final UI/home.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/EndScreen.gd" type="Script" id=4]
@@ -58,7 +57,6 @@ stretch_mode = 5
 
 [node name="Ui1" type="TextureRect" parent="."]
 pause_mode = 2
-visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -67,7 +65,6 @@ margin_left = -309.5
 margin_top = -213.0
 margin_right = 309.5
 margin_bottom = 213.0
-texture = ExtResource( 1 )
 expand = true
 stretch_mode = 6
 
