@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/UI/Themes/resumebuttons.tres" type="Theme" id=1]
+[ext_resource path="res://Scenes/UI/countdowncicle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Resume_screen.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/UI/Themes/totalmeat.tres" type="Theme" id=4]
+
+[node name="Resume_screen" type="CanvasLayer"]
+layer = 40
+script = ExtResource( 3 )
+
+[node name="Control" type="Control" parent="."]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.305882 )
+
+[node name="EndRun" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -111.0
+margin_top = -76.0
+margin_right = -29.0
+margin_bottom = -27.0
+theme = ExtResource( 1 )
+text = "End Run"
+
+[node name="countdowncircle" parent="Control" instance=ExtResource( 2 )]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_top = 69.0
+margin_bottom = 69.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -51.5
+margin_right = 100.0
+margin_bottom = 51.5
+theme = ExtResource( 1 )
+custom_constants/separation = 5
+alignment = 1
+
+[node name="WatchAD" type="Button" parent="Control/VBoxContainer"]
+margin_right = 200.0
+margin_bottom = 49.0
+rect_min_size = Vector2( 200, 30 )
+text = "Watch a video"
+
+[node name="UseMeat" type="Button" parent="Control/VBoxContainer"]
+margin_top = 54.0
+margin_right = 200.0
+margin_bottom = 103.0
+rect_min_size = Vector2( 200, 30 )
+
+[node name="Displaymeat" type="Label" parent="Control"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -20.0
+margin_top = -68.0
+margin_right = 20.0
+margin_bottom = -54.0
+theme = ExtResource( 4 )
+text = "Meat"
+
+[connection signal="pressed" from="Control/EndRun" to="." method="_on_EndRun_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/WatchAD" to="." method="_on_WatchAD_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/UseMeat" to="." method="_on_UseMeat_pressed"]

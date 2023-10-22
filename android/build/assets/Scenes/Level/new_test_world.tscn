@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Level/new_world.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Level/new_background.tscn" type="PackedScene" id=2]
+
+[node name="new_test_world" type="Node2D"]
+
+[node name="new_background" parent="." instance=ExtResource( 2 )]
+
+[node name="Node2D" parent="." instance=ExtResource( 1 )]

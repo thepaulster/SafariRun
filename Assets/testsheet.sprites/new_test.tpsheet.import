@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/new_test.tpsheet-bcbc950f33060504d9cc5329f6960d2e.res"
+
+[deps]
+
+files=[ "res://Assets/testsheet.sprites/new_test.sprites/Asset 4.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 3.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 2.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 1.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 12.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 13.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 5.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 6.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 7.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 9.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 8.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 11.tres" ]
+
+source_file="res://Assets/testsheet.sprites/new_test.tpsheet"
+dest_files=[ "res://.import/new_test.tpsheet-bcbc950f33060504d9cc5329f6960d2e.res", "res://Assets/testsheet.sprites/new_test.sprites/Asset 4.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 3.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 2.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 1.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 12.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 13.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 5.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 6.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 7.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 9.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 8.tres", "res://Assets/testsheet.sprites/new_test.sprites/Asset 11.tres" ]
+
+[params]
+

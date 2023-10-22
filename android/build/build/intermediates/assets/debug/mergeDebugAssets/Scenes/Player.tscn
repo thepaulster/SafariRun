@@ -1,0 +1,157 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://Scripts/playerFSM.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0007.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0008.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Player Assets/Hyena/frame0018.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0009.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0000.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0002.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0004.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0001.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0003.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0006.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Player Assets/Hyena2/hyena0005.png" type="Texture" id=21]
+[ext_resource path="res://Scenes/Dash.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Assets/Player Assets/Hyena/jump1.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Player Assets/Hyena/jump3.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Player Assets/Hyena/fall.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Player Assets/Hyena/jump2.png" type="Texture" id=26]
+[ext_resource path="res://Scenes/UI/Themes/totalmeat.tres" type="Theme" id=27]
+[ext_resource path="res://Assets/others/dust_particle.png" type="Texture" id=39]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 32 )
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+
+[sub_resource type="Animation" id=3]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 25 ) ],
+"loop": true,
+"name": "hyenafall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 26 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "hyenajump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 18 ), ExtResource( 16 ), ExtResource( 19 ), ExtResource( 17 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "hyenarun",
+"speed": 16.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 44, 12 )
+
+[sub_resource type="Curve" id=6]
+_data = [ Vector2( 0.00495049, 0.996861 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.0150429 ), 0.0, 0.0, 0, 0 ]
+
+[node name="Player" type="KinematicBody2D" groups=["player"]]
+scale = Vector2( 0.5, 0.5 )
+collision_layer = 2
+script = ExtResource( 2 )
+jumpforce = 1300
+
+[node name="Dash" parent="." instance=ExtResource( 22 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = 0
+limit_bottom = 360
+
+[node name="invulnerabilityTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 2 )
+anims/invulnerability = SubResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -26, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+animation = "hyenarun"
+frame = 1
+playing = true
+flip_h = true
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 13 )
+flip_h = true
+
+[node name="PlayerFSM" type="Node" parent="."]
+script = ExtResource( 1 )
+
+[node name="PreyTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="prey" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="prey"]
+position = Vector2( -3, -2 )
+shape = SubResource( 5 )
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2( -23, 32 )
+emitting = false
+amount = 16
+lifetime = 0.5
+explosiveness = 0.5
+texture = ExtResource( 39 )
+emission_shape = 2
+emission_rect_extents = Vector2( 35, 1 )
+direction = Vector2( -45, 0 )
+gravity = Vector2( 0, 0 )
+initial_velocity = 45.0
+scale_amount = 4.0
+scale_amount_curve = SubResource( 6 )
+color = Color( 0.972549, 0.694118, 0.301961, 0.168627 )
+
+[node name="RichTextLabel" type="Label" parent="."]
+margin_left = -10.0
+margin_top = -98.0
+margin_right = 96.0
+margin_bottom = -34.0
+theme = ExtResource( 27 )
+text = "FPS"
+
+[connection signal="timeout" from="invulnerabilityTimer" to="." method="_on_invulnerabilityTimer_timeout"]
+[connection signal="timeout" from="PreyTimer" to="." method="_on_PreyTimer_timeout"]
+[connection signal="body_entered" from="prey" to="." method="_on_prey_body_entered"]

@@ -1,0 +1,288 @@
+{
+	"textures": [
+		{
+			"image": "animals.png",
+			"size": {
+				"w": 512,
+				"h": 1204
+			},
+			"sprites": [
+				{
+					"filename": "try_new - Run cycle_00009.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 263,
+						"h": 124
+					},
+					"margin": {
+						"x": 102,
+						"y": 74,
+						"w": 169,
+						"h": 164
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00005.png",
+					"region": {
+						"x": 266,
+						"y": 1,
+						"w": 240,
+						"h": 145
+					},
+					"margin": {
+						"x": 103,
+						"y": 69,
+						"w": 192,
+						"h": 143
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00008.png",
+					"region": {
+						"x": 1,
+						"y": 127,
+						"w": 259,
+						"h": 143
+					},
+					"margin": {
+						"x": 104,
+						"y": 64,
+						"w": 173,
+						"h": 145
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00006.png",
+					"region": {
+						"x": 262,
+						"y": 148,
+						"w": 246,
+						"h": 142
+					},
+					"margin": {
+						"x": 103,
+						"y": 69,
+						"w": 186,
+						"h": 146
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00001.png",
+					"region": {
+						"x": 1,
+						"y": 272,
+						"w": 259,
+						"h": 117
+					},
+					"margin": {
+						"x": 101,
+						"y": 77,
+						"w": 173,
+						"h": 171
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00013.png",
+					"region": {
+						"x": 262,
+						"y": 292,
+						"w": 246,
+						"h": 127
+					},
+					"margin": {
+						"x": 101,
+						"y": 78,
+						"w": 186,
+						"h": 161
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00017.png",
+					"region": {
+						"x": 1,
+						"y": 391,
+						"w": 258,
+						"h": 124
+					},
+					"margin": {
+						"x": 101,
+						"y": 80,
+						"w": 174,
+						"h": 164
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00007.png",
+					"region": {
+						"x": 261,
+						"y": 421,
+						"w": 250,
+						"h": 142
+					},
+					"margin": {
+						"x": 104,
+						"y": 66,
+						"w": 182,
+						"h": 146
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00010.png",
+					"region": {
+						"x": 1,
+						"y": 517,
+						"w": 258,
+						"h": 119
+					},
+					"margin": {
+						"x": 101,
+						"y": 85,
+						"w": 174,
+						"h": 169
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00000.png",
+					"region": {
+						"x": 261,
+						"y": 565,
+						"w": 250,
+						"h": 115
+					},
+					"margin": {
+						"x": 101,
+						"y": 79,
+						"w": 182,
+						"h": 173
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00002.png",
+					"region": {
+						"x": 1,
+						"y": 638,
+						"w": 258,
+						"h": 116
+					},
+					"margin": {
+						"x": 101,
+						"y": 75,
+						"w": 174,
+						"h": 172
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00004.png",
+					"region": {
+						"x": 261,
+						"y": 682,
+						"w": 238,
+						"h": 142
+					},
+					"margin": {
+						"x": 102,
+						"y": 70,
+						"w": 194,
+						"h": 146
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00016.png",
+					"region": {
+						"x": 1,
+						"y": 756,
+						"w": 256,
+						"h": 124
+					},
+					"margin": {
+						"x": 101,
+						"y": 80,
+						"w": 176,
+						"h": 164
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00012.png",
+					"region": {
+						"x": 259,
+						"y": 826,
+						"w": 251,
+						"h": 121
+					},
+					"margin": {
+						"x": 101,
+						"y": 82,
+						"w": 181,
+						"h": 167
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00011.png",
+					"region": {
+						"x": 1,
+						"y": 882,
+						"w": 255,
+						"h": 125
+					},
+					"margin": {
+						"x": 101,
+						"y": 85,
+						"w": 177,
+						"h": 163
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00003.png",
+					"region": {
+						"x": 258,
+						"y": 949,
+						"w": 253,
+						"h": 132
+					},
+					"margin": {
+						"x": 102,
+						"y": 72,
+						"w": 179,
+						"h": 156
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00015.png",
+					"region": {
+						"x": 1,
+						"y": 1009,
+						"w": 254,
+						"h": 124
+					},
+					"margin": {
+						"x": 101,
+						"y": 82,
+						"w": 178,
+						"h": 164
+					}
+				},
+				{
+					"filename": "try_new - Run cycle_00014.png",
+					"region": {
+						"x": 257,
+						"y": 1083,
+						"w": 251,
+						"h": 120
+					},
+					"margin": {
+						"x": 101,
+						"y": 83,
+						"w": 181,
+						"h": 168
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:d407b022a11d6371eddc8f1947c7df6e:dcf41c1c319f55d06ea9a2686b9e9a61:fdae6c9d31bba7ec2cb9614eb6c2ad59$"
+	}
+}

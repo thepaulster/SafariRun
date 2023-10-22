@@ -1,0 +1,282 @@
+{
+	"textures": [
+		{
+			"image": "ui_sheet-0.png",
+			"size": {
+				"w": 1979,
+				"h": 1800
+			},
+			"sprites": [
+				{
+					"filename": "g216.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 1821,
+						"h": 1048
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "achievements_button.png",
+					"region": {
+						"x": 1824,
+						"y": 1,
+						"w": 154,
+						"h": 155
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "backbutton.png",
+					"region": {
+						"x": 1824,
+						"y": 158,
+						"w": 154,
+						"h": 155
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "exit_button.png",
+					"region": {
+						"x": 1824,
+						"y": 315,
+						"w": 154,
+						"h": 155
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "mission_button.png",
+					"region": {
+						"x": 1824,
+						"y": 472,
+						"w": 154,
+						"h": 155
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "settings_button.png",
+					"region": {
+						"x": 1824,
+						"y": 629,
+						"w": 154,
+						"h": 155
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "shop_button.png",
+					"region": {
+						"x": 1824,
+						"y": 786,
+						"w": 154,
+						"h": 155
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g166.png",
+					"region": {
+						"x": 1824,
+						"y": 943,
+						"w": 145,
+						"h": 139
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "stamina_and_coins_bar.png",
+					"region": {
+						"x": 1,
+						"y": 1051,
+						"w": 1334,
+						"h": 436
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g142.png",
+					"region": {
+						"x": 1337,
+						"y": 1051,
+						"w": 258,
+						"h": 251
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "hud_meat.png",
+					"region": {
+						"x": 1597,
+						"y": 1051,
+						"w": 210,
+						"h": 230
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g126.png",
+					"region": {
+						"x": 1809,
+						"y": 1084,
+						"w": 166,
+						"h": 169
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g199.png",
+					"region": {
+						"x": 1809,
+						"y": 1255,
+						"w": 144,
+						"h": 137
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g214.png",
+					"region": {
+						"x": 1337,
+						"y": 1394,
+						"w": 624,
+						"h": 241
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g67.png",
+					"region": {
+						"x": 1,
+						"y": 1489,
+						"w": 1312,
+						"h": 245
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g215.png",
+					"region": {
+						"x": 1315,
+						"y": 1637,
+						"w": 572,
+						"h": 162
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "ui_sheet-1.png",
+			"size": {
+				"w": 786,
+				"h": 703
+			},
+			"sprites": [
+				{
+					"filename": "g94.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 784,
+						"h": 701
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:03da909db99fa5a4a4866f81885f8408:707fdb4d3f5043ac74d9f7c2d7e5807c:f8e57b0fd79f2506f5125abf30a5485c$"
+	}
+}

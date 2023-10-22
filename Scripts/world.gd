@@ -11,6 +11,7 @@ onready var spawn_position = get_node("SpawnPosition")
 #const lion = preload("res://Scenes/lion.tscn")
 #const leopard = preload("res://Scenes/Leopard.tscn")
 #const cheetah = preload("res://Scenes/Cheetah.tscn")
+#const simpleplayer = preload("res://Scenes/Player.tscn")
 const simpleplayer = preload("res://Scenes/simplePlayer.tscn")
 
 #var selected_player = [
