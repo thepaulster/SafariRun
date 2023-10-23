@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/human-bite-crunch-toast-1-sound-effect-88455201.ogg-f0f422fac706274c16d5645de546e4dd.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/human-bite-crunch-toast-1-sound-effect-88455201.ogg"
+dest_files=[ "res://.import/human-bite-crunch-toast-1-sound-effect-88455201.ogg-f0f422fac706274c16d5645de546e4dd.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Level.gd" type="Script" id=1]
+
+[node name="GreenSavannahLevel" type="Node2D"]
+script = ExtResource( 1 )
+level_name = "GreenSavannah"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1278.0
+margin_bottom = 723.0
+color = Color( 0.109804, 0.713726, 0.0588235, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 548.0
+margin_top = 233.0
+margin_right = 668.0
+margin_bottom = 247.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Green Savannah level"
+
+[node name="ChangeSceneButton" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 529.0
+margin_top = 331.0
+margin_right = 686.0
+margin_bottom = 351.0
+text = "Click to change scenes"
+
+[connection signal="pressed" from="ChangeSceneButton" to="." method="_on_ChangeSceneButton_pressed"]
