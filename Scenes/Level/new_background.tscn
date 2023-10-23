@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/testsheet.sprites/new_test.sprites/Asset 4.tres" type="Texture" id=1]
-[ext_resource path="res://Assets/testsheet.sprites/new_test.sprites/Asset 2.tres" type="Texture" id=2]
+[ext_resource path="res://Assets/testsheet.sprites/new_test.sprites/Asset 14.tres" type="Texture" id=2]
 [ext_resource path="res://Assets/testsheet.sprites/new_test.sprites/Asset 13.tres" type="Texture" id=3]
 [ext_resource path="res://Assets/testsheet.sprites/new_test.sprites/Asset 3.tres" type="Texture" id=4]
 [ext_resource path="res://Assets/testsheet.sprites/1x/Asset 82.tres" type="Texture" id=6]
@@ -58,7 +58,7 @@ motion_scale = Vector2( 0.6, 1 )
 motion_mirroring = Vector2( 1920, 0 )
 
 [node name="Asset2" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
-position = Vector2( 958, 885 )
+position = Vector2( 957, 767 )
 texture = ExtResource( 2 )
 
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="."]

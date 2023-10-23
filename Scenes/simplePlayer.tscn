@@ -95,12 +95,12 @@ theme = ExtResource( 3 )
 text = "state"
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
-position = Vector2( -11, 5 )
-scale = Vector2( 0.5, 0.5 )
+position = Vector2( -11, -17 )
+scale = Vector2( 0.8, 0.8 )
 z_index = 10
 frames = SubResource( 2 )
 animation = "running"
-frame = 7
+frame = 5
 playing = true
 flip_h = true
 

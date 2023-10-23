@@ -3,8 +3,8 @@
 		{
 			"image": "ui_sheet-0.png",
 			"size": {
-				"w": 1979,
-				"h": 1958
+				"w": 2042,
+				"h": 1956
 			},
 			"sprites": [
 				{
@@ -23,12 +23,12 @@
 					}
 				},
 				{
-					"filename": "stamina_and_coins_bar.png",
+					"filename": "g262.png",
 					"region": {
 						"x": 1,
 						"y": 1051,
-						"w": 1334,
-						"h": 436
+						"w": 1254,
+						"h": 642
 					},
 					"margin": {
 						"x": 0,
@@ -38,72 +38,27 @@
 					}
 				},
 				{
-					"filename": "g67.png",
+					"filename": "g94.png",
+					"region": {
+						"x": 1257,
+						"y": 1051,
+						"w": 784,
+						"h": 701
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "stamina_bar.png",
 					"region": {
 						"x": 1,
-						"y": 1489,
-						"w": 1312,
-						"h": 245
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "g214.png",
-					"region": {
-						"x": 1315,
-						"y": 1489,
-						"w": 624,
-						"h": 241
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "g310.png",
-					"region": {
-						"x": 1315,
-						"y": 1732,
-						"w": 626,
-						"h": 222
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "g215.png",
-					"region": {
-						"x": 1337,
-						"y": 1051,
-						"w": 572,
-						"h": 162
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "g142.png",
-					"region": {
-						"x": 1337,
-						"y": 1215,
-						"w": 258,
-						"h": 251
+						"y": 1695,
+						"w": 830,
+						"h": 119
 					},
 					"margin": {
 						"x": 0,
@@ -115,8 +70,8 @@
 				{
 					"filename": "hud_meat.png",
 					"region": {
-						"x": 1597,
-						"y": 1215,
+						"x": 1824,
+						"y": 1,
 						"w": 210,
 						"h": 230
 					},
@@ -130,8 +85,8 @@
 				{
 					"filename": "g126.png",
 					"region": {
-						"x": 1809,
-						"y": 1215,
+						"x": 1824,
+						"y": 233,
 						"w": 166,
 						"h": 169
 					},
@@ -143,25 +98,10 @@
 					}
 				},
 				{
-					"filename": "g235.png",
-					"region": {
-						"x": 1,
-						"y": 1736,
-						"w": 821,
-						"h": 221
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
 					"filename": "achievements_button.png",
 					"region": {
-						"x": 824,
-						"y": 1736,
+						"x": 1824,
+						"y": 404,
 						"w": 154,
 						"h": 155
 					},
@@ -175,8 +115,8 @@
 				{
 					"filename": "backbutton.png",
 					"region": {
-						"x": 980,
-						"y": 1736,
+						"x": 1824,
+						"y": 561,
 						"w": 154,
 						"h": 155
 					},
@@ -190,8 +130,8 @@
 				{
 					"filename": "exit_button.png",
 					"region": {
-						"x": 1136,
-						"y": 1736,
+						"x": 1824,
+						"y": 718,
 						"w": 154,
 						"h": 155
 					},
@@ -206,69 +146,9 @@
 					"filename": "mission_button.png",
 					"region": {
 						"x": 1824,
-						"y": 1,
+						"y": 875,
 						"w": 154,
 						"h": 155
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "settings_button.png",
-					"region": {
-						"x": 1824,
-						"y": 158,
-						"w": 154,
-						"h": 155
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "shop_button.png",
-					"region": {
-						"x": 1824,
-						"y": 315,
-						"w": 154,
-						"h": 155
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "g291.png",
-					"region": {
-						"x": 1824,
-						"y": 472,
-						"w": 152,
-						"h": 145
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "g311.png",
-					"region": {
-						"x": 1824,
-						"y": 619,
-						"w": 152,
-						"h": 145
 					},
 					"margin": {
 						"x": 0,
@@ -280,8 +160,8 @@
 				{
 					"filename": "g166.png",
 					"region": {
-						"x": 1824,
-						"y": 766,
+						"x": 1,
+						"y": 1816,
 						"w": 145,
 						"h": 139
 					},
@@ -295,10 +175,85 @@
 				{
 					"filename": "g199.png",
 					"region": {
-						"x": 1824,
-						"y": 907,
+						"x": 148,
+						"y": 1816,
 						"w": 144,
 						"h": 137
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "settings_button.png",
+					"region": {
+						"x": 833,
+						"y": 1695,
+						"w": 154,
+						"h": 155
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g215.png",
+					"region": {
+						"x": 989,
+						"y": 1754,
+						"w": 572,
+						"h": 162
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "shop_button.png",
+					"region": {
+						"x": 1563,
+						"y": 1754,
+						"w": 154,
+						"h": 155
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g291.png",
+					"region": {
+						"x": 1719,
+						"y": 1754,
+						"w": 152,
+						"h": 145
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g311.png",
+					"region": {
+						"x": 1873,
+						"y": 1754,
+						"w": 152,
+						"h": 145
 					},
 					"margin": {
 						"x": 0,
@@ -312,17 +267,17 @@
 		{
 			"image": "ui_sheet-1.png",
 			"size": {
-				"w": 2042,
-				"h": 703
+				"w": 1942,
+				"h": 908
 			},
 			"sprites": [
 				{
-					"filename": "g94.png",
+					"filename": "stamina_and_coins_bar.png",
 					"region": {
 						"x": 1,
 						"y": 1,
-						"w": 784,
-						"h": 701
+						"w": 1334,
+						"h": 436
 					},
 					"margin": {
 						"x": 0,
@@ -332,12 +287,87 @@
 					}
 				},
 				{
-					"filename": "g262.png",
+					"filename": "meat_bar.png",
 					"region": {
-						"x": 787,
+						"x": 1337,
 						"y": 1,
-						"w": 1254,
-						"h": 642
+						"w": 295,
+						"h": 297
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g142.png",
+					"region": {
+						"x": 1634,
+						"y": 1,
+						"w": 258,
+						"h": 251
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g67.png",
+					"region": {
+						"x": 1,
+						"y": 439,
+						"w": 1312,
+						"h": 245
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g214.png",
+					"region": {
+						"x": 1315,
+						"y": 439,
+						"w": 624,
+						"h": 241
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g310.png",
+					"region": {
+						"x": 1315,
+						"y": 682,
+						"w": 626,
+						"h": 222
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g235.png",
+					"region": {
+						"x": 1,
+						"y": 686,
+						"w": 821,
+						"h": 221
 					},
 					"margin": {
 						"x": 0,
@@ -352,6 +382,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:2e03d1d01d60e21996aac76affa3f3c4:6e70d29db22442724575148e1f89b85e:f8e57b0fd79f2506f5125abf30a5485c$"
+		"smartupdate": "$TexturePacker:SmartUpdate:de6221a236be51d58a2b6deb147a9224:697e9683b30380b1c0bf5f294f518e51:f8e57b0fd79f2506f5125abf30a5485c$"
 	}
 }
