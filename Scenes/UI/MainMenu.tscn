@@ -4,12 +4,12 @@
 [ext_resource path="res://Assets/UI/Final UI/menu_button.png" type="Texture" id=2]
 [ext_resource path="res://Assets/UI/Final UI/exit_button.png" type="Texture" id=3]
 [ext_resource path="res://Assets/UI/Final UI/title_1.png" type="Texture" id=4]
-[ext_resource path="res://Assets/testsheet.sprites/ui_sheet.sprites/settings_button.tres" type="Texture" id=5]
+[ext_resource path="res://Assets/testsheet.sprites/ui_sheet.sprites/ui-new_g8242.tres" type="Texture" id=5]
 [ext_resource path="res://admob-lib/admob.gd" type="Script" id=6]
-[ext_resource path="res://Assets/testsheet.sprites/ui_sheet.sprites/shop_button.tres" type="Texture" id=7]
-[ext_resource path="res://Assets/testsheet.sprites/ui_sheet.sprites/exit_button.tres" type="Texture" id=8]
-[ext_resource path="res://Assets/testsheet.sprites/ui_sheet.sprites/mission_button.tres" type="Texture" id=9]
-[ext_resource path="res://Assets/testsheet.sprites/ui_sheet.sprites/achievements_button.tres" type="Texture" id=10]
+[ext_resource path="res://Assets/testsheet.sprites/ui_sheet.sprites/ui-new_g8390.tres" type="Texture" id=7]
+[ext_resource path="res://Assets/testsheet.sprites/ui_sheet.sprites/ui-new_g8354.tres" type="Texture" id=8]
+[ext_resource path="res://Assets/testsheet.sprites/ui_sheet.sprites/ui-new_g8270.tres" type="Texture" id=9]
+[ext_resource path="res://Assets/testsheet.sprites/ui_sheet.sprites/ui-new_g8322.tres" type="Texture" id=10]
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
@@ -91,46 +91,36 @@ margin_bottom = 373.0
 
 [node name="TextureButton" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
 margin_right = 154.0
-margin_bottom = 155.0
-rect_min_size = Vector2( 154, 155 )
-texture_normal = ExtResource( 7 )
-expand = true
+margin_bottom = 148.0
+texture_normal = ExtResource( 5 )
 stretch_mode = 4
 
 [node name="TextureButton2" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
-margin_top = 159.0
+margin_top = 152.0
 margin_right = 154.0
-margin_bottom = 314.0
-rect_min_size = Vector2( 154, 155 )
-texture_normal = ExtResource( 9 )
-expand = true
+margin_bottom = 298.0
+texture_normal = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureButton3" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
-margin_top = 318.0
+margin_top = 302.0
 margin_right = 154.0
-margin_bottom = 473.0
-rect_min_size = Vector2( 154, 155 )
-texture_normal = ExtResource( 10 )
-expand = true
+margin_bottom = 448.0
+texture_normal = ExtResource( 7 )
 stretch_mode = 4
 
 [node name="settingsButton" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
-margin_top = 477.0
+margin_top = 452.0
 margin_right = 154.0
-margin_bottom = 632.0
-rect_min_size = Vector2( 154, 155 )
-texture_normal = ExtResource( 5 )
-expand = true
+margin_bottom = 602.0
+texture_normal = ExtResource( 8 )
 stretch_mode = 4
 
 [node name="exitButton" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
-margin_top = 636.0
+margin_top = 606.0
 margin_right = 154.0
-margin_bottom = 791.0
-rect_min_size = Vector2( 154, 155 )
-texture_normal = ExtResource( 8 )
-expand = true
+margin_bottom = 752.0
+texture_normal = ExtResource( 9 )
 stretch_mode = 4
 
 [node name="AdMob" type="Node" parent="."]

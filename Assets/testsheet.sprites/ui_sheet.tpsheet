@@ -3,17 +3,17 @@
 		{
 			"image": "ui_sheet-0.png",
 			"size": {
-				"w": 2042,
-				"h": 1956
+				"w": 1858,
+				"h": 1409
 			},
 			"sprites": [
 				{
-					"filename": "g216.png",
+					"filename": "ui-new_g24.png",
 					"region": {
 						"x": 1,
 						"y": 1,
-						"w": 1821,
-						"h": 1048
+						"w": 1407,
+						"h": 810
 					},
 					"margin": {
 						"x": 0,
@@ -23,12 +23,12 @@
 					}
 				},
 				{
-					"filename": "g262.png",
+					"filename": "ui-new_g1518-6.png",
 					"region": {
 						"x": 1,
-						"y": 1051,
-						"w": 1254,
-						"h": 642
+						"y": 813,
+						"w": 1014,
+						"h": 189
 					},
 					"margin": {
 						"x": 0,
@@ -38,12 +38,12 @@
 					}
 				},
 				{
-					"filename": "g94.png",
+					"filename": "ui-new_g1391-2.png",
 					"region": {
-						"x": 1257,
-						"y": 1051,
-						"w": 784,
-						"h": 701
+						"x": 1017,
+						"y": 813,
+						"w": 606,
+						"h": 542
 					},
 					"margin": {
 						"x": 0,
@@ -53,12 +53,12 @@
 					}
 				},
 				{
-					"filename": "stamina_bar.png",
+					"filename": "ui-new_g235.png",
 					"region": {
 						"x": 1,
-						"y": 1695,
-						"w": 830,
-						"h": 119
+						"y": 1004,
+						"w": 802,
+						"h": 216
 					},
 					"margin": {
 						"x": 0,
@@ -68,12 +68,87 @@
 					}
 				},
 				{
-					"filename": "hud_meat.png",
+					"filename": "ui-new_g1252-3.png",
 					"region": {
-						"x": 1824,
+						"x": 805,
+						"y": 1004,
+						"w": 200,
+						"h": 194
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui-new_g1488-4.png",
+					"region": {
+						"x": 805,
+						"y": 1200,
+						"w": 149,
+						"h": 148
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui-new_g3.png",
+					"region": {
+						"x": 1,
+						"y": 1222,
+						"w": 482,
+						"h": 186
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui-new_g23.png",
+					"region": {
+						"x": 485,
+						"y": 1222,
+						"w": 313,
+						"h": 110
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui-new_path8122.png",
+					"region": {
+						"x": 485,
+						"y": 1334,
+						"w": 264,
+						"h": 38
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui-new_g1612-3.png",
+					"region": {
+						"x": 1410,
 						"y": 1,
-						"w": 210,
-						"h": 230
+						"w": 138,
+						"h": 151
 					},
 					"margin": {
 						"x": 0,
@@ -83,12 +158,12 @@
 					}
 				},
 				{
-					"filename": "g126.png",
+					"filename": "ui-new_g8354.png",
 					"region": {
-						"x": 1824,
-						"y": 233,
-						"w": 166,
-						"h": 169
+						"x": 1410,
+						"y": 154,
+						"w": 148,
+						"h": 150
 					},
 					"margin": {
 						"x": 0,
@@ -98,12 +173,12 @@
 					}
 				},
 				{
-					"filename": "achievements_button.png",
+					"filename": "ui-new_g1680-2.png",
 					"region": {
-						"x": 1824,
-						"y": 404,
-						"w": 154,
-						"h": 155
+						"x": 1550,
+						"y": 1,
+						"w": 148,
+						"h": 149
 					},
 					"margin": {
 						"x": 0,
@@ -113,12 +188,12 @@
 					}
 				},
 				{
-					"filename": "backbutton.png",
+					"filename": "ui-new_g310.png",
 					"region": {
-						"x": 1824,
-						"y": 561,
-						"w": 154,
-						"h": 155
+						"x": 1410,
+						"y": 306,
+						"w": 420,
+						"h": 149
 					},
 					"margin": {
 						"x": 0,
@@ -128,12 +203,12 @@
 					}
 				},
 				{
-					"filename": "exit_button.png",
+					"filename": "ui-new_g8242.png",
 					"region": {
-						"x": 1824,
-						"y": 718,
-						"w": 154,
-						"h": 155
+						"x": 1560,
+						"y": 152,
+						"w": 148,
+						"h": 148
 					},
 					"margin": {
 						"x": 0,
@@ -143,12 +218,12 @@
 					}
 				},
 				{
-					"filename": "mission_button.png",
+					"filename": "ui-new_g8270.png",
 					"region": {
-						"x": 1824,
-						"y": 875,
-						"w": 154,
-						"h": 155
+						"x": 1700,
+						"y": 1,
+						"w": 147,
+						"h": 146
 					},
 					"margin": {
 						"x": 0,
@@ -158,11 +233,26 @@
 					}
 				},
 				{
-					"filename": "g166.png",
+					"filename": "ui-new_g8322.png",
 					"region": {
-						"x": 1,
-						"y": 1816,
-						"w": 145,
+						"x": 1710,
+						"y": 149,
+						"w": 147,
+						"h": 146
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui-new_g213.png",
+					"region": {
+						"x": 1410,
+						"y": 457,
+						"w": 424,
 						"h": 139
 					},
 					"margin": {
@@ -173,12 +263,12 @@
 					}
 				},
 				{
-					"filename": "g199.png",
+					"filename": "ui-new_g4.png",
 					"region": {
-						"x": 148,
-						"y": 1816,
-						"w": 144,
-						"h": 137
+						"x": 1410,
+						"y": 598,
+						"w": 442,
+						"h": 125
 					},
 					"margin": {
 						"x": 0,
@@ -188,12 +278,12 @@
 					}
 				},
 				{
-					"filename": "settings_button.png",
+					"filename": "ui-new_g8390.png",
 					"region": {
-						"x": 833,
-						"y": 1695,
-						"w": 154,
-						"h": 155
+						"x": 1625,
+						"y": 725,
+						"w": 147,
+						"h": 146
 					},
 					"margin": {
 						"x": 0,
@@ -203,41 +293,11 @@
 					}
 				},
 				{
-					"filename": "g215.png",
+					"filename": "ui-new_g291.png",
 					"region": {
-						"x": 989,
-						"y": 1754,
-						"w": 572,
-						"h": 162
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "shop_button.png",
-					"region": {
-						"x": 1563,
-						"y": 1754,
-						"w": 154,
-						"h": 155
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "g291.png",
-					"region": {
-						"x": 1719,
-						"y": 1754,
-						"w": 152,
+						"x": 1625,
+						"y": 873,
+						"w": 147,
 						"h": 145
 					},
 					"margin": {
@@ -248,11 +308,11 @@
 					}
 				},
 				{
-					"filename": "g311.png",
+					"filename": "ui-new_g311.png",
 					"region": {
-						"x": 1873,
-						"y": 1754,
-						"w": 152,
+						"x": 1625,
+						"y": 1020,
+						"w": 147,
 						"h": 145
 					},
 					"margin": {
@@ -261,23 +321,14 @@
 						"w": 0,
 						"h": 0
 					}
-				}
-			]
-		},
-		{
-			"image": "ui_sheet-1.png",
-			"size": {
-				"w": 1942,
-				"h": 908
-			},
-			"sprites": [
+				},
 				{
-					"filename": "stamina_and_coins_bar.png",
+					"filename": "ui-new_g1368-3.png",
 					"region": {
-						"x": 1,
-						"y": 1,
-						"w": 1334,
-						"h": 436
+						"x": 1625,
+						"y": 1167,
+						"w": 129,
+						"h": 131
 					},
 					"margin": {
 						"x": 0,
@@ -287,87 +338,12 @@
 					}
 				},
 				{
-					"filename": "meat_bar.png",
+					"filename": "ui-new_path3.png",
 					"region": {
-						"x": 1337,
-						"y": 1,
-						"w": 295,
-						"h": 297
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "g142.png",
-					"region": {
-						"x": 1634,
-						"y": 1,
-						"w": 258,
-						"h": 251
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "g67.png",
-					"region": {
-						"x": 1,
-						"y": 439,
-						"w": 1312,
-						"h": 245
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "g214.png",
-					"region": {
-						"x": 1315,
-						"y": 439,
-						"w": 624,
-						"h": 241
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "g310.png",
-					"region": {
-						"x": 1315,
-						"y": 682,
-						"w": 626,
-						"h": 222
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "g235.png",
-					"region": {
-						"x": 1,
-						"y": 686,
-						"w": 821,
-						"h": 221
+						"x": 1625,
+						"y": 1300,
+						"w": 96,
+						"h": 97
 					},
 					"margin": {
 						"x": 0,
@@ -382,6 +358,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:de6221a236be51d58a2b6deb147a9224:697e9683b30380b1c0bf5f294f518e51:f8e57b0fd79f2506f5125abf30a5485c$"
+		"smartupdate": "$TexturePacker:SmartUpdate:47df27bf2bd78500099ee5cb2ba3bc9f:8c47acf9e096f2cf53363afb0edcbe06:2f515636576b799fda99998413674f3c$"
 	}
 }
