@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/testsheet.sprites/ui_sheet.sprites/ui-new_g1612-3.tres" type="Texture" id=3]
 [ext_resource path="res://Scenes/UI/Themes/distance_font.tres" type="Theme" id=4]
 [ext_resource path="res://Scenes/UI/Themes/meat_color_text.tres" type="Theme" id=5]
-[ext_resource path="res://Assets/UI/Final UI/pause_btn.png" type="Texture" id=8]
+[ext_resource path="res://Assets/testsheet.sprites/ui_sheet.sprites/ui-new_g317.tres" type="Texture" id=6]
 [ext_resource path="res://Scripts/PauseMenu.gd" type="Script" id=11]
 [ext_resource path="res://Assets/others/meat.png" type="Texture" id=12]
 [ext_resource path="res://Assets/UI/Text/Bahianita-Regular.ttf" type="DynamicFontData" id=13]
@@ -127,13 +127,11 @@ text = "20"
 [node name="PauseButton" type="TextureButton" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 16.0
-margin_top = -71.0
-margin_right = 92.0
-margin_bottom = -8.0
-rect_min_size = Vector2( 76, 63 )
-texture_normal = ExtResource( 8 )
-expand = true
+margin_left = 28.0
+margin_top = -155.0
+margin_right = 161.0
+margin_bottom = -28.0
+texture_normal = ExtResource( 6 )
 stretch_mode = 5
 
 [connection signal="pressed" from="PauseButton" to="." method="_on_PauseButton_pressed"]
