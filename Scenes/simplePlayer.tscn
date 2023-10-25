@@ -72,6 +72,7 @@ position = Vector2( 2, 0 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2( 200, 0 )
 current = true
 limit_bottom = 1080
 limit_smoothed = true
@@ -100,7 +101,7 @@ scale = Vector2( 0.6, 0.6 )
 z_index = 10
 frames = SubResource( 2 )
 animation = "running"
-frame = 6
+frame = 7
 playing = true
 flip_h = true
 

@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeDebugResources-9:/values-ar/values-ar.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-3:/values-ar/values-ar.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Paul\\.gradle\\caches\\transforms-3\\9bcb1a65f5938aad264f4d73e9a06f28\\transformed\\core-1.2.0\\res\\values-ar\\values-ar.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "123",
-                        "endColumns": "100",
-                        "endOffsets": "219"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Paul\\Documents\\GitHub\\SafariRun\\android\\build\\res\\values-ar\\godot_project_name_string.xml",
+                    "source": "C:\\Github\\SafariRun\\android\\build\\res\\values-ar\\godot_project_name_string.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "1",
@@ -35,6 +18,23 @@
                         "startOffsets": "55",
                         "endColumns": "67",
                         "endOffsets": "118"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\paul.asiimwe\\.gradle\\caches\\transforms-3\\9bcb1a65f5938aad264f4d73e9a06f28\\transformed\\core-1.2.0\\res\\values-ar\\values-ar.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "123",
+                        "endColumns": "100",
+                        "endOffsets": "219"
                     }
                 }
             ]

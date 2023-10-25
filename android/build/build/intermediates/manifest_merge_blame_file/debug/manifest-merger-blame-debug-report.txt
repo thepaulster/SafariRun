@@ -10,84 +10,84 @@
 10        android:targetSdkVersion="33" />
 11
 12    <supports-screens
-12-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:12:5-16:40
+12-->C:\Github\SafariRun\android\build\AndroidManifest.xml:12:5-16:40
 13        android:largeScreens="true"
-13-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:15:9-36
+13-->C:\Github\SafariRun\android\build\AndroidManifest.xml:15:9-36
 14        android:normalScreens="true"
-14-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:14:9-37
+14-->C:\Github\SafariRun\android\build\AndroidManifest.xml:14:9-37
 15        android:smallScreens="true"
-15-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:13:9-36
+15-->C:\Github\SafariRun\android\build\AndroidManifest.xml:13:9-36
 16        android:xlargeScreens="true" />
-16-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:16:9-37
+16-->C:\Github\SafariRun\android\build\AndroidManifest.xml:16:9-37
 17
 18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-18-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\src\debug\AndroidManifest.xml:10:5-79
-18-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\src\debug\AndroidManifest.xml:10:22-76
+18-->C:\Github\SafariRun\android\build\src\debug\AndroidManifest.xml:10:5-79
+18-->C:\Github\SafariRun\android\build\src\debug\AndroidManifest.xml:10:22-76
 19    <uses-permission android:name="android.permission.INTERNET" />
-19-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\src\debug\AndroidManifest.xml:11:5-67
-19-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\src\debug\AndroidManifest.xml:11:22-64
+19-->C:\Github\SafariRun\android\build\src\debug\AndroidManifest.xml:11:5-67
+19-->C:\Github\SafariRun\android\build\src\debug\AndroidManifest.xml:11:22-64
 20    <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
 21    <uses-feature
-21-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:19:5-21:35
+21-->C:\Github\SafariRun\android\build\AndroidManifest.xml:19:5-21:35
 22        android:glEsVersion="0x00020000"
-22-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:20:9-41
+22-->C:\Github\SafariRun\android\build\AndroidManifest.xml:20:9-41
 23        android:required="true" />
-23-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:21:9-32
+23-->C:\Github\SafariRun\android\build\AndroidManifest.xml:21:9-32
 24
 25    <application
-25-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:30:5-94:19
+25-->C:\Github\SafariRun\android\build\AndroidManifest.xml:30:5-94:19
 26        android:allowBackup="false"
-26-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:30:68-95
+26-->C:\Github\SafariRun\android\build\AndroidManifest.xml:30:68-95
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.2.0] C:\Users\Paul\.gradle\caches\transforms-3\9bcb1a65f5938aad264f4d73e9a06f28\transformed\core-1.2.0\AndroidManifest.xml:24:18-86
+27-->[androidx.core:core:1.2.0] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\9bcb1a65f5938aad264f4d73e9a06f28\transformed\core-1.2.0\AndroidManifest.xml:24:18-86
 28        android:debuggable="true"
 29        android:hasFragileUserData="false"
-29-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:30:118-152
+29-->C:\Github\SafariRun\android\build\AndroidManifest.xml:30:118-152
 30        android:icon="@mipmap/icon"
-30-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:30:238-265
+30-->C:\Github\SafariRun\android\build\AndroidManifest.xml:30:238-265
 31        android:isGame="true"
-31-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:30:96-117
+31-->C:\Github\SafariRun\android\build\AndroidManifest.xml:30:96-117
 32        android:label="@string/godot_project_name_string"
-32-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:30:18-67
+32-->C:\Github\SafariRun\android\build\AndroidManifest.xml:30:18-67
 33        android:requestLegacyExternalStorage="false" >
-33-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:30:153-197
+33-->C:\Github\SafariRun\android\build\AndroidManifest.xml:30:153-197
 34        <activity
-34-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:65:9-88:20
+34-->C:\Github\SafariRun\android\build\AndroidManifest.xml:65:9-88:20
 35            android:name="com.godot.game.GodotApp"
-35-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:66:13-37
+35-->C:\Github\SafariRun\android\build\AndroidManifest.xml:66:13-37
 36            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
-36-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:73:13-141
+36-->C:\Github\SafariRun\android\build\AndroidManifest.xml:73:13-141
 37            android:excludeFromRecents="false"
-37-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:70:13-47
+37-->C:\Github\SafariRun\android\build\AndroidManifest.xml:70:13-47
 38            android:exported="true"
-38-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:71:13-36
+38-->C:\Github\SafariRun\android\build\AndroidManifest.xml:71:13-36
 39            android:label="@string/godot_project_name_string"
-39-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:67:13-62
+39-->C:\Github\SafariRun\android\build\AndroidManifest.xml:67:13-62
 40            android:launchMode="singleTask"
-40-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:69:13-44
+40-->C:\Github\SafariRun\android\build\AndroidManifest.xml:69:13-44
 41            android:resizeableActivity="true"
-41-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:74:13-47
+41-->C:\Github\SafariRun\android\build\AndroidManifest.xml:74:13-47
 42            android:screenOrientation="userLandscape"
-42-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:72:13-50
+42-->C:\Github\SafariRun\android\build\AndroidManifest.xml:72:13-50
 43            android:theme="@style/GodotAppSplashTheme" >
-43-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:68:13-55
+43-->C:\Github\SafariRun\android\build\AndroidManifest.xml:68:13-55
 44            <intent-filter>
-44-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:80:13-87:29
+44-->C:\Github\SafariRun\android\build\AndroidManifest.xml:80:13-87:29
 45                <action android:name="android.intent.action.MAIN" />
-45-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:81:17-69
-45-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:81:25-66
+45-->C:\Github\SafariRun\android\build\AndroidManifest.xml:81:17-69
+45-->C:\Github\SafariRun\android\build\AndroidManifest.xml:81:25-66
 46
 47                <category android:name="android.intent.category.LAUNCHER" />
-47-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:82:17-77
-47-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:82:27-74
+47-->C:\Github\SafariRun\android\build\AndroidManifest.xml:82:17-77
+47-->C:\Github\SafariRun\android\build\AndroidManifest.xml:82:27-74
 48
 49                <!--
 50                Enable access to OpenXR on Oculus mobile devices, no-op on other Android
 51                platforms.
 52                -->
 53                <category android:name="com.oculus.intent.category.VR" />
-53-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:86:17-74
-53-->C:\Users\Paul\Documents\GitHub\SafariRun\android\build\AndroidManifest.xml:86:27-71
+53-->C:\Github\SafariRun\android\build\AndroidManifest.xml:86:17-74
+53-->C:\Github\SafariRun\android\build\AndroidManifest.xml:86:27-71
 54            </intent-filter>
 55        </activity>
 56        <!-- Records the version of the Godot editor used for building -->
@@ -95,43 +95,43 @@
 58            android:name="org.godotengine.editor.version"
 59            android:value="3.5.3.stable" /> <!-- Records the version of the Godot library -->
 60        <meta-data
-60-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:14:9-16:44
+60-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:14:9-16:44
 61            android:name="org.godotengine.library.version"
-61-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:15:13-59
+61-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:15:13-59
 62            android:value="3.5.3.stable" />
-62-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:16:13-41
+62-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:16:13-41
 63
 64        <service android:name="org.godotengine.godot.GodotDownloaderService" />
-64-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:18:9-80
-64-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:18:18-77
+64-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:18:9-80
+64-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:18:18-77
 65
 66        <activity
-66-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:20:9-24:75
+66-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:20:9-24:75
 67            android:name="org.godotengine.godot.utils.ProcessPhoenix"
-67-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:21:13-70
+67-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:21:13-70
 68            android:exported="false"
-68-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:22:13-37
+68-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:22:13-37
 69            android:process=":phoenix"
-69-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:23:13-39
+69-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:23:13-39
 70            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-70-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:24:13-72
+70-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:24:13-72
 71
 72        <provider
-72-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:26:9-34:20
+72-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:26:9-34:20
 73            android:name="androidx.core.content.FileProvider"
-73-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:27:13-62
+73-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:27:13-62
 74            android:authorities="org.grassthatchedstudios.safarihunt.fileprovider"
-74-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:28:13-64
+74-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:28:13-64
 75            android:exported="false"
-75-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:29:13-37
+75-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:29:13-37
 76            android:grantUriPermissions="true" >
-76-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:30:13-47
+76-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:30:13-47
 77            <meta-data
-77-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:31:13-33:64
+77-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:31:13-33:64
 78                android:name="android.support.FILE_PROVIDER_PATHS"
-78-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:32:17-67
+78-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:32:17-67
 79                android:resource="@xml/godot_provider_paths" />
-79-->[godot-lib.debug.aar] C:\Users\Paul\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:33:17-61
+79-->[godot-lib.debug.aar] C:\Users\paul.asiimwe\.gradle\caches\transforms-3\bc57bf9a95885c2fd81c29e99b26c727\transformed\jetified-godot-lib.debug\AndroidManifest.xml:33:17-61
 80        </provider>
 81    </application>
 82

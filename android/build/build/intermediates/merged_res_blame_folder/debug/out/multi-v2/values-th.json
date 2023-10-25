@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeDebugResources-9:/values-th/values-th.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-3:/values-th/values-th.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Paul\\Documents\\GitHub\\SafariRun\\android\\build\\res\\values-th\\godot_project_name_string.xml",
+                    "source": "C:\\Github\\SafariRun\\android\\build\\res\\values-th\\godot_project_name_string.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "1",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Paul\\.gradle\\caches\\transforms-3\\9bcb1a65f5938aad264f4d73e9a06f28\\transformed\\core-1.2.0\\res\\values-th\\values-th.xml",
+                    "source": "C:\\Users\\paul.asiimwe\\.gradle\\caches\\transforms-3\\9bcb1a65f5938aad264f4d73e9a06f28\\transformed\\core-1.2.0\\res\\values-th\\values-th.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
